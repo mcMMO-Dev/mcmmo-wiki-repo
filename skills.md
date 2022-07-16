@@ -2,7 +2,7 @@
 title: Skills
 description: View an overview of all mcMMO Skills!
 published: true
-date: 2022-07-16T20:23:34.236Z
+date: 2022-07-16T21:09:54.676Z
 tags: skills
 editor: markdown
 dateCreated: 2022-07-16T20:23:34.236Z
