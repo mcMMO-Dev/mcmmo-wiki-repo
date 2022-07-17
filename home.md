@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2022-07-17T21:06:30.358Z
+date: 2022-07-17T21:40:25.232Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -17,9 +17,15 @@ Welcome to the mcMMO wiki.
 
 Use the sidebar or the search function to find what you're looking for!
 
-## Getting Started
+# Getting Started
 
 - [Installation](/installation) - Everything you need to know about installing or updating mcMMO
-- [Configuration](/config) - Customize mcMMO
 - [Skills](/skills) - Read about mcMMO skills and sub-skills
 - [Permissions](/permissions) - Information on permission nodes used within mcMMO
+
+# Useful Pages
+- [Configuration](/config) - Customize mcMMO
+- [Plugin Integration](/plugin-integration/plugin-support) - Optional mcMMO features making use of other plugins
+- [World Blacklist](/config/world-blacklist) - Information about the world blacklist feature
+- [Hardcore Mode](/config/hardcore-mode) - Information about mcMMO's optional hardcore mode
+- [Vampirisim](/config/vampirism) - Information about mcMMO's optional vampirism PVP setting
