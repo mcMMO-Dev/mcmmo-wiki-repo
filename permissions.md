@@ -1,11 +1,11 @@
 ---
 title: Permissions
-description: Permission nodes used within mcMMO
+description: mcMMO permissions info
 published: true
-date: 2022-07-17T21:46:08.005Z
-tags: permissions
+date: 2022-07-17T22:30:51.370Z
+tags: config, permissions, perks
 editor: markdown
-dateCreated: 2022-07-17T21:10:51.772Z
+dateCreated: 2022-07-17T22:30:51.370Z
 ---
 
 # Permissions
