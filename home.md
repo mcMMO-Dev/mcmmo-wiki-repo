@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2022-07-17T21:42:23.251Z
+date: 2022-07-17T21:44:28.659Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -25,6 +25,7 @@ Use the sidebar or the search function to find what you're looking for!
 
 # Useful Pages
 - [Configuration](/config) - Customize mcMMO
+- [Locale](/config/locale) - Customize mcMMO messages or change the language for mcMMO
 - [Plugin Integration](/plugin-integration/plugin-support) - Optional mcMMO features making use of other plugins
 - [World Blacklist](/config/world-blacklist) - Information about the world blacklist feature
 - [Hardcore Mode](/config/hardcore-mode) - Information about mcMMO's optional hardcore mode
