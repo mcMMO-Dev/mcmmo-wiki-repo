@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2022-07-17T19:58:16.449Z
+date: 2022-07-17T20:45:16.477Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -20,12 +20,6 @@ Use the sidebar or the search function to find what you're looking for!
 ## Getting Started
 
 - [Installation](/installation) - Everything you need to know about installing or updating mcMMO
-- [config.yml](/config/config) - Customize mcMMO
-
-## [Skills](/skills)
-
-Click the link to view all skills or use the sidebar navigation to easily navigate to the page pertaining to a specific skill.
-
-## [Configuration](/config)
-
-mcMMO has several config files. Click the link to view all config files.
+- [Configuration](/config) - Customize mcMMO
+- [Skills](/skills) - Read about mcMMO skills and sub-skills
+- [Permissions](/permissions) - Information on permission nodes used within mcMMO
