@@ -2,7 +2,7 @@
 title: API
 description: mcMMO API information
 published: true
-date: 2022-07-17T22:09:31.312Z
+date: 2022-07-17T22:09:37.520Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-17T21:52:56.138Z
