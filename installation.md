@@ -1,11 +1,11 @@
 ---
-title: Install or upgrade mcMMO
-description: Instructions on how to install mcMMO for the first time or upgrade from a prior version
+title: Install or Update mcMMO
+description: Instructions on how to install or update mcMMO
 published: true
-date: 2022-07-17T22:16:27.282Z
-tags: install, upgrade
+date: 2022-07-17T22:27:04.825Z
+tags: install, update
 editor: markdown
-dateCreated: 2022-07-17T19:39:19.550Z
+dateCreated: 2022-07-17T22:27:04.825Z
 ---
 
 # Installation & Upgrading
