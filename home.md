@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2022-07-17T21:41:03.919Z
+date: 2022-07-17T21:42:23.251Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -29,3 +29,5 @@ Use the sidebar or the search function to find what you're looking for!
 - [World Blacklist](/config/world-blacklist) - Information about the world blacklist feature
 - [Hardcore Mode](/config/hardcore-mode) - Information about mcMMO's optional hardcore mode
 - [Vampirisim](/config/vampirism) - Information about mcMMO's optional vampirism PVP setting
+# API
+- [API](/api/mcmmo-api) - mcMMO API Information for developers
