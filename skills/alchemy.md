@@ -2,25 +2,30 @@
 title: Alchemy
 description: View information about the mcMMO Skill Alchemy.
 published: true
-date: 2022-07-16T21:46:19.551Z
-tags: skills, alchemy
+date: 2022-08-08T16:29:35.952Z
+tags: alchemy, skills
 editor: markdown
 dateCreated: 2022-07-16T21:46:19.551Z
 ---
 
 # Alchemy
 
+> nossr50 plans on reworking/rewriting the entirety of Alchemy in 2.2, due to difficulties with the current code.
+{.is-warning}
+
 Alchemy is about brewing potions. It provides a speed increase in the potion brew time, as well as the addition of new (previously) unobtainable potions.
 
 ## XP Gain
 
-To gain XP in this skill you need to brew potions.
+Experience in Alchemy is gained by successfully crafting potions and by adding additional ingredients to existing potions.
 
-## How does Catalysis work?
+## Passive Sub-Skills
+
+### Catalysis
 
 Catalysis speeds of the brewing process, with a max speed of 4x at level 1000. This ability is unlocked at level 100 by default.
 
-## How does Concoctions work?
+### Concoctions
 
 Concoctions allows brewing of more potions with custom ingredients. Which special ingredients are unlocked is determined by your Rank. There are 8 ranks to unlock.
 
