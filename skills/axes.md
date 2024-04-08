@@ -10,7 +10,7 @@ dateCreated: 2022-07-17T01:32:38.684Z
 
 # Axes
 
-With the Axes skill you can use your axe for much more then just deforesting! You can hack and chop away at mobs and players to gain XP, hitting mobs with the effect of knockback and inflicting DEADLY criticals on mobs and players. Your axe also becomes a hand-held woodchipper, breaking down the enemy's armor with ease as your level increases.
+With the Axes skill you can use your axe for much more than just deforesting! You can hack and chop away at mobs and players to gain XP, hitting mobs with the effect of knockback and inflicting DEADLY criticals on mobs and players. Your axe also becomes a hand-held woodchipper, breaking down the enemy's armor with ease as your level increases.
 
 ## XP Gain
 
