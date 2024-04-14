@@ -1,9 +1,9 @@
 ---
-title: Crossbow
-description: View information for the mcMMO Skill Crossbow.
+title: Crossbows
+description: View information for the mcMMO Skill Crossbows.
 published: true
-date: 2024-04-13T18:01:10.633Z
-tags: skills, crossbow
+date: 2024-04-14T01:08:59.077Z
+tags: crossbow, skills
 editor: markdown
 dateCreated: 2024-04-13T18:01:10.633Z
 ---
