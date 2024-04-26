@@ -18,7 +18,7 @@ XP is gained whenever you break log blocks.
 
 ## How does Tree Feller work?
 
-Tree Feller is an active ability, you can right-click while holding an ax to activate Tree Feller. This will cause the entire tree to break instantly, dropping all of its logs at once.
+Tree Feller is an active ability, you can right-click while holding an axe to activate Tree Feller. This will cause the entire tree to break instantly, dropping all of its logs at once.
 
 ## How does Leaf Blower work?
 
