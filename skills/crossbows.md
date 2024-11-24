@@ -2,13 +2,15 @@
 title: Crossbows
 description: View information for the mcMMO Skill Crossbows.
 published: true
-date: 2024-04-14T01:08:59.077Z
-tags: [crossbows, skills]
+date: 2024-11-24T01:41:00.858Z
+tags: crossbow, skills
 editor: markdown
 dateCreated: 2024-04-13T18:01:10.633Z
 ---
 
-# Crossbows
+# Crossbow
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Crossbows is all about shooting with your crossbow.
 
