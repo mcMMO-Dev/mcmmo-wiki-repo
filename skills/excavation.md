@@ -2,13 +2,15 @@
 title: Excavation
 description: View information about the Excavation skill for mcMMO!
 published: true
-date: 2022-07-17T01:36:33.657Z
-tags: [skills, excavation]
+date: 2024-11-24T01:43:42.890Z
+tags: excavation, skills
 editor: markdown
 dateCreated: 2022-07-17T01:36:33.657Z
 ---
 
 # Excavation
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Excavation is the act of digging up dirt to find treasures. By excavating the land you will find treasures. The more you do this the more treasures you can 
 
@@ -32,4 +34,6 @@ Every possible treasure for Excavation has its own skill level requirement for i
 
 ## Notes about Excavation
 
-Excavation drops are completely customizable, so results vary server to server.
+> Excavation drops are completely customizable, so results vary server to server.
+{.is-warning}
+
