@@ -2,7 +2,7 @@
 title: Commands
 description: mcMMO commands
 published: true
-date: 2024-11-24T02:51:13.494Z
+date: 2024-11-24T02:52:05.056Z
 tags: commands
 editor: markdown
 dateCreated: 2024-11-24T01:51:14.196Z
@@ -77,7 +77,6 @@ Manage chat-related functionalities within mcMMO.
 | Command        | Aliases     | Description                                         | Permission                  |
 |----------------|-------------|-----------------------------------------------------|-----------------------------|
 | `/adminchat`   | `/ac`, `/a` | Toggle Admin chat or send admin chat messages.      | `mcmmo.chat.adminchat`      |
-| `/mcscoreboard`| `/mcsb`     | Manage your mcMMO Scoreboard.                       | `mcmmo.commands.mcscoreboard` |
 
 ---
 
