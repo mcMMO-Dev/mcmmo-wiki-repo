@@ -2,13 +2,15 @@
 title: Alchemy
 description: View information about the mcMMO Skill Alchemy.
 published: true
-date: 2024-11-24T01:37:09.675Z
+date: 2024-11-24T01:41:12.847Z
 tags: alchemy, skills
 editor: markdown
 dateCreated: 2022-07-16T21:46:19.551Z
 ---
 
 # Alchemy
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Alchemy is about brewing potions. It provides a speed increase in the potion brew time, as well as the addition of new (previously) unobtainable potions.
 
