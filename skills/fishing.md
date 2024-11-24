@@ -2,13 +2,15 @@
 title: Fishing
 description: View information about the Fishing skill for mcMMO!
 published: true
-date: 2022-09-11T14:35:02.262Z
-tags: [fishing, skills]
+date: 2024-11-24T01:41:38.591Z
+tags: fishing, skills
 editor: markdown
 dateCreated: 2022-07-17T01:41:00.266Z
 ---
 
 # Fishing
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 The **fishing** skill allows you to fish faster and catch more unique treasures while fishing.
 
