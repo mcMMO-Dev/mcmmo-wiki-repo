@@ -28,7 +28,7 @@ Archery is about shooting with your bow and arrow. It provides various combat bo
 
 With the Axes skill you can use your axe for much more then just deforesting! You can hack and chop away at mobs and players to gain XP, hitting mobs with the effect of knockback and inflicting DEADLY criticals on mobs and players. Your axe also becomes a hand-held woodchipper, breaking down the enemy's armor with ease as your level increases.
 
-## [Crossbow](/skills/crossbows)
+## [Crossbows](/skills/crossbows)
 
 Crossbows is all about shooting with your crossbow.
 
@@ -44,7 +44,7 @@ With the Fishing skill, Fishing is exciting again! Find hidden treasures, and sh
 
 Herbalism is about collecting herbs and plants.
 
-## [Mace](/skills/maces)
+## [Maces](/skills/maces)
 
 > Coming soon!
 {.is-info}
