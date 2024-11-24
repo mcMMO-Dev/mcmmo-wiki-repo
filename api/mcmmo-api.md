@@ -2,7 +2,7 @@
 title: mcMMO API
 description: mcMMO API
 published: true
-date: 2024-11-24T02:14:07.767Z
+date: 2024-11-24T02:17:28.299Z
 tags: api
 editor: markdown
 dateCreated: 2024-11-24T02:14:07.767Z
@@ -33,7 +33,7 @@ Add to your pom.xml...
 <dependency>
   <groupId>com.gmail.nossr50.mcMMO</groupId>
   <artifactId>mcMMO</artifactId>
-  <version>LATEST</version>
+  <version>{insert-mcMMO-version-here}</version>
   <scope>provided</scope>
 </dependency>
 ```
