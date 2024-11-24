@@ -2,7 +2,7 @@
 title: Install or Update mcMMO
 description: Instructions on how to install or update mcMMO
 published: true
-date: 2024-11-24T01:48:00.884Z
+date: 2024-11-24T02:31:22.978Z
 tags: install, update
 editor: markdown
 dateCreated: 2022-07-17T22:27:04.825Z
@@ -15,7 +15,7 @@ dateCreated: 2022-07-17T22:27:04.825Z
 -   Recommended to use the latest version of Java Minecraft
 -   Use a compatible version of Spigot, Paper or Folia
 
-> mcMMO currently only officially supports Spigot, Paper, and Folia. Any support outside of these platforms is unsupported at best.
+> mcMMO officially supports Spigot, Paper, and Folia. Any support outside of these platforms is unsupported at best.
 
 
 Modern versions of mcMMO expect you to be running the latest available Java Minecraft release, however older versions of mcMMO are still available and should work perfectly fine for those playing on legacy versions.  
