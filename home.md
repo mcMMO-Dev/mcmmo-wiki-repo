@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2024-11-24T02:01:24.756Z
+date: 2024-11-24T02:19:29.327Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -44,6 +44,6 @@ Use the sidebar or the search function to find what you're looking for!
 - [Hardcore Mode](/config/hardcore-mode) - Information about mcMMO's optional hardcore mode
 - [Vampirisim](/config/vampirism) - Information about mcMMO's optional vampirism PVP setting
 
-## API
+## For plugin developers...
 
 - [API](/api/mcmmo-api) - mcMMO API Information for developers
