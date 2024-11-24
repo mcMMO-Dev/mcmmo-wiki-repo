@@ -2,13 +2,15 @@
 title: Swords
 description: View information about the Swords skill for mcMMO!
 published: true
-date: 2022-07-17T14:29:42.727Z
-tags: [skills, swords]
+date: 2024-11-24T01:42:04.578Z
+tags: skills, swords
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
 ---
 
 # Swords
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 This skill awards combat bonuses to anyone fighting with a sword.
 
