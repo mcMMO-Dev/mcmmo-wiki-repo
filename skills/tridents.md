@@ -1,9 +1,9 @@
 ---
 title: Tridents
-description: View information about the Trident skill for mcMMO!
+description: View information about the Tridents skill for mcMMO!
 published: true
 date: 2024-04-14T01:07:50.697Z
-tags: skills, trident
+tags: [skills, tridents]
 editor: markdown
 dateCreated: 2024-04-13T18:14:01.830Z
 ---

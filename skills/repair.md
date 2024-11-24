@@ -3,7 +3,7 @@ title: Repair
 description: View information about the Repair skill for mcMMO!
 published: true
 date: 2022-07-17T14:28:35.051Z
-tags: skills, repair
+tags: [skills, repair]
 editor: markdown
 dateCreated: 2022-07-17T14:28:35.051Z
 ---

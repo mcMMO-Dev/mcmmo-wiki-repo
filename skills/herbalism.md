@@ -3,7 +3,7 @@ title: Herbalism
 description: View information about the Herbalism skill for mcMMO!
 published: true
 date: 2022-07-17T02:01:12.134Z
-tags: skills, herbalism
+tags: [skills, herbalism]
 editor: markdown
 dateCreated: 2022-07-17T02:01:12.134Z
 ---

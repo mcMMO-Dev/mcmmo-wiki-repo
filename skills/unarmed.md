@@ -3,7 +3,7 @@ title: Unarmed
 description: View information about the Herbalism skill for mcMMO!
 published: true
 date: 2022-07-17T14:35:33.401Z
-tags: skills, unarmed
+tags: [skills, unarmed]
 editor: markdown
 dateCreated: 2022-07-17T14:35:33.401Z
 ---

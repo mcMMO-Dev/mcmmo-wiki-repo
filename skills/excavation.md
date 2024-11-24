@@ -3,7 +3,7 @@ title: Excavation
 description: View information about the Excavation skill for mcMMO!
 published: true
 date: 2022-07-17T01:36:33.657Z
-tags: skills, excavation
+tags: [skills, excavation]
 editor: markdown
 dateCreated: 2022-07-17T01:36:33.657Z
 ---

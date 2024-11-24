@@ -65,9 +65,9 @@ This skill awards combat bonuses to anyone fighting with a sword.
 
 Taming will give players various combat bonuses when using tamed wolves.
 
-## [Trident](/skills/tridents)
+## [Tridents](/skills/tridents)
 
-Tridents skill involves impaling foes with your trident.
+The Tridents skill involves impaling foes with your trident.
 
 ## [Unarmed](/skills/unarmed)
 

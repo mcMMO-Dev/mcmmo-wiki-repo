@@ -3,7 +3,7 @@ title: Taming
 description: View information about the Taming skill for mcMMO!
 published: true
 date: 2022-07-17T14:33:02.554Z
-tags: skills, taming
+tags: [skills, taming]
 editor: markdown
 dateCreated: 2022-07-17T14:33:02.554Z
 ---

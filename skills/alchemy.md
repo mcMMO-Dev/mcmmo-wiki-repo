@@ -3,7 +3,7 @@ title: Alchemy
 description: View information about the mcMMO Skill Alchemy.
 published: true
 date: 2022-08-08T16:29:35.952Z
-tags: alchemy, skills
+tags: [alchemy, skills]
 editor: markdown
 dateCreated: 2022-07-16T21:46:19.551Z
 ---

@@ -3,7 +3,7 @@ title: Woodcutting
 description: View information about the Herbalism skill for mcMMO!
 published: true
 date: 2022-07-17T14:37:12.913Z
-tags: skills, woodcutting
+tags: [skills, woodcutting]
 editor: markdown
 dateCreated: 2022-07-17T14:37:12.913Z
 ---

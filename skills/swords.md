@@ -3,7 +3,7 @@ title: Swords
 description: View information about the Swords skill for mcMMO!
 published: true
 date: 2022-07-17T14:29:42.727Z
-tags: skills, swords
+tags: [skills, swords]
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
 ---

@@ -3,7 +3,7 @@ title: Fishing
 description: View information about the Fishing skill for mcMMO!
 published: true
 date: 2022-09-11T14:35:02.262Z
-tags: fishing, skills
+tags: [fishing, skills]
 editor: markdown
 dateCreated: 2022-07-17T01:41:00.266Z
 ---

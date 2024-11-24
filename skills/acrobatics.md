@@ -3,7 +3,7 @@ title: Acrobatics
 description: View information about the Acrobatics skill for mcMMO!
 published: true
 date: 2022-08-08T16:22:50.747Z
-tags: acrobatics, skills
+tags: [acrobatics, skills]
 editor: markdown
 dateCreated: 2022-07-16T20:35:16.605Z
 ---

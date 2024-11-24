@@ -3,7 +3,7 @@ title: Axes
 description: View information for the mcMMO Skill Axes.
 published: true
 date: 2022-07-17T01:32:38.684Z
-tags: skills, axes
+tags: [skills, axes]
 editor: markdown
 dateCreated: 2022-07-17T01:32:38.684Z
 ---

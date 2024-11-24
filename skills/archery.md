@@ -3,7 +3,7 @@ title: Archery
 description: View information about the mcMMO Skill Archery.
 published: true
 date: 2022-07-16T22:04:13.180Z
-tags: skills, archery
+tags: [skills, archery]
 editor: markdown
 dateCreated: 2022-07-16T22:04:13.180Z
 ---

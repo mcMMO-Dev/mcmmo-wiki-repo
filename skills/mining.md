@@ -3,7 +3,7 @@ title: Mining
 description: View information about the Mining skill for mcMMO!
 published: true
 date: 2024-01-14T18:11:37.169Z
-tags: mining, skills
+tags: [mining, skills]
 editor: markdown
 dateCreated: 2022-07-17T14:27:25.815Z
 ---

@@ -3,7 +3,7 @@ title: World Blacklist
 description: Information about the world blacklist feature for mcMMO
 published: true
 date: 2022-07-17T22:33:56.252Z
-tags: blacklist, config
+tags: [blacklist, config]
 editor: markdown
 dateCreated: 2022-07-17T22:33:56.252Z
 ---
