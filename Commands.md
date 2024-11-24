@@ -2,24 +2,13 @@
 title: Commands
 description: mcMMO commands
 published: true
-date: 2024-11-24T02:50:12.570Z
+date: 2024-11-24T02:50:34.103Z
 tags: commands
 editor: markdown
 dateCreated: 2024-11-24T01:51:14.196Z
 ---
 
 # mcMMO Commands
-
-## Table of Contents
-
-- [General Commands](#general-commands)
-- [Skill Management](#skill-management)
-- [Party Commands](#party-commands)
-- [Chat Commands](#chat-commands)
-- [Admin Commands](#admin-commands)
-- [Miscellaneous Commands](#miscellaneous-commands)
-
----
 
 ## General Commands
 
