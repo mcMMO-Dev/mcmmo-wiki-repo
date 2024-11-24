@@ -2,13 +2,16 @@
 title: Mining
 description: View information about the Mining skill for mcMMO!
 published: true
-date: 2024-01-14T18:11:37.169Z
-tags: [mining, skills]
+date: 2024-11-24T01:44:31.134Z
+tags: mining, skills
 editor: markdown
 dateCreated: 2022-07-17T14:27:25.815Z
 ---
 
 # Mining
+
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Mining consists of mining stone and ores. It provides bonuses to the amount of materials dropped while mining.
 
