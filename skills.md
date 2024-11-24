@@ -2,13 +2,16 @@
 title: Skills
 description: View an overview of all mcMMO Skills!
 published: true
-date: 2024-11-24T01:59:00.711Z
+date: 2024-11-24T01:59:07.533Z
 tags: skills
 editor: markdown
 dateCreated: 2022-07-16T20:23:34.236Z
 ---
 
 # Skills
+
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 mcMMO has several skills for you to level up and gain abilities with. There are 16 parent skills. Each of them are breifly described below, and you may click on the skill name to view more information.
 
