@@ -2,7 +2,7 @@
 title: mcMMO API
 description: mcMMO API
 published: true
-date: 2024-11-24T02:17:28.299Z
+date: 2024-11-24T02:18:19.890Z
 tags: api
 editor: markdown
 dateCreated: 2024-11-24T02:14:07.767Z
@@ -10,9 +10,6 @@ dateCreated: 2024-11-24T02:14:07.767Z
 
 # API
 > This page is intended for minecraft modders / Java developers.
-{.is-warning}
-
-> This page is under construction, **you** can add to it and help complete it!
 {.is-warning}
 
 # Some advice...
@@ -48,3 +45,5 @@ Coming soon...
 
 # Examples
 Coming one day.. maybe..
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
