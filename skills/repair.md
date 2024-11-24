@@ -2,13 +2,15 @@
 title: Repair
 description: View information about the Repair skill for mcMMO!
 published: true
-date: 2022-07-17T14:28:35.051Z
-tags: [skills, repair]
+date: 2024-11-24T01:41:51.767Z
+tags: repair, skills
 editor: markdown
 dateCreated: 2022-07-17T14:28:35.051Z
 ---
 
 # Repair
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Repair allows you to use an iron block to repair armor and tools.
 
