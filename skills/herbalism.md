@@ -2,13 +2,15 @@
 title: Herbalism
 description: View information about the Herbalism skill for mcMMO!
 published: true
-date: 2022-07-17T02:01:12.134Z
-tags: [skills, herbalism]
+date: 2024-11-24T01:42:32.131Z
+tags: herbalism, skills
 editor: markdown
 dateCreated: 2022-07-17T02:01:12.134Z
 ---
 
 # Herbalism
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Herbalism is about collecting herbs and plants.
 
