@@ -2,7 +2,7 @@
 title: Commands
 description: mcMMO commands
 published: true
-date: 2024-11-24T02:50:34.103Z
+date: 2024-11-24T02:51:13.494Z
 tags: commands
 editor: markdown
 dateCreated: 2024-11-24T01:51:14.196Z
@@ -10,14 +10,13 @@ dateCreated: 2024-11-24T01:51:14.196Z
 
 # mcMMO Commands
 
-## General Commands
+## Plugin Info / Description
 
 These commands provide basic information and settings for mcMMO.
 
 | Command      | Aliases   | Description                              | Permission               |
 |--------------|-----------|------------------------------------------|--------------------------|
 | `/mcmmo`     | None      | Shows a brief description of mcMMO.      | `mcmmo.commands.mcmmo`   |
-| `/mmoinfo`   | `/mcinfo` | (WIP) Currently unfinished command to show detailed info for sub-skills.            | `mcmmo.commands.mmoinfo` |
 
 ---
 
