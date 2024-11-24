@@ -2,7 +2,7 @@
 title: Install or Update mcMMO
 description: Instructions on how to install or update mcMMO
 published: true
-date: 2022-07-17T22:27:04.825Z
+date: 2024-11-24T01:48:00.884Z
 tags: install, update
 editor: markdown
 dateCreated: 2022-07-17T22:27:04.825Z
@@ -13,7 +13,10 @@ dateCreated: 2022-07-17T22:27:04.825Z
 ## Pre-Requisites
 
 -   Recommended to use the latest version of Java Minecraft
--   Use a compatible version of Spigot or Paper
+-   Use a compatible version of Spigot, Paper or Folia
+
+> mcMMO currently only officially supports Spigot, Paper, and Folia. Any support outside of these platforms is unsupported at best.
+
 
 Modern versions of mcMMO expect you to be running the latest available Java Minecraft release, however older versions of mcMMO are still available and should work perfectly fine for those playing on legacy versions.  
 mcMMO is a plugin for the Spigot API, which makes running Spigot or Paper a requirement, other forks of Spigot/Paper may work but for those wanting a painless installation and having everything just work we officially recommend sticking to Spigot or Paper.  
@@ -30,7 +33,7 @@ Upgrading mcMMO is meant to be as simple as possible, you are never required to 
 
 1.  Grab the latest version of mcMMO from spigotmc or polymart
 2.  Make sure that your Spigot or Paper server is up to date
-3.  Place mcMMO.jar in /path/to/your/spigot-or-paper-server/plugins/ directory
+3.  Place mcMMO.jar in /path/to/your/spigot-or-paper-or-folia-server/plugins/ directory
 4.  Replace the existing mcMMO.jar
 
 Congratulations, you have upgraded mcMMO. Make sure you are running a compatible version of Java Minecraft and Spigot/Paper. The newest versions of mcMMO target the latest versions of Java Minecraft and therefor may not work with older versions.
@@ -58,6 +61,6 @@ When using mcMMO against older versions of the game you must make sure to use a 
 
 -   Grab the version of mcMMO compatible with the version of Java Minecraft you are using
 -   Grab the latest Spigot or Paper software for that version of Java Minecraft
--   Place mcMMO.jar in /path/to/your/legacy/spigot-or-paper-server/plugins/ directory
+-   Place mcMMO.jar in /path/to/your/legacy/spigot-or-paper-or-folia-server/plugins/ directory
 
 If you encounter any errors/issues running Legacy versions, make sure that you have the latest Spigot (from BuildTools) or the latest Paper. If issues persist, you are likely out of luck as legacy versions are as-is and receive no updates, however mcMMO source code is freely available on GitHub so those with a programming background can fork older versions of the codebase and fix any problems themselves.
