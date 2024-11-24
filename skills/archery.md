@@ -2,13 +2,16 @@
 title: Archery
 description: View information about the mcMMO Skill Archery.
 published: true
-date: 2022-07-16T22:04:13.180Z
-tags: [skills, archery]
+date: 2024-11-24T01:44:06.678Z
+tags: archery, skills
 editor: markdown
 dateCreated: 2022-07-16T22:04:13.180Z
 ---
 
 # Archery
+
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Archery is about shooting with your bow and arrow. It provides various combat bonuses, such as a damage boost that scales with your level and the ability to daze your opponents in PvP. In addition to this, you can retrieve some of your spent arrows from the corpses of your foes.
 
