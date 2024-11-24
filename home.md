@@ -2,19 +2,18 @@
 title: Home
 description: Welcome!
 published: true
-date: 2024-11-24T02:19:29.327Z
+date: 2024-11-24T02:30:53.032Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
 ---
 
-# mcMMO Wiki
-
-Welcome to the mcMMO wiki.
-
 > A gentle reminder that **anyone** can edit this wiki, and I would *sincerely* appreciate any volunteers from the community to help bring pages up to date.
 {.is-warning}
 
+# mcMMO Wiki
+
+Welcome to the mcMMO wiki.
 
 The pages on this wiki can be edited by the community on [our wiki git repo](https://github.com/mcMMO-Dev/mcmmo-wiki-repo) hosted on GitHub.
 It would be wonderful if you would make any contribution to help us get the wiki up to date.
