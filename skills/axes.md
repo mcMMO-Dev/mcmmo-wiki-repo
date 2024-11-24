@@ -2,13 +2,15 @@
 title: Axes
 description: View information for the mcMMO Skill Axes.
 published: true
-date: 2022-07-17T01:32:38.684Z
-tags: [skills, axes]
+date: 2024-11-24T01:43:23.987Z
+tags: axes, skills
 editor: markdown
 dateCreated: 2022-07-17T01:32:38.684Z
 ---
 
 # Axes
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 With the Axes skill you can use your axe for much more than just deforesting! You can hack and chop away at mobs and players to gain XP, hitting mobs with the effect of knockback and inflicting DEADLY criticals on mobs and players. Your axe also becomes a hand-held woodchipper, breaking down the enemy's armor with ease as your level increases.
 
