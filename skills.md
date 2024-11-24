@@ -2,7 +2,7 @@
 title: Skills
 description: View an overview of all mcMMO Skills!
 published: true
-date: 2024-04-13T18:16:14.368Z
+date: 2024-11-24T01:59:00.711Z
 tags: skills
 editor: markdown
 dateCreated: 2022-07-16T20:23:34.236Z
@@ -46,8 +46,7 @@ Herbalism is about collecting herbs and plants.
 
 ## [Maces](/skills/maces)
 
-> Coming soon!
-{.is-info}
+The Maces skill is great at crushing your foes. 
 
 ## [Mining](/skills/mining)
 
