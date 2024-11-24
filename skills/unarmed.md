@@ -2,13 +2,15 @@
 title: Unarmed
 description: View information about the Herbalism skill for mcMMO!
 published: true
-date: 2022-07-17T14:35:33.401Z
-tags: [skills, unarmed]
+date: 2024-11-24T01:42:42.274Z
+tags: skills, unarmed
 editor: markdown
 dateCreated: 2022-07-17T14:35:33.401Z
 ---
 
 # Unarmed
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Unarmed will give players various combat bonuses when using your fists as a weapon.
 
