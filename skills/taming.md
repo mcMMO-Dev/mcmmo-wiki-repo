@@ -2,13 +2,15 @@
 title: Taming
 description: View information about the Taming skill for mcMMO!
 published: true
-date: 2022-07-17T14:33:02.554Z
-tags: [skills, taming]
+date: 2024-11-24T01:42:19.018Z
+tags: skills, taming
 editor: markdown
 dateCreated: 2022-07-17T14:33:02.554Z
 ---
 
 # Taming
+> This page is under construction, **you** can add to it and help complete it!
+{.is-warning}
 
 Taming will give players various combat bonuses when using tamed wolves.
 
