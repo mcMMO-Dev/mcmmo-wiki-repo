@@ -2,14 +2,14 @@
 title: mcMMO API
 description: mcMMO API
 published: true
-date: 2024-11-24T02:18:19.890Z
+date: 2024-11-24T02:18:42.087Z
 tags: api
 editor: markdown
 dateCreated: 2024-11-24T02:14:07.767Z
 ---
 
 # API
-> This page is intended for minecraft modders / Java developers.
+> This page is intended for Minecraft modders / Java developers.
 {.is-warning}
 
 # Some advice...
