@@ -2,15 +2,16 @@
 title: Commands
 description: mcMMO commands
 published: true
-date: 2024-11-24T02:52:40.764Z
+date: 2024-11-24T02:53:25.157Z
 tags: commands
 editor: markdown
 dateCreated: 2024-11-24T01:51:14.196Z
 ---
 
-# mcMMO Commands
-> This is not a complete list of commands for mcMMO
+> This is not a complete list of commands for mcMMO, this page is a WIP. Feel free to contribute!
 {.is-warning}
+
+# mcMMO Commands
 
 ## Plugin Info / Description
 
