@@ -14,14 +14,10 @@ mcMMO has limited support for some optional features when used with other plugin
 > Feel free to ask for support for integration with other plugins in the discord, or to expand existing support, I'm always open to suggestions
 
 # World Guard
-## World Guard Region Flags
-`mcmmo` Enables or disables mcMMO in a specific WG region
-`mcmmo-xp` Enable or disable mcMMO XP in a specific WG region
-`mcmmo-hardcore` Enable or disable mcMMO hardcore features in a specific WG region
 
+mcMMO registers three custom WorldGuard `StateFlag` values for per-region control of skills, XP gain, and hardcore/vampirism penalties.
 
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
+See the [WorldGuard Integration](/plugin-integration/worldguard) page for the full flag reference and usage instructions.
 
 ## PAPI / Placeholders
 ### Note
@@ -30,6 +26,8 @@ The latest versions of mcMMO have built in support for PAPI, no need to download
 # mcMMO Placeholders for PlaceholderAPI (PAPI)
 
 ## Skill-Specific Placeholders
+
+Replace `<skillname>` with the lowercase skill name (e.g., `mining`, `fishing`, `swords`).
 
 - `%mcmmo_level_<skillname>%` - Current level of the skill.
 - `%mcmmo_xp_<skillname>%` - Current XP in the skill.
@@ -59,6 +57,3 @@ These placeholders are related to global XP events:
 - `%mcmmo_is_xp_event_active%` - Whether an XP event is currently active (true/false).
 - `%mcmmo_xprate%` - Current global XP rate multiplier.
 
-### Notes
-- Replace `<skillname>` with the lowercase name of the skill (e.g., `mining`, `fishing`).
-- Ensure PlaceholderAPI and mcMMO are correctly configured for these placeholders to function.

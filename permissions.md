@@ -10,19 +10,83 @@ dateCreated: 2022-07-17T22:30:51.370Z
 
 # Permissions
 
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
+mcMMO permission nodes are set to sensible default values out of the box. Every player automatically receives `mcmmo.defaults`, which grants access to all standard mcMMO features. Server operators automatically receive `mcmmo.defaultsop`, which adds admin-level commands. You only need to configure permissions manually if your permission plugin denies all nodes by default.
 
-Before reading further, it should be known that mcMMO permission nodes are set to default values which automatically ensure every player can use mcMMO properly and gives server operators access to admin tools within mcMMO, you can customize mcMMO permission nodes if you want but it should not be necessary unless you have your permission plugin set to deny all nodes by default for users on your server.
+The authoritative source for all permissions is [plugin.yml](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/plugin.yml) in the mcMMO source.
 
-## Complete List of Permissions
+## Default Permission Groups
 
-The authoritative source for permissions is [plugin.yml](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/plugin.yml#L185) which is part of mcMMO source code, it is bundled inside mcMMO.jar when mcMMO is compiled and contains every permission for mcMMO.
+| Permission | Default | Description |
+|------------|---------|-------------|
+| `mcmmo.defaults` | All players | Grants standard player access: party chat, all skills, level-up broadcasts, MOTD, and default commands. |
+| `mcmmo.defaultsop` | Operators | Grants admin chat, admin commands, all items, and all tools on top of defaults. |
+| `mcmmo.all` | None | Grants everything: admin, bypass, all commands, defaults, defaultsop, all party perks, all perks. Equivalent to `mcmmo.*`. |
 
-## Recommended Permissions
+## Key Permission Nodes
 
-The recommended permission to give players is ***mcmmo.defaults*** this gives players access to everything outside of admin tools
+### Player Permissions (included in `mcmmo.defaults`)
+- `mcmmo.skills.all` — Access to all mcMMO skills
+- `mcmmo.chat.partychat` — Use party chat
+- `mcmmo.chat.colors` — See mcMMO chat colors
+- `mcmmo.broadcast.levelup` — Receive level-up broadcast messages
+- `mcmmo.motd` — See the mcMMO MOTD
+- `mcmmo.commands.defaults` — Access to standard player commands
 
-# Perk Permissions
+### Operator Permissions (included in `mcmmo.defaultsop`)
+- `mcmmo.chat.adminchat` — Use admin chat
+- `mcmmo.commands.defaultsop` — Access to operator-level commands
+- `mcmmo.item.all` — Access to all mcMMO items
+- `mcmmo.tools.all` — Access to all mcMMO tools
 
-Contained within mcMMO are perk permissions, which give players bonuses so long as the permission is active on the player.
+### Admin Permissions (included in `mcmmo.all`)
+- `mcmmo.admin` — Full admin access
+- `mcmmo.bypass.all` — Bypass all mcMMO restrictions
+
+## Ability Permissions
+
+Individual abilities can be granted or denied using the pattern:
+
+```
+mcmmo.ability.<skill>.<ability>
+```
+
+For example:
+- `mcmmo.ability.swords.serrated_strikes`
+- `mcmmo.ability.mining.super_breaker`
+- `mcmmo.ability.axes.skull_splitter`
+
+## Command Permissions
+
+Individual commands follow the pattern:
+
+```
+mcmmo.commands.<command>
+```
+
+For example:
+- `mcmmo.commands.mctop`
+- `mcmmo.commands.mmoedit`
+- `mcmmo.commands.mcremove`
+
+## Perk Permissions
+
+Perk permissions grant players special bonuses so long as the permission node is active. They follow the pattern:
+
+```
+mcmmo.perks.<perk>
+```
+
+Use `mcmmo.perks.*` to grant all perks. Perks can include things like double XP rates or reduced cooldowns, configurable in `advanced.yml`.
+
+## Limit Break Permissions
+
+Each combat skill's Limit Break ability can be individually controlled:
+
+```
+mcmmo.ability.<skill>.limit_break
+```
+
+For example:
+- `mcmmo.ability.swords.swords_limit_break`
+- `mcmmo.ability.axes.axes_limit_break`
+- `mcmmo.ability.archery.archery_limit_break`

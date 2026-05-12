@@ -21,13 +21,25 @@ To gain XP in this skill you need to shoot mobs or other players.
 
 ## How does Skill Shot work?
 
+**Ranks:** 20
+
 Skill Shot provides additional damage to your shots. The bonus damage from Skill Shot increases as you level in Archery. With the default settings, your archery damage increases 10% every 50 levels, to a maximum of 200% bonus damage.
 
 ## How does Daze work?
+
+**Ranks:** 1
 
 You have a passive chance to daze other players when you shoot them. When Daze triggers it forces your opponents to look straight up for a short duration. A Daze shot also deals an additional 4 damage (2 hearts).
 
 ## How does Arrow Retrieval work?
 
+**Ranks:** 1
+
 You have a passive chance to retrieve some of your arrows when you kill a mob with your bow. This chance increases as you level in Archery. By default, this ability increases by 0.1% per level, up to 100% at level 1000.
+
+## How does Archery Limit Break work?
+
+**Ranks:** 10
+
+Archery Limit Break is a passive sub-skill that provides bonus damage against tough opponents in PvP. The bonus scales with rank. It can optionally be enabled for PvE via `Skills.General.LimitBreak.AllowPVE` in the advanced config (disabled by default).
 

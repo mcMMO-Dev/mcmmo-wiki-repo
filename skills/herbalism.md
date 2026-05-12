@@ -9,8 +9,6 @@ dateCreated: 2022-07-17T02:01:12.134Z
 ---
 
 # Herbalism
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
 
 Herbalism is about collecting herbs and plants.
 
@@ -22,24 +20,48 @@ Compatible Blocks Wheat, Potatoes, Carrots, Melons,  Pumpkins, Sugar Canes, Coco
 
 ## How does Green Terra work?
 
+**Ranks:** 1
+
 Green Terra is an active ability, you can right-click while holding a hoe to activate Green Terra. Green Terra grants players a chance to get 3x drops from harvesting plants. It also gives players the ability to spread life into blocks and transform them using seeds from your inventory.
 
 ## How does Green Thumb (Crops) work?
+
+**Ranks:** 4
 
 This passive ability will automatically replant crops when harvesting. Your chance of success depends on your Herbalism skill.
 
 ## How does Green Thumb (Cobble/Stone Brick/Dirt) work?
 
+**Ranks:** 4
+
 This active ability allows you to turn blocks into their "plant-related" counterparts. You can do this by right-clicking a block, while holding seeds. This will consume 1 seed.
 
 ## How does Farmer's Diet work?
+
+**Ranks:** 5
 
 This passive skill increases the amount of hunger restored  when eating Bread, Cookies, Melons, Mushroom Soup, Carrots, and Potatoes.
 
 ## How does Hylian Luck work?
 
+**Ranks:** 1
+
 This passive ability gives you a chance to find rare items when certain blocks are broken with a sword.
 
 ## How do Double Drops work? 
 
+**Ranks:** 1
+
 This passive ability gives players more yield from their harvests.
+
+## How does Verdant Bounty work?
+
+**Ranks:** 1
+
+Verdant Bounty is a passive sub-skill that gives you a chance to receive triple drops when harvesting plants. It rolls independently from Double Drops, but the effects do not stack — triple drops is the maximum possible reward. Verdant Bounty's chance scales with your Herbalism skill level.
+
+## How does Shroom Thumb work?
+
+**Ranks:** 1
+
+Shroom Thumb is a passive sub-skill that gives you a chance to transform dirt or grass into mycelium or podzol using mushrooms. Right-click a block while holding a mushroom to attempt this transformation.

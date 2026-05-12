@@ -14,7 +14,9 @@ The plugin supports various different PlaceholderAPIs built in to the plugin! Yo
 
 ## Each Skill
 
-Each still has the following placeholders. Replace the placeholder `<skillname>` with the name of the skill, e.g. "mining"
+Each skill has the following placeholders. Replace `<skillname>` with the lowercase name of the skill (e.g., `mining`, `fishing`).
+
+The 19 skills are: `acrobatics`, `alchemy`, `archery`, `axes`, `crossbows`, `excavation`, `fishing`, `herbalism`, `maces`, `mining`, `repair`, `salvage`, `smelting`, `spears`, `swords`, `taming`, `tridents`, `unarmed`, `woodcutting`
 
 * `%mcmmo_level_<skillname>%`
 * `%mcmmo_xp_needed_<skillname>%`
@@ -27,7 +29,6 @@ Each still has the following placeholders. Replace the placeholder `<skillname>`
 
 As for everything else:
 
-* `%mcmmo_power_level%`
 * `%mcmmo_power_level%`
 * `%mcmmo_power_level_cap%`
 * `%mcmmo_in_party%`

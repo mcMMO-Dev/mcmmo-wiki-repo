@@ -9,8 +9,6 @@ dateCreated: 2022-07-17T14:28:35.051Z
 ---
 
 # Repair
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
 
 Repair allows you to use an iron block to repair armor and tools.
 
@@ -24,12 +22,18 @@ Place down a mcMMO Anvil and right-click to repair the item  you're currently ho
 
 ## How does Repair Mastery work?
 
+**Ranks:** 1
+
 Repair Mastery increases the repair amount. The extra amount repaired is influenced by your Repair skill level.
 
 ## How does Super Repair work?
 
+**Ranks:** 1
+
 Super Repair is a passive ability. When repairing an item, it grants players a chance to repair an item with double effectiveness.
 
 ## How does Arcane Forging work?
+
+**Ranks:** 8
 
 This passive ability allows you to repair items with a certain chance of maintaining its enchantments. The enchants may be kept at their existing levels, downgraded to a lower level, or lost entirely.

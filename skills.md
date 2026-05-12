@@ -10,10 +10,7 @@ dateCreated: 2022-07-16T20:23:34.236Z
 
 # Skills
 
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
-
-mcMMO has several skills for you to level up and gain abilities with. There are 16 parent skills. Each of them are breifly described below, and you may click on the skill name to view more information.
+mcMMO has several skills for you to level up and gain abilities with. There are 19 skills. Each of them are briefly described below, and you may click on the skill name to view more information.
 
 ## [Acrobatics](/skills/acrobatics)
 
@@ -58,6 +55,18 @@ Mining consists of mining stone and ores. It provides bonuses to the amount of m
 ## [Repair](/skills/repair)
 
 Repair allows you to use an iron block to repair armor and tools.
+
+## [Salvage](/skills/salvage)
+
+Salvage allows you to break down tools and armor into their base materials at a Salvage Anvil (gold block).
+
+## [Smelting](/skills/smelting)
+
+Smelting is a passive gathering skill that improves your furnace efficiency, unlocking bonuses to output, fuel consumption, and vanilla XP gain.
+
+## [Spears](/skills/spears)
+
+Spears is a combat skill focused on fighting with spears. As you level up, you gain passive damage bonuses and combat mobility effects.
 
 ## [Swords](/skills/swords)
 

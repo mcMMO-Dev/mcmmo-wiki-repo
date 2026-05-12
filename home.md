@@ -41,7 +41,7 @@ Use the sidebar or the search function to find what you're looking for!
 - [Plugin Integration](/plugin-integration/plugin-support) - Optional mcMMO features making use of other plugins
 - [World Blacklist](/config/world-blacklist) - Information about the world blacklist feature
 - [Hardcore Mode](/config/hardcore-mode) - Information about mcMMO's optional hardcore mode
-- [Vampirisim](/config/vampirism) - Information about mcMMO's optional vampirism PVP setting
+- [Vampirism](/config/vampirism) - Information about mcMMO's optional vampirism PVP setting
 
 ## For plugin developers...
 

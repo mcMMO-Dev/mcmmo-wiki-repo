@@ -43,6 +43,8 @@ Additionally, after gaining experience from a fall, there will be a cooldown of 
 
 ### Roll
 
+**Ranks:** 1
+
 Rolling is an active sub-skill with a passive component. It provides a chance to negate fall damage based on the player's **Acrobatics** skill level. At level 50, the player has a 50% chance to negate damage, or 100% if **Graceful Roll** is activated. The chance for success is scaled against the Acrobatics skill level in a linear curve. Every level increases the chance to roll successfully by 1%. Therefore, it will always trigger at level 100.
 
 A normal roll can be transformed into a **Graceful Roll** by sneaking while falling. Doing so will double the odds to roll and the amount of damage prevented.
@@ -59,6 +61,8 @@ Level | Retro Mode | Roll | Damage Absorbed | Graceful Roll | Damage Absorbed Gr
 ## Passive Sub-Skill
 
 ### Dodge
+
+**Ranks:** 1
 
 > Dodge unlocks at Level 2 or Level 20 for Retro Mode
 {.is-info}

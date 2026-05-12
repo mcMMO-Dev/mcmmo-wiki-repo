@@ -9,10 +9,8 @@ dateCreated: 2022-07-17T01:36:33.657Z
 ---
 
 # Excavation
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
 
-Excavation is the act of digging up dirt to find treasures. By excavating the land you will find treasures. The more you do this the more treasures you can 
+Excavation is about digging up dirt, sand, gravel, and other materials to find treasures. Level it up by digging with a shovel to unlock more treasures that can drop and the Giga Drill Breaker ability.
 
 ## XP Gain
 
@@ -22,6 +20,8 @@ Compatible Materials: Grass, Dirt, Sand, Clay, Gravel, Mycelium, Soul Sand, Snow
 
 ## How to use Giga Drill Breaker
 
+**Ranks:** 1
+
 With a shovel in hand right click to ready your tool. Once in this state you have about 4 seconds to make contact with Excavation compatible materials this will activate Giga Drill Breaker.
 
 ## What is Giga Drill Breaker?
@@ -29,6 +29,8 @@ With a shovel in hand right click to ready your tool. Once in this state you hav
 Giga Drill Breaker is an ability with a cooldown tied to Excavation skill. It triples your chance of finding treasures and enables instant break on Excavation materials.
 
 ## How does Archaeology work?
+
+**Ranks:** 8
 
 Every possible treasure for Excavation has its own skill level requirement for it to drop, as a result it's difficult to say how much it is helping you. Just keep in mind that the higher your Excavation skill is, the more treasures that can be found. And also keep in mind that each type of Excavation compatible material has its own unique list of treasures. In other words you will find different treasures in Dirt than you would in Gravel.
 

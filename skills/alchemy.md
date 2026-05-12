@@ -9,8 +9,6 @@ dateCreated: 2022-07-16T21:46:19.551Z
 ---
 
 # Alchemy
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
 
 Alchemy is about brewing potions. It provides a speed increase in the potion brew time, as well as the addition of new (previously) unobtainable potions.
 
@@ -22,9 +20,13 @@ Experience in Alchemy is gained by successfully crafting potions and by adding a
 
 ### Catalysis
 
+**Ranks:** 1
+
 Catalysis speeds of the brewing process, with a max speed of 4x at level 1000. This ability is unlocked at level 100 by default.
 
 ### Concoctions
+
+**Ranks:** 8
 
 Concoctions allows brewing of more potions with custom ingredients. Which special ingredients are unlocked is determined by your Rank. There are 8 ranks to unlock.
 

@@ -10,17 +10,33 @@ dateCreated: 2024-04-13T18:16:00.881Z
 
 # Maces
 
-With the Maces skill you can use your mace to increase your damage output. SMASH your opponents with your abilities, rendering them slow as a snail.
+With the Maces skill you can use your mace to increase your damage output. Level it up by hitting mobs or players to unlock damage bonuses and the ability to slow your opponents.
 
 ## XP Gain
 
-To gain XP in this skil you need to hit other mobs or players with a Mace.
+To gain XP in this skill you need to hit other mobs or players with a Mace.
 
-## Crush
-Increases damage by 1.125 for every level.
+## Sub-Skills
 
-## Cripple
-Inflicts slowness on player and mob hits.
+### Crush
 
-## How does Cripple work?
-For every level it increases the slowness level by 1. With a 8.25% Cripple chance every level.
+**Ranks:** 4
+
+Crush is a passive sub-skill that increases damage dealt with maces. The bonus damage scales with rank.
+
+### Cripple
+
+**Ranks:** 4
+
+Cripple is a passive sub-skill that has a chance to inflict Slowness on mobs and players you hit with a mace. The severity and chance to trigger scale with rank.
+
+### Maces Limit Break
+
+**Ranks:** 10
+
+Maces Limit Break is a passive sub-skill that provides bonus damage against tough opponents in PvP. The bonus scales with rank. It can optionally be enabled for PvE via `Skills.General.LimitBreak.AllowPVE` in the advanced config (disabled by default).
+
+## Commands
+
+Use `/maces` to view your Maces skill information in-game.
+

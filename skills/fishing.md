@@ -9,8 +9,6 @@ dateCreated: 2022-07-17T01:41:00.266Z
 ---
 
 # Fishing
-> This page is under construction, **you** can add to it and help complete it!
-{.is-warning}
 
 The **fishing** skill allows you to fish faster and catch more unique treasures while fishing.
 
@@ -19,6 +17,8 @@ The **fishing** skill allows you to fish faster and catch more unique treasures 
 Catch fish.
 
 ## Treasure Hunter
+
+**Ranks:** 8
 
 Level Requirement: 10 (100 for retro)
 
@@ -63,15 +63,21 @@ List of treasures you can fish up:
 
 ## Ice Fishing
 
+**Ranks:** 1
+
 This passive skill allows you to fish in ice lakes! Cast your fishing rod in an ice lake and the ability will create a small hole in the ice to fish in.
 
 ## Master Angler
+
+**Ranks:** 8
 
 Level Requirement: 15 (150 for retro)
 
 This passive skill increases the bite chance while fishing. When you've unlocked this ability, fishing while in a boat improves odds of catching a fish.
 
 ## Shake
+
+**Ranks:** 8
 
 Level Requirement: 15 (150)
 
@@ -109,6 +115,8 @@ On mobs this will damage them for 1/4 of their total health. Starting in mcmmo 2
 
 ## Fisherman's Diet
 
+**Ranks:** 5
+
 Level Requirement: 20 (200 for retro)
 
 This passive skill increases the amount of hunger restored from eating fish.
@@ -122,6 +130,8 @@ This passive skill increases the amount of hunger restored from eating fish.
 | 5 | 100 | 1000 |
 
 ## Magic Hunter
+
+**Ranks:** 1
 
 Level Requirement: 20 (200 for retro)
 
