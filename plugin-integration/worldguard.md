@@ -3,7 +3,7 @@ title: WorldGuard Integration
 description: Information about mcMMO's WorldGuard flag support
 published: true
 date: 2026-05-11T00:00:00.000Z
-tags: [worldguard, plugin-integration, config]
+tags: worldguard, plugin-integration, config
 editor: markdown
 dateCreated: 2026-05-11T00:00:00.000Z
 ---

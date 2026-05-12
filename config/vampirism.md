@@ -3,7 +3,7 @@ title: Vampirism
 description: Information about mcMMO's optional vampirism setting
 published: true
 date: 2024-11-24T01:59:07.533Z
-tags: [config, vampirism, pvp]
+tags: config, vampirism, pvp
 editor: markdown
 dateCreated: 2022-07-17T21:52:03.092Z
 ---

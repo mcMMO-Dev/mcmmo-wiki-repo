@@ -3,7 +3,7 @@ title: Hardcore Mode
 description: Information about mcMMO's optional hardcore mode
 published: true
 date: 2024-11-24T01:59:07.533Z
-tags: [config, hardcore]
+tags: config, hardcore
 editor: markdown
 dateCreated: 2022-07-17T21:51:08.011Z
 ---
