@@ -16,21 +16,19 @@ Spears is a combat skill focused on fighting with spears. As you level up Spears
 
 XP is gained by hitting mobs or other players with a spear.
 
-## Sub-Skills
-
-### Spear Mastery
+## Spear Mastery
 
 **Ranks:** 8
 
 Spear Mastery is a passive sub-skill that increases damage dealt with spears. The bonus damage scales with rank, rewarding dedicated Spears users with increasingly powerful strikes.
 
-### Momentum
+## Momentum
 
 **Ranks:** 10
 
 Momentum is a passive sub-skill that gives you a chance to gain Speed II when you hit a target with a spear. The chance to activate and duration of the speed effect both scale with rank. Momentum will not override a stronger or longer-lasting Speed effect already applied to you.
 
-### Spears Limit Break
+## Spears Limit Break
 
 **Ranks:** 10
 

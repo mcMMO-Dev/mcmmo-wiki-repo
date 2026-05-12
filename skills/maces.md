@@ -16,21 +16,19 @@ With the Maces skill you can use your mace to increase your damage output. Level
 
 To gain XP in this skill you need to hit other mobs or players with a Mace.
 
-## Sub-Skills
-
-### Crush
+## Crush
 
 **Ranks:** 4
 
 Crush is a passive sub-skill that increases damage dealt with maces. The bonus damage scales with rank.
 
-### Cripple
+## Cripple
 
 **Ranks:** 4
 
 Cripple is a passive sub-skill that has a chance to inflict Slowness on mobs and players you hit with a mace. The severity and chance to trigger scale with rank.
 
-### Maces Limit Break
+## Maces Limit Break
 
 **Ranks:** 10
 

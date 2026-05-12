@@ -18,37 +18,37 @@ Unarmed will give players various combat bonuses when using your fists as a weap
 
 XP is gained based on the amount of damage dealt to mobs or other players when unarmed.
 
-## How does Berserk work?
+## Berserk
 
 **Ranks:** 1
 
 Beserk is an active ability that is activated by right-clicking. While in Beserk mode, you deal 50% more damage and you can break weak materials instantly, such as  Dirt and Grass.
 
-## How does Steel Arm Style work?
+## Steel Arm Style
 
 **Ranks:** 20
 
 Steel Arm Style increases the damage dealt when hitting mobs or players with your fists.
 
-## How does Arrow Deflect work?
+## Arrow Deflect
 
 **Ranks:** 1
 
 Arrow Deflect is a passive ability that gives you a chance to deflect arrows shot by Skeletons or other players. The arrow will fall harmlessly to the ground.
 
-## How does Iron Grip work?
+## Iron Grip
 
 **Ranks:** 1
 
 Iron Grip is a passive ability that counters disarm. As your unarmed level increases, the chance of preventing a disarm increases.
 
-## How does Disarm work?
+## Disarm
 
 **Ranks:** 1
 
 This passive ability allows players to disarm other players, causing the target's equipped item to fall to the ground.
 
-## How does Block Cracker work?
+## Block Cracker
 
 **Ranks:** 1
 
@@ -61,7 +61,7 @@ Block Cracker is a passive ability that gives you a chance to crack certain bloc
 - **Polished Blackstone Bricks** → Cracked Polished Blackstone Bricks
 - **Nether Bricks** → Cracked Nether Bricks
 
-## How does Unarmed Limit Break work?
+## Unarmed Limit Break
 
 **Ranks:** 10
 

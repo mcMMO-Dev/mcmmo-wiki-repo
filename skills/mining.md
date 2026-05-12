@@ -21,33 +21,29 @@ To gain XP in this skill, you must mine with a pickaxe in hand. Only certain blo
 
 Compatible Materials: Stone, Coal Ore, Iron Ore, Gold Ore, Diamond Ore, Redstone Ore, Lapis Ore, Obsidian, Mossy Cobblestone, Ender Stone, Glowstone, and Netherrack.
 
-## How to use Super Breaker
+## Super Breaker
 
 **Ranks:** 1
 
 With a pickaxe in your hand, right click to ready your tool. Once in this state, you have about 4 seconds to make contact with Mining compatible materials, which will activate Super Breaker.
 
-## What is Super Breaker?
-
 Super Breaker is an ability with a cooldown tied to the Mining skill. It triples your chance of extra items dropping and enables instant break on Mining materials.
 
-## How to use Blast Mining
+## Blast Mining
 
 **Ranks:** 8
 
 With a pickaxe in hand, crouch and right-click on TNT from a distance. This will cause the TNT to instantly explode.
 
-## How does Blast Mining work?
-
 Blast Mining is an ability with a cooldown tied to the Mining skill. It gives bonuses when mining with TNT and allows you to remote detonate TNT. There are three parts to Blast Mining. The first part is Bigger Bombs, which increases blast radius. The second is Demolitions Expert, which decreases damage from TNT explosions. The third part simply increases the amount of ores dropped from TNT and decreases the debris dropped.
 
-## How does Double Drops work?
+## Double Drops
 
 **Ranks:** 1
 
 Double Drops is a passive sub-skill that gives you a chance to receive an extra block or ore whenever you mine a compatible material. This chance scales with your Mining skill level.
 
-## How does Mother Lode work?
+## Mother Lode
 
 **Ranks:** 1
 

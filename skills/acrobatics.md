@@ -39,9 +39,7 @@ A user will not gain experience if any of the following are true:
 
 Additionally, after gaining experience from a fall, there will be a cooldown of 3 seconds before you may gain experience again. If you take more fall damage during this period, extra time is added to the cooldown, starting at an additional 10 seconds and increasing by 1 each time more fall damage is taken before the cooldown is over.
 
-## Active Sub-Skill
-
-### Roll
+## Roll
 
 **Ranks:** 1
 
@@ -58,9 +56,7 @@ Level | Retro Mode | Roll | Damage Absorbed | Graceful Roll | Damage Absorbed Gr
 75 | 750 | 75% | 7 | 100% | 14 |
 | 100 | 1000 | 100% | 7 | 100% | 14 |
 
-## Passive Sub-Skill
-
-### Dodge
+## Dodge
 
 **Ranks:** 1
 

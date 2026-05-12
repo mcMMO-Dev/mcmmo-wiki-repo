@@ -16,7 +16,7 @@ Taming will give players various combat bonuses when using tamed wolves, ocelots
 
 To gain XP in this skill, you need to tame wolves/ocelots or get into combat with your wolves.
 
-## How does Call of the Wild work?
+## Call of the Wild
 
 **Ranks:** 1
 
@@ -28,55 +28,55 @@ Call of the Wild is an active ability that lets you summon a tamed animal to you
 | Cat    | Cod           | 10   |
 | Horse  | Apple         | 10   |
 
-## How does Beast Lore work?
+## Beast Lore
 
 **Ranks:** 1
 
 Beast Lore allows players to inspect pets and to check the stats of wolves and ocelots. Left-click a wolf or ocelot to use Beast Lore.
 
-## How does Gore work?
+## Gore
 
 **Ranks:** 1
 
 Gore is a passive ability that has a chance of inflicting a bleeding effect on your wolves' targets.
 
-## How does Sharpened Claws work?
+## Sharpened Claws
 
 **Ranks:** 1
 
 Sharpened Claws provides a damage bonus to damage dealt by wolves. The damage bonus depends on your Taming level.
 
-## How does Environmentally Aware work?
+## Environmentally Aware
 
 **Ranks:** 1
 
 This passive ability will allow wolves to teleport to you when they get near hazards, such as Cacti/Lava. It will also give wolves fall damage immunity.
 
-## How does Thick Fur work?
+## Thick Fur
 
 **Ranks:** 1
 
 This passive ability will reduce damage and make wolves fire resistant.
 
-## How does Shock Proof work?
+## Shock Proof
 
 **Ranks:** 1
 
 This passive ability reduces damage done to wolves from explosions.
 
-## How does Fast Food Service work?
+## Fast Food Service
 
 **Ranks:** 1
 
 This passive ability gives wolves a chance to heal whenever they perform an attack.
 
-## How does Holy Hound work?
+## Holy Hound
 
 **Ranks:** 1
 
 Holy Hound is a passive ability that allows your wolves to regenerate health and remove negative potion effects when fighting undead mobs.
 
-## How does Pummel work?
+## Pummel
 
 **Ranks:** 1
 

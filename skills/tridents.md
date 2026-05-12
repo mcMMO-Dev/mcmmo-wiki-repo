@@ -16,15 +16,13 @@ The Tridents skill involves impaling foes with your trident. Level it up by hitt
 
 XP is gained whenever you hit mobs or other players with a trident.
 
-## Sub-Skills
-
-### Impale
+## Impale
 
 **Ranks:** 10
 
 Impale is a passive sub-skill that provides bonus damage when attacking with a trident. The bonus damage scales with rank, rewarding dedicated Tridents users with increasingly powerful strikes.
 
-### Tridents Limit Break
+## Tridents Limit Break
 
 **Ranks:** 10
 

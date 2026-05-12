@@ -16,23 +16,23 @@ Repair allows you to use an iron block to repair armor and tools.
 
 Repair tools or armor using the mcMMO Anvil. This is an iron block by default and should not be confused with the Vanilla Minecraft Anvil.
 
-## How can I use Repair?
+## Usage
 
 Place down a mcMMO Anvil and right-click to repair the item  you're currently holding. This consumes 1 item on every use.
 
-## How does Repair Mastery work?
+## Repair Mastery
 
 **Ranks:** 1
 
 Repair Mastery increases the repair amount. The extra amount repaired is influenced by your Repair skill level.
 
-## How does Super Repair work?
+## Super Repair
 
 **Ranks:** 1
 
 Super Repair is a passive ability. When repairing an item, it grants players a chance to repair an item with double effectiveness.
 
-## How does Arcane Forging work?
+## Arcane Forging
 
 **Ranks:** 8
 

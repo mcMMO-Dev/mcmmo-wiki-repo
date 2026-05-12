@@ -16,15 +16,13 @@ Smelting is a skill that improves your furnace efficiency. Level it up by smelti
 
 XP is gained passively whenever items finish smelting in a furnace.
 
-## Sub-Skills
-
-### Second Smelt
+## Second Smelt
 
 **Ranks:** 1
 
 Second Smelt is a passive sub-skill that gives you a chance to receive an extra smelted item whenever a furnace completes a smelt. The chance scales with your Smelting skill level.
 
-### Fuel Efficiency
+## Fuel Efficiency
 
 **Ranks:** 3
 
@@ -36,7 +34,7 @@ Fuel Efficiency is a passive sub-skill that increases how long furnace fuel burn
 | 2    | 3×                  |
 | 3    | 4×                  |
 
-### Understanding the Art
+## Understanding the Art
 
 **Ranks:** 8
 

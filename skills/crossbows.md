@@ -16,15 +16,13 @@ Crossbows is all about shooting with your crossbow. Level it up by shooting mobs
 
 XP is gained whenever you shoot mobs or players with a crossbow.
 
-## Sub-Skills
-
-### Powered Shot
+## Powered Shot
 
 **Ranks:** 20
 
 Powered Shot is a passive sub-skill that provides a bonus damage multiplier to crossbow shots. The bonus scales with rank, rewarding high-level Crossbows users with significantly increased projectile damage.
 
-### Trick Shot
+## Trick Shot
 
 **Ranks:** 3
 
@@ -36,7 +34,7 @@ Trick Shot is a passive sub-skill that allows crossbow bolts to bounce off block
 | 2    | 2             |
 | 3    | 3             |
 
-### Crossbows Limit Break
+## Crossbows Limit Break
 
 **Ranks:** 10
 

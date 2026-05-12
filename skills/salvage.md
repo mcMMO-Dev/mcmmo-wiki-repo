@@ -16,22 +16,20 @@ Salvage allows you to break down tools and armor into their base materials at a 
 
 XP is gained by successfully salvaging items at a Salvage Anvil (gold block).
 
-## How to Use Salvage
+## Usage
 
 Place a gold block down to create a Salvage Anvil. Hold the item you wish to salvage in your main hand and right-click the Salvage Anvil to break it down. You will receive base materials back based on your rank in Scrap Collector.
 
 > Items that are unbreakable or have custom model data (when disallowed by config) cannot be salvaged.
 {.is-warning}
 
-## Sub-Skills
-
-### Scrap Collector
+## Scrap Collector
 
 **Ranks:** 8
 
 Scrap Collector determines how many materials you recover when salvaging an item. At rank 1 you recover a single material. Higher ranks recover progressively more materials (rank × 2 items). The amount recovered also depends on the item's remaining durability.
 
-### Arcane Salvage
+## Arcane Salvage
 
 **Ranks:** 8
 

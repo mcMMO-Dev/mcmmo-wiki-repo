@@ -16,15 +16,13 @@ Alchemy is about brewing potions. It provides a speed increase in the potion bre
 
 Experience in Alchemy is gained by successfully crafting potions and by adding additional ingredients to existing potions.
 
-## Passive Sub-Skills
-
-### Catalysis
+## Catalysis
 
 **Ranks:** 1
 
 Catalysis speeds of the brewing process, with a max speed of 4x at level 1000. This ability is unlocked at level 100 by default.
 
-### Concoctions
+## Concoctions
 
 **Ranks:** 8
 

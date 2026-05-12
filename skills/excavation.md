@@ -18,17 +18,15 @@ To gain XP in this skill you must dig with a shovel in hand. Only certain materi
 
 Compatible Materials: Grass, Dirt, Sand, Clay, Gravel, Mycelium, Soul Sand, Snow
 
-## How to use Giga Drill Breaker
+## Giga Drill Breaker
 
 **Ranks:** 1
 
 With a shovel in hand right click to ready your tool. Once in this state you have about 4 seconds to make contact with Excavation compatible materials this will activate Giga Drill Breaker.
 
-## What is Giga Drill Breaker?
-
 Giga Drill Breaker is an ability with a cooldown tied to Excavation skill. It triples your chance of finding treasures and enables instant break on Excavation materials.
 
-## How does Archaeology work?
+## Archaeology
 
 **Ranks:** 8
 
