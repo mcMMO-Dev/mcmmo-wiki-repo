@@ -155,7 +155,7 @@ mcMMO displays rich hover tooltips when players run skill commands (e.g. `/minin
 
 ### Hex colors in JSON tooltip keys
 
-Yes — hex colors work in `JSON.*` keys. Use the same `&#RRGGBB` format as anywhere else in the locale:
+Hex colors work in `JSON.*` keys using the same `&#RRGGBB` format as anywhere else in the locale:
 
 ```properties
 JSON.Type.SuperAbility=&#FF55FFSuper Ability
