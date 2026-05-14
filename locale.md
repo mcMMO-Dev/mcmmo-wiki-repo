@@ -151,10 +151,7 @@ My.Key=&lBold then &#FF0000red then &r reset
 
 ## JSON tooltip keys
 
-mcMMO displays rich hover tooltips when players run skill commands (e.g. `/mining`). These tooltips are driven by `JSON.*` keys in the locale. 
-
-> **Do not use color codes in `JSON.*` keys.** Colors for tooltips are defined separately in `advanced.yml`. Adding `&` codes or `[[tokens]]` to JSON keys will produce visible formatting characters in the tooltip instead of colors.
-{.is-danger}
+mcMMO displays rich hover tooltips when players run skill commands (e.g. `/mining`). These tooltips are driven by `JSON.*` keys in the locale. Colors are set directly in the locale values using the same `&` codes and `&#RRGGBB` hex formats as any other key.
 
 ### Tooltip structure keys
 
