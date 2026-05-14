@@ -59,10 +59,7 @@ The master key list is in `en_US`: [locale_en_US.properties on GitHub](https://g
 
 **Applying changes:**
 - Restart the server, **or**
-- Run `/mcmmoreloadlocale` (affects the locale file only, not config files)
-
-> Locales currently only support ASCII and UTF-16 characters. Non-ASCII characters (e.g. accented letters, CJK characters) must be escaped as Unicode sequences (`\uXXXX`).
-{.is-warning}
+- Run `/mcmmoreloadlocale` (alias: `/mcreloadlocale`) — affects the locale file only, not config files. Requires the `mcmmo.commands.reloadlocale` permission.
 
 ---
 
