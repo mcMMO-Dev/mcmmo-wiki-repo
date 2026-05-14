@@ -61,6 +61,9 @@ The master key list is in `en_US`: [locale_en_US.properties on GitHub](https://g
 - Restart the server, **or**
 - Run `/mcmmoreloadlocale` (alias: `/mcreloadlocale`) — affects the locale file only, not config files. Requires the `mcmmo.commands.reloadlocale` permission.
 
+> If a key is missing from all locale files, mcMMO will display `!key.name!` literally in chat. If you see this in-game, the key is absent from your override file and the bundled locales.
+{.is-info}
+
 ---
 
 ## Color codes
@@ -193,7 +196,7 @@ All three color formats are supported:
 |-----|--------------|---------|
 | `JSON.Hover.Rank` | `&e&lRank:&r &f{0}` | Current rank display (`{0}` = rank number) |
 | `JSON.Hover.NextRank` | `&7&oNext upgrade at level {0}` | Next rank unlock hint |
-| `JSON.Hover.Mystery` | `&7???` | Shown for unknown/locked content |
+| `JSON.Hover.Mystery` | `&7???` | Shown for locked sub-skills; `{0}` = unlock level (not used in the default value, but available for custom display) |
 | `JSON.Hover.SkillName` | `&3{0}&r` | Sub-skill name in hover (`{0}` = name) |
 | `JSON.Hover.MaxRankSkillName` | `&6{0}&r` | Sub-skill name when at max rank |
 | `JSON.Hover.Tips` | `Tips` | Tips section header |
