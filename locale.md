@@ -153,6 +153,24 @@ My.Key=&lBold then &#FF0000red then &r reset
 
 mcMMO displays rich hover tooltips when players run skill commands (e.g. `/mining`). These tooltips are driven by `JSON.*` keys in the locale. Colors are set directly in the locale values using the same `&` codes and `&#RRGGBB` hex formats as any other key.
 
+### Hex colors in JSON tooltip keys
+
+Yes — hex colors work in `JSON.*` keys. Use the same `&#RRGGBB` format as anywhere else in the locale:
+
+```properties
+JSON.Type.SuperAbility=&#FF55FFSuper Ability
+JSON.Hover.SkillName=&#00FFAASkill Name Here
+JSON.DescriptionHeader=&#AAAAFF&lDescription:
+```
+
+All three color formats are supported:
+
+| Format | Example |
+|--------|---------|
+| `&` code | `&a&lPassive&r` |
+| `[[NAME]]` token | `[[GREEN]][[BOLD]]Passive[[RESET]]` |
+| Hex | `&#00FF00&lPassive&r` |
+
 ### Tooltip structure keys
 
 | Key | Default value | Purpose |
