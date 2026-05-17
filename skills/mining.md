@@ -112,3 +112,11 @@ Right-click TNT with a Flint and Steel to remotely detonate it. Each rank improv
 - **Debris Reduction** — chance that non-ore blocks (stone, gravel, etc.) drop nothing.
 - **Drop Multiplier** — all items that do drop are multiplied by this factor.
 - At Rank 8, blast self-damage is completely negated.
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `/mining` | Display your Mining skill stats and sub-skill information. |
+| `/mctop mining` | View the Mining leaderboard. |
+| `/mcrank` | Show your rank on every skill leaderboard. |

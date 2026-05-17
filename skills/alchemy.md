@@ -1,6 +1,6 @@
 ---
 title: Alchemy
-description: View information about the mcMMO Skill Alchemy.
+description: "Information about the Alchemy skill."
 published: true
 date: 2024-11-24T01:41:12.847Z
 tags: alchemy, skills
@@ -10,32 +10,84 @@ dateCreated: 2022-07-16T21:46:19.551Z
 
 # Alchemy
 
-Alchemy is about brewing potions. It provides a speed increase in the potion brew time, as well as the addition of new (previously) unobtainable potions.
+The Alchemy skill governs potion brewing. Levelling Alchemy speeds up your brewing process (Catalysis) and unlocks access to additional brewing ingredients that produce potions unavailable in vanilla Minecraft (Concoctions). XP is earned by successfully completing potion brews.
 
 ## XP Gain
 
-Experience in Alchemy is gained by successfully crafting potions and by adding additional ingredients to existing potions.
+XP is awarded each time a brewing operation completes. The amount depends on which stage (how many ingredients have been added to the potion):
 
-## Catalysis
+| Stage | Description | XP |
+|-------|------------|-----|
+| Stage 1 | Base potion | 666 |
+| Stage 2 | Base potion + 1 ingredient | 1111 |
+| Stage 3 | Base potion + 1 ingredient + 1 amplifier | 1750 |
+| Stage 4 | Base potion + 1 ingredient + 2 amplifiers | 2250 |
+| Stage 5 | Base potion + 1 ingredient with swapped amplifiers | 0 |
 
-**Ranks:** 1
+XP is multiplied by the number of potions brewed in the batch (up to 3). Values are configurable in `experience.yml` under `Alchemy.Potion_Brewing`.
 
-Catalysis speeds of the brewing process, with a max speed of 4x at level 1000. This ability is unlocked at level 100 by default.
+## Sub-Skills
 
-## Concoctions
+### Catalysis
+
+**Ranks:** 1 — Unlocks at level 0
+
+Catalysis passively increases the speed of all brewing operations. The speed multiplier scales linearly from the minimum (1.0×) at level 0 to the maximum (4.0×) at level 1000.
+
+| Skill level | Brew speed |
+|-------------|-----------|
+| 0           | 1.0×      |
+| 250         | 1.75×     |
+| 500         | 2.5×      |
+| 750         | 3.25×     |
+| 1000+       | 4.0×      |
+
+**Formula:** `speed = min(MaxSpeed, MinSpeed + (MaxSpeed − MinSpeed) × skillLevel / MaxBonusLevel)`
+
+**Config keys** (`advanced.yml` under `Skills.Alchemy.Catalysis`):
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `MinSpeed` | `1.0` | Brew speed multiplier before any bonus |
+| `MaxSpeed` | `4.0` | Maximum brew speed multiplier |
+| `MaxBonusLevel.RetroMode` | `1000` | Skill level at which MaxSpeed is reached |
+
+> Players with the Lucky perk receive an additional 4/3× multiplier on top of their Catalysis speed.
+{.is-info}
+
+> Brewing speed is applied inside mcMMO's own brew timer. When mcMMO takes ownership of a brewing stand (by placing an ingredient), it replaces vanilla's 400-tick countdown with its own task that counts down at `brewSpeed` ticks per server tick. The brewing stand therefore completes in roughly `400 / brewSpeed` ticks. At 4.0× speed that is 100 ticks (5 seconds) instead of the vanilla 20 seconds.
+{.is-info}
+
+---
+
+### Concoctions
 
 **Ranks:** 8
 
-Concoctions allows brewing of more potions with custom ingredients. Which special ingredients are unlocked is determined by your Rank. There are 8 ranks to unlock.
+Concoctions unlocks additional brewing ingredients that can be used in the brewing stand to create special potions not craftable in vanilla Minecraft. Each rank unlocks a new set of ingredients; your current tier is the highest tier you have access to, and includes all ingredients from lower tiers.
 
-| Concoction Tier | Ingredients |
-|-----------------|-------------|
-| Tier 1 | Blaze Powder, Fermented Spider Eye, Ghast Tear, Redstone, Glowstone Dust, Sugar, Glistering Melon, Golden Carrot, Magma Cream, Nether Wart, Spider Eye, Suplhur, Water Lily, Pufferfish (Vanilla Potions) |
-| Tier 2 | Carrot (Potion of Haste)<br>Slimeball (Potion of Dullness) |
-| Tier 3 | Quartz (Potion of Absorption)<br>Rabbit's Foot (Potion of Leaping) |
-| Tier 4 | Apple (Potion of Health Boost)<br>Rotten Flesh (Potion of Hunger) |
-| Tier 5 | Brown Mushroom (Potion of Nausea)<br>Ink Sack (Potion of Blindness) |
-| Tier 6 | Fern (Potion of Saturation)
-| Tier 7 | Poisonous Potato (Potion of Decay) |
-| Tier 8 | Regular Golden Apple (Potion of Resistance) |
+All potion recipes and effects are configurable in `potions.yml`. The default ingredient-to-potion mappings are shown below.
 
+| Rank | Unlock level | Ingredients unlocked | Default potion produced |
+|------|-------------|----------------------|------------------------|
+| 1 | 0 | Blaze Powder, Breeze Rod, Cobweb, Dragon's Breath, Fermented Spider Eye, Ghast Tear, Glistering Melon Slice, Glowstone Dust, Golden Carrot, Gunpowder, Lily Pad, Magma Cream, Nether Wart, Pufferfish, Redstone, Slime Block, Spider Eye, Stone, Sugar, Turtle Helmet | Vanilla brewing ingredients |
+| 2 | 100 | Carrot, Phantom Membrane, Slimeball | Haste / Slow Falling / Dullness |
+| 3 | 200 | Quartz, Rabbit's Foot | Absorption / Leaping |
+| 4 | 350 | Apple, Rotten Flesh | Health Boost / Hunger |
+| 5 | 500 | Brown Mushroom, Ink Sac | Nausea / Blindness |
+| 6 | 750 | Fern | Saturation |
+| 7 | 900 | Poisonous Potato | Decay |
+| 8 | 1000 | Golden Apple | Resistance |
+
+> Concoctions ingredients and their resulting potions are fully configurable in `potions.yml`. Servers may add, remove, or change any Concoctions recipe.
+{.is-warning}
+
+---
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `/alchemy` | Display your Alchemy skill stats and sub-skill information. |
+| `/mctop alchemy` | View the Alchemy leaderboard. |
+| `/mcrank` | Show your rank on every skill leaderboard. |

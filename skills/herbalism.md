@@ -1,67 +1,144 @@
 ---
 title: Herbalism
-description: View information about the Herbalism skill for mcMMO!
+description: "Information about the Herbalism skill."
 published: true
-date: 2024-11-24T01:42:32.131Z
-tags: herbalism, skills
+date: 2024-11-24T01:41:48.891Z
+tags: skills, herbalism
 editor: markdown
-dateCreated: 2022-07-17T02:01:12.134Z
+dateCreated: 2022-07-17T14:29:42.727Z
 ---
 
 # Herbalism
 
-Herbalism is about collecting herbs and plants.
+The Herbalism skill rewards players for growing and harvesting plants. Levelling Herbalism unlocks double and triple drop bonuses (Double Drops, Verdant Bounty), improved food healing (Farmer's Diet), automatic crop replanting (Green Thumb), an active ability to convert blocks into farmland (Green Terra), hidden treasure from grass and flowers (Hylian Luck), and mushroom conversion (Shroom Thumb).
 
 ## XP Gain
 
-Collect plants and herbs.
+XP is earned by breaking herb and plant blocks (wheat, carrots, potatoes, beetroot, nether wart, cactus, cocoa, sugar cane, mushrooms, flowers, etc.). XP values are determined per material in `experience.yml`. Only mature crops award the full XP value; immature crops award reduced or no XP depending on configuration.
 
-Compatible Blocks Wheat, Potatoes, Carrots, Melons,  Pumpkins, Sugar Canes, Cocoa Beans, Flowers, Cacti, Mushrooms, Nether Wart, Lily Pads, and Vines.
+## Sub-Skills
 
-## Green Terra
+### Double Drops
 
-**Ranks:** 1
+**Ranks:** 1 -- Unlocks at level 1
 
-Green Terra is an active ability, you can right-click while holding a hoe to activate Green Terra. Green Terra grants players a chance to get 3x drops from harvesting plants. It also gives players the ability to spread life into blocks and transform them using seeds from your inventory.
+Double Drops is a passive sub-skill that grants a chance to receive an extra drop from any herbalism-eligible block you break. The chance scales linearly from 0% at level 0 to **100%** at level 1000.
 
-## Green Thumb
+**Config keys** (`advanced.yml` under `Skills.Herbalism.DoubleDrops`):
 
-**Ranks:** 4
+| Key | Default | Description |
+|-----|---------|-------------|
+| `ChanceMax` | `100.0` | Maximum double-drop chance (%) at MaxBonusLevel |
+| `MaxBonusLevel.RetroMode` | `1000` | Skill level at which max chance is reached |
 
-This passive ability will automatically replant crops when harvesting. Your chance of success depends on your Herbalism skill.
+---
 
-## Green Thumb — Block Transformation
+### Verdant Bounty
 
-**Ranks:** 4
+**Ranks:** 1 -- Unlocks at level 1000
 
-This active ability allows you to turn blocks into their "plant-related" counterparts. You can do this by right-clicking a block, while holding seeds. This will consume 1 seed.
+Verdant Bounty is a passive sub-skill that grants a chance to receive a **second** extra drop (a triple drop) from herbalism-eligible blocks, in addition to the Double Drops bonus. It rolls independently; if both proc, three items drop instead of one. The chance scales from 0% to **50%** at level 10000.
 
-## Farmer's Diet
+> Verdant Bounty scales all the way to level **10,000** in Retro mode -- by far the longest progression of any Herbalism sub-skill. This is intentional: it provides long-term endgame progression for dedicated herbalism players.
+{.is-info}
+
+**Config keys** (`advanced.yml` under `Skills.Herbalism.VerdantBounty`):
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `ChanceMax` | `50.0` | Maximum triple-drop chance (%) at MaxBonusLevel |
+| `MaxBonusLevel.RetroMode` | `10000` | Skill level at which max chance is reached |
+
+---
+
+### Farmer's Diet
 
 **Ranks:** 5
 
-This passive skill increases the amount of hunger restored  when eating Bread, Cookies, Melons, Mushroom Soup, Carrots, and Potatoes.
+Farmer's Diet increases the amount of hunger restored when eating food. Each rank adds **+1 hunger point** restored on top of the food's base value.
 
-## Hylian Luck
+| Rank | Unlock level | Bonus hunger restored |
+|------|-------------|----------------------|
+| 1 | 200 | +1 |
+| 2 | 400 | +2 |
+| 3 | 600 | +3 |
+| 4 | 800 | +4 |
+| 5 | 1000 | +5 |
 
-**Ranks:** 1
+---
 
-This passive ability gives you a chance to find rare items when certain blocks are broken with a sword.
+### Green Thumb
 
-## Double Drops
+**Ranks:** 4
 
-**Ranks:** 1
+Green Thumb is a passive proc that automatically replants a mature crop as a young plant immediately after breaking it, consuming one seed from the player's inventory. It requires the player to hold a hoe (or an axe for Cocoa Beans).
 
-This passive ability gives players more yield from their harvests.
+Supported crops: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Cocoa Beans, Torchflower, Sweet Berry Bush.
 
-## Verdant Bounty
+The proc chance scales linearly from 0% at level 0 to **100%** at level 1000. Green Thumb always activates (no chance roll) while Green Terra is active.
 
-**Ranks:** 1
+| Rank | Unlock level |
+|------|-------------|
+| 1 | 250 |
+| 2 | 500 |
+| 3 | 750 |
+| 4 | 1000 |
 
-Verdant Bounty is a passive sub-skill that gives you a chance to receive triple drops when harvesting plants. It rolls independently from Double Drops, but the effects do not stack — triple drops is the maximum possible reward. Verdant Bounty's chance scales with your Herbalism skill level.
+**Config keys** (`advanced.yml` under `Skills.Herbalism.GreenThumb`):
 
-## Shroom Thumb
+| Key | Default | Description |
+|-----|---------|-------------|
+| `ChanceMax` | `100.0` | Maximum proc chance (%) at MaxBonusLevel |
+| `MaxBonusLevel.RetroMode` | `1000` | Skill level at which max chance is reached |
 
-**Ranks:** 1
+---
 
-Shroom Thumb is a passive sub-skill that gives you a chance to transform dirt or grass into mycelium or podzol using mushrooms. Right-click a block while holding a mushroom to attempt this transformation.
+### Green Terra
+
+**Ranks:** 1 -- Unlocks at level 50
+
+Green Terra is an active ability that must be armed by right-clicking with a hoe while not looking at a block. When active, interacting with dirt blocks converts them into farmland, and Green Thumb procs automatically without a chance roll for the duration.
+
+---
+
+### Hylian Luck
+
+**Ranks:** 0 (passive, no rank unlock required)
+
+Hylian Luck gives a chance to find hidden treasures by breaking grass blocks, dead bushes, ferns, and similar vegetation with a sword or other eligible tool. The treasure pool is defined in `treasures.yml` under `Hylian_Luck`. The chance scales from 0% to **10%** at level 1000.
+
+When Hylian Luck procs, the block is broken and a treasure item is spawned instead.
+
+**Config keys** (`advanced.yml` under `Skills.Herbalism.HylianLuck`):
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `ChanceMax` | `10.0` | Maximum proc chance (%) at MaxBonusLevel |
+| `MaxBonusLevel.RetroMode` | `1000` | Skill level at which max chance is reached |
+
+---
+
+### Shroom Thumb
+
+**Ranks:** 0 (passive, no rank unlock required)
+
+Shroom Thumb allows a player to convert a dirt or grass block into a mycelium block by right-clicking it while holding one Brown Mushroom and one Red Mushroom. Both mushrooms are consumed on use. The chance of success scales from 0% to **50%** at level 1000.
+
+If the conversion fails, the player is notified and the mushrooms are still consumed.
+
+**Config keys** (`advanced.yml` under `Skills.Herbalism.ShroomThumb`):
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `ChanceMax` | `50.0` | Maximum success chance (%) at MaxBonusLevel |
+| `MaxBonusLevel.RetroMode` | `1000` | Skill level at which max chance is reached |
+
+---
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `/herbalism` | Display your Herbalism skill stats and sub-skill information. |
+| `/mctop herbalism` | View the Herbalism leaderboard. |
+| `/mcrank` | Show your rank on every skill leaderboard. |
