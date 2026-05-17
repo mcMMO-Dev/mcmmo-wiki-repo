@@ -15,11 +15,21 @@ dateCreated: 2024-04-13T18:01:10.633Z
 
 The Crossbows skill enhances combat with crossbows. Levelling Crossbows boosts bolt damage (Powered Shot), lets bolts ricochet off blocks (Trick Shot), and adds bonus damage against heavily armoured players (Crossbows Limit Break). XP is earned each time a crossbow bolt damages a mob or player.
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Combat (ranged) |
+| **Primary tool** | Crossbow |
+| **Super ability** | None |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 XP is earned each time a crossbow bolt deals damage to a mob or player. Like Archery, the XP is multiplied by a distance factor:
 
-- **Distance** — targets hit from farther away grant more XP. The multiplier is `1 + min(distance, 50) × 0.025`, capping at **2.25×** at 50 or more blocks.
+- **Distance:** targets hit from farther away grant more XP. The multiplier is `1 + min(distance, 50) × 0.025`, capping at **2.25×** at 50 or more blocks.
 
 Unlike bows, crossbows do not have a draw-force multiplier (they are always fully loaded).
 
@@ -38,7 +48,7 @@ Unlike bows, crossbows do not have a draw-force multiplier (they are always full
 
 ### Powered Shot
 
-**Ranks:** 20 — Unlocks at level 1
+**Ranks:** 20, Unlocks at level 1
 
 Powered Shot passively increases the damage dealt by every crossbow bolt. The bonus is a percentage of the bolt's base damage and scales with rank; higher ranks are unlocked as you level up.
 
@@ -81,7 +91,7 @@ Total damage is capped at `baseDamage + MaxDamage` regardless of rank.
 
 ### Trick Shot
 
-**Ranks:** 3 — Unlocks at level 50
+**Ranks:** 3, Unlocks at level 50
 
 Trick Shot allows crossbow bolts to ricochet off solid blocks. When a bolt collides with a block surface, it spawns a new bolt with a reflected trajectory and continues toward whatever targets lie in the new direction. The maximum number of ricochets per original bolt equals the player's current Trick Shot rank.
 
@@ -138,3 +148,10 @@ Against mobs (when PvE is enabled), the full ×1.00 modifier always applies. See
 | `/crossbows` | Display your Crossbows skill stats and sub-skill information. |
 | `/mctop crossbows` | View the Crossbows leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

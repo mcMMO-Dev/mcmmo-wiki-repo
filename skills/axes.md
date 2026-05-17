@@ -12,6 +12,16 @@ dateCreated: 2022-07-17T14:29:42.727Z
 
 The Axes skill enhances combat with all axe-type weapons. Levelling Axes unlocks passive damage bonuses (Axe Mastery), guaranteed critical hits (Critical Strikes), a knockback and bonus-damage proc against unarmoured targets (Greater Impact), armor durability reduction (Armor Impact), an area-of-effect strike (Skull Splitter), and bonus damage scaling with armor rating (Axes Limit Break).
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Combat (melee) |
+| **Primary tool** | Axe |
+| **Super ability** | Skull Splitter |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 XP is earned based on the amount of damage dealt to mobs or players when wielding an axe. XP is proportional to damage dealt; heavier hits grant more XP.
@@ -41,7 +51,7 @@ Axe Mastery adds a flat HP bonus to every axe hit. It is always active once unlo
 
 ### Critical Strikes
 
-**Ranks:** 1 — Unlocks at level 1
+**Ranks:** 1, Unlocks at level 1
 
 Critical Strikes is a passive proc that multiplies the total damage of an axe hit. The proc chance scales linearly from 0% at level 0 to **37.5%** at level 1000. When it procs, the bonus damage (the portion above the base hit) is scaled by the attack strength modifier.
 
@@ -63,7 +73,7 @@ Critical Strikes is a passive proc that multiplies the total damage of an axe hi
 
 ### Greater Impact
 
-**Ranks:** 1 — Unlocks at level 250
+**Ranks:** 1, Unlocks at level 250
 
 Greater Impact is a passive proc that triggers only against targets wearing **no armor**. The proc chance is a flat **25%** regardless of skill level. On proc, it deals bonus damage and launches the target backwards. The bonus damage is scaled by the attack strength modifier at the moment of the hit.
 
@@ -77,7 +87,7 @@ Greater Impact is a passive proc that triggers only against targets wearing **no
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `Chance` | `25.0` | Flat proc chance (%) — not affected by skill level |
+| `Chance` | `25.0` | Flat proc chance (%), not affected by skill level |
 | `BonusDamage` | `2.0` | Extra HP on proc (before attack strength scaling) |
 | `KnockbackModifier` | `1.5` | Velocity multiplier applied to target |
 
@@ -119,13 +129,13 @@ Durability damage per proc = `rank × DamagePerRank` (default 6.5 per rank).
 | Key | Default | Description |
 |-----|---------|-------------|
 | `DamagePerRank` | `6.5` | Durability damage multiplied by rank |
-| `Chance` | `25.0` | Flat proc chance (%) per armor piece — not affected by skill level |
+| `Chance` | `25.0` | Flat proc chance (%) per armor piece, not affected by skill level |
 
 ---
 
 ### Skull Splitter
 
-**Ranks:** 1 — Unlocks at level 50
+**Ranks:** 1, Unlocks at level 50
 
 Skull Splitter is an active ability that must be armed by right-clicking with an axe while not looking at a block. When active, the next axe attack deals 50% of the hit's damage (scaled by attack strength) to all enemies within **2.5 blocks** of the primary target.
 
@@ -187,3 +197,10 @@ Against mobs (when PvE is enabled), the full ×1.00 modifier always applies. See
 | `/axes` | Display your Axes skill stats and sub-skill information. |
 | `/mctop axes` | View the Axes leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

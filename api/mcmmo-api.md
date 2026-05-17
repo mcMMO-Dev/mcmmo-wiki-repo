@@ -63,10 +63,10 @@ dependencies {
 ```
 
 # Useful Packages
-- `com.gmail.nossr50.api` — Contains public static helper methods
-- `com.gmail.nossr50.events` — Home of mcMMO events (listen to these to react to mcMMO actions)
-- `com.gmail.nossr50.mcMMO` — The main plugin class; contains useful public static APIs
-- `com.gmail.nossr50.util.player.UserManager` — Contains public static methods for getting mcMMO state for players
+- `com.gmail.nossr50.api`, Contains public static helper methods
+- `com.gmail.nossr50.events`, Home of mcMMO events (listen to these to react to mcMMO actions)
+- `com.gmail.nossr50.mcMMO`, The main plugin class; contains useful public static APIs
+- `com.gmail.nossr50.util.player.UserManager`, Contains public static methods for getting mcMMO state for players
 
 # Examples
 

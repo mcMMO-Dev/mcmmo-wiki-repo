@@ -12,6 +12,16 @@ dateCreated: 2022-07-17T14:29:42.727Z
 
 The Swords skill enhances combat with all sword-type weapons. Levelling Swords unlocks passive damage bonuses (Stab), a bleeding damage-over-time effect (Rupture), an area-of-effect strike (Serrated Strikes), a damage reflection effect (Counter Attack), and bonus damage against heavily armoured targets (Swords Limit Break).
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Combat (melee) |
+| **Primary tool** | Sword |
+| **Super ability** | Serrated Strikes |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 XP is earned based on the amount of damage dealt to mobs or players when wielding a sword. XP is proportional to damage dealt; heavier hits grant more XP.
@@ -166,3 +176,10 @@ See [Limit Break](/skills/limit-break) for full details on the damage formula an
 | `/swords` | Display your Swords skill stats and sub-skill information. |
 | `/mctop swords` | View the Swords leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

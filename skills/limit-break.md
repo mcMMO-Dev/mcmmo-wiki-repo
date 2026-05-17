@@ -10,7 +10,7 @@ dateCreated: 2024-11-24T01:41:45.231Z
 
 # Limit Break
 
-Limit Break is a passive sub-skill available to several mcMMO combat skills. It adds bonus damage on top of a hit, with the bonus scaling based on the quality of the defender's armour. Higher-ranked Limit Break deals more damage, but the full damage is only realised against heavily armoured targets — lighter armour receives less of the bonus.
+Limit Break is a passive sub-skill available to several mcMMO combat skills. It adds bonus damage on top of a hit, with the bonus scaling based on the quality of the defender's armour. Higher-ranked Limit Break deals more damage, but the full damage is only realised against heavily armoured targets, lighter armour receives less of the bonus.
 
 ## Skills with Limit Break
 

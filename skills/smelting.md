@@ -15,6 +15,16 @@ The Smelting skill improves furnace efficiency. Levelling Smelting boosts vanill
 > Smelting is a **child skill** of Mining and Repair. Your Smelting level equals the average of your Mining and Repair levels: `Smelting level = floor((Mining + Repair) / 2)`. You cannot level Smelting directly -- improve Mining and Repair to increase it.
 {.is-info}
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Utility / crafting (child skill) |
+| **Primary tool** | Furnace |
+| **Super ability** | None |
+| **Parent skill(s)** | Mining + Repair |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 When a furnace completes a smelt operation, mcMMO XP is awarded and split equally between **Mining** and **Repair**. The amount per smelt depends on the source item being smelted:
@@ -122,3 +132,11 @@ Understanding the Art multiplies the vanilla Minecraft XP dropped when a furnace
 | `/smelting` | Display your Smelting skill stats and sub-skill information. |
 | `/mctop smelting` | View the Smelting leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Mining](skills/mining.md): parent skill
+- [Repair](skills/repair.md): parent skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

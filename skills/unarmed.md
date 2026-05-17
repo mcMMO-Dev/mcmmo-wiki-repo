@@ -12,6 +12,16 @@ dateCreated: 2022-07-17T14:29:42.727Z
 
 The Unarmed skill enhances bare-handed combat. Levelling Unarmed unlocks passive damage bonuses (Steel Arm Style), a damage multiplier ability (Berserk), arrow deflection (Arrow Deflect), weapon disarming (Disarm), resistance to being disarmed (Iron Grip), passive block cracking (Block Cracker), and bonus damage against armored targets (Unarmed Limit Break).
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Combat (melee) |
+| **Primary tool** | Fists (empty hand) |
+| **Super ability** | Berserk |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 XP is earned based on the amount of damage dealt to mobs or players while fighting bare-handed (no weapon held). XP is proportional to damage dealt; heavier hits grant more XP.
@@ -22,7 +32,7 @@ XP is earned based on the amount of damage dealt to mobs or players while fighti
 
 **Ranks:** 20
 
-Steel Arm Style adds a flat HP bonus to every unarmed hit. It is always active once unlocked — there is no proc chance. The bonus scales with rank using the formula `0.5 + (rank / 2)`, with extra bonus added at ranks 18+ for a steeper curve.
+Steel Arm Style adds a flat HP bonus to every unarmed hit. It is always active once unlocked, there is no proc chance. The bonus scales with rank using the formula `0.5 + (rank / 2)`, with extra bonus added at ranks 18+ for a steeper curve.
 
 | Rank | Unlock level | Bonus damage (HP) |
 |------|-------------|-------------------|
@@ -58,7 +68,7 @@ Steel Arm Style adds a flat HP bonus to every unarmed hit. It is always active o
 
 ### Berserk
 
-**Ranks:** 1 — Unlocks at level 50
+**Ranks:** 1, Unlocks at level 50
 
 Berserk is an active ability that must be armed by right-clicking while bare-handed and not looking at a block. When active, all unarmed hits deal **1.5× damage** multiplied by the current attack strength modifier.
 
@@ -66,7 +76,7 @@ Berserk is an active ability that must be armed by right-clicking while bare-han
 
 ### Arrow Deflect
 
-**Ranks:** 1 — Unlocks at level 200
+**Ranks:** 1, Unlocks at level 200
 
 Arrow Deflect is a passive proc that triggers when a projectile (arrow, bolt, etc.) would hit you while bare-handed. On proc, the projectile is deflected and deals no damage. The proc chance scales linearly from 0% at level 0 to **50%** at level 1000.
 
@@ -81,7 +91,7 @@ Arrow Deflect is a passive proc that triggers when a projectile (arrow, bolt, et
 
 ### Disarm
 
-**Ranks:** 1 — Unlocks at level 250
+**Ranks:** 1, Unlocks at level 250
 
 Disarm is a passive proc that triggers when you deal damage to another player bare-handed. On proc, the target''s held item is dropped at their location. If `AntiTheft` is enabled in `advanced.yml`, only the disarmed player can pick up their own item.
 
@@ -99,7 +109,7 @@ The proc chance scales linearly from 0% at level 0 to **33%** at level 1000. The
 
 ### Iron Grip
 
-**Ranks:** 1 — Unlocks at level 600
+**Ranks:** 1, Unlocks at level 600
 
 Iron Grip is a passive counter-proc that triggers when another player attempts to Disarm you. On proc, the Disarm is negated and both players are notified. The proc chance scales linearly from 0% at level 0 to **100%** at level 1000.
 
@@ -116,7 +126,7 @@ Iron Grip is a passive counter-proc that triggers when another player attempts t
 
 **Ranks:** 0 (passive, no rank unlock required)
 
-Block Cracker is a passive ability that automatically converts certain block types into their cracked variants when punched bare-handed. No proc chance is involved — the conversion happens every punch, provided the `Block_Cracker` permission is granted and the feature is enabled in `config.yml`.
+Block Cracker is a passive ability that automatically converts certain block types into their cracked variants when punched bare-handed. No proc chance is involved, the conversion happens every punch, provided the `Block_Cracker` permission is granted and the feature is enabled in `config.yml`.
 
 Affected conversions:
 
@@ -183,3 +193,10 @@ See [Limit Break](/skills/limit-break) for full details on the damage formula an
 | `/unarmed` | Display your Unarmed skill stats and sub-skill information. |
 | `/mctop unarmed` | View the Unarmed leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

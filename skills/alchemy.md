@@ -12,6 +12,19 @@ dateCreated: 2022-07-16T21:46:19.551Z
 
 The Alchemy skill governs potion brewing. Levelling Alchemy speeds up your brewing process (Catalysis) and unlocks access to additional brewing ingredients that produce potions unavailable in vanilla Minecraft (Concoctions). XP is earned by successfully completing potion brews.
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Utility / crafting |
+| **Primary tool** | Brewing Stand |
+| **Super ability** | None |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
+> **Compared to vanilla:** vanilla brewing supports a fixed set of recipes and takes a constant time per batch. Alchemy unlocks Concoctions (additional ingredients producing recipes that don't exist in vanilla) and Catalysis (reduced brewing time per rank).
+{.is-info}
+
 ## XP Gain
 
 XP is awarded each time a brewing operation completes. The amount depends on which stage (how many ingredients have been added to the potion):
@@ -30,7 +43,7 @@ XP is multiplied by the number of potions brewed in the batch (up to 3). Values 
 
 ### Catalysis
 
-**Ranks:** 1 — Unlocks at level 0
+**Ranks:** 1, Unlocks at level 0
 
 Catalysis passively increases the speed of all brewing operations. The speed multiplier scales linearly from the minimum (1.0×) at level 0 to the maximum (4.0×) at level 1000.
 
@@ -91,3 +104,10 @@ All potion recipes and effects are configurable in `potions.yml`. The default in
 | `/alchemy` | Display your Alchemy skill stats and sub-skill information. |
 | `/mctop alchemy` | View the Alchemy leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)
+- [Configuration](/config)

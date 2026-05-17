@@ -12,9 +12,115 @@ dateCreated: 2022-07-17T14:29:42.727Z
 
 The Herbalism skill rewards players for growing and harvesting plants. Levelling Herbalism unlocks double and triple drop bonuses (Double Drops, Verdant Bounty), improved food healing (Farmer's Diet), automatic crop replanting (Green Thumb), an active ability to convert blocks into farmland (Green Terra), hidden treasure from grass and flowers (Hylian Luck), and mushroom conversion (Shroom Thumb).
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Gathering |
+| **Primary tool** | Hoe (and hand) |
+| **Super ability** | Green Terra |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
-XP is earned by breaking herb and plant blocks (wheat, carrots, potatoes, beetroot, nether wart, cactus, cocoa, sugar cane, mushrooms, flowers, etc.). XP values are determined per material in `experience.yml`. Only mature crops award the full XP value; immature crops award reduced or no XP depending on configuration.
+XP is earned by breaking herb and plant blocks (wheat, carrots, potatoes, beetroot, nether wart, cactus, cocoa, sugar cane, mushrooms, flowers, etc.). Only mature crops award the full XP value; immature crops award reduced or no XP depending on configuration. Per-block XP values are configured in `experience.yml` under `Experience_Values.Herbalism`. The default values are listed below.
+
+### Crops
+
+| Block | XP |
+|-------|---:|
+| Torchflower | 90 |
+| Beetroot / Beetroots | 50 |
+| Carrots | 50 |
+| Nether Wart | 50 |
+| Potatoes | 50 |
+| Sweet Berry Bush | 50 |
+| Wheat | 50 |
+| Cocoa | 30 |
+| Sugar Cane | 30 |
+| Melon | 20 |
+| Pumpkin | 20 |
+
+### Flowers and tall plants
+
+| Block | XP |
+|-------|---:|
+| Wither Rose | 500 |
+| Allium | 300 |
+| Azure Bluet / Blue Orchid / Cornflower / Lily of the Valley / Orange Tulip / Oxeye Daisy / Pink Tulip / Red Tulip / White Tulip | 150 |
+| Dandelion / Poppy | 100 |
+| Eyeblossom / Open Eyeblossom / Closed Eyeblossom | 66 |
+| Cactus Flower | 60 |
+| Lilac / Peony / Rose Bush / Sunflower / Large Fern / Tall Grass | 50 |
+| Cactus / Dead Bush | 30 |
+| Firefly Bush / Wildflowers | 15 |
+| Pink Petals | 10 |
+| Bush | 11 |
+
+### Grass, ferns, vines, and ground cover
+
+| Block | XP |
+|-------|---:|
+| Fern / Grass / Short Grass / Vine / Bamboo / Weeping Vines Plant / Twisting Vines Plant | 10 |
+| Short Dry Grass | 6 |
+| Tall Dry Grass | 12 |
+| Leaf Litter | 2 |
+| Glow Lichen | 1 |
+
+### Cave and lush plants
+
+| Block | XP |
+|-------|---:|
+| Pitcher Plant | 160 |
+| Moss Block | 150 |
+| Pale Hanging Moss | 150 |
+| Big Dripleaf / Small Dripleaf | 140 |
+| Cave Vines / Cave Vines Plant | 90 |
+| Pale Moss Block / Pale Moss Carpet | 10 |
+
+### Mushrooms and fungi
+
+| Block | XP |
+|-------|---:|
+| Brown Mushroom / Red Mushroom | 150 |
+| Crimson Fungus / Warped Fungus | 50 |
+
+### Nether vegetation
+
+| Block | XP |
+|-------|---:|
+| Shroomlight | 250 |
+| Nether Sprouts | 10 |
+| Crimson Roots / Warped Roots | 6 |
+| Nether Wart Block / Warped Wart Block | 3 |
+
+### Coral (live, broken with shears or by hand)
+
+| Block | XP |
+|-------|---:|
+| Horn Coral / Horn Coral Fan / Horn Coral Wall Fan | 175 |
+| Fire Coral / Fire Coral Fan / Fire Coral Wall Fan | 120 |
+| Brain Coral / Brain Coral Fan / Brain Coral Wall Fan | 90 |
+| Tube Coral / Tube Coral Fan / Tube Coral Wall Fan | 80 |
+| Bubble Coral / Bubble Coral Fan / Bubble Coral Wall Fan | 75 |
+| Dead Coral (any variant) | 10 |
+
+### Aquatic
+
+| Block | XP |
+|-------|---:|
+| Seagrass / Tall Seagrass | 10 |
+| Kelp / Kelp Plant | 3 |
+| Lily Pad | 100 |
+
+### Other Herbalism blocks
+
+| Block | XP |
+|-------|---:|
+| Bee Nest | 200 |
+| Chorus Flower | 25 |
+| Chorus Plant | 1 |
 
 ## Sub-Skills
 
@@ -142,3 +248,10 @@ If the conversion fails, the player is notified and the mushrooms are still cons
 | `/herbalism` | Display your Herbalism skill stats and sub-skill information. |
 | `/mctop herbalism` | View the Herbalism leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)
+- [Configuration](/config)

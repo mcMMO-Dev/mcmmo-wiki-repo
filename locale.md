@@ -10,7 +10,7 @@ dateCreated: 2022-07-18T00:13:13.163Z
 
 # Locale
 
-mcMMO uses `.properties` locale files for all in-game text — messages, skill names, tooltips, colors, and formatting. Everything visible to players can be customized through the locale system.
+mcMMO uses `.properties` locale files for all in-game text, messages, skill names, tooltips, colors, and formatting. Everything visible to players can be customized through the locale system.
 
 ## Built-in translations
 
@@ -49,7 +49,7 @@ plugins/mcMMO/locales/locale_override.properties
 2. Any key found there takes priority over the bundled locale.
 3. Missing keys fall back to the active locale, then to `en_US`.
 
-This means you only need to copy the keys you want to change — you don't need to copy the entire file. If mcMMO updates a key you haven't overridden, you'll get the update automatically.
+This means you only need to copy the keys you want to change, you don't need to copy the entire file. If mcMMO updates a key you haven't overridden, you'll get the update automatically.
 
 > Copy only the keys you want to change. Copying the whole file means you'll miss future text updates unless you track them manually.
 {.is-warning}
@@ -59,7 +59,7 @@ The master key list is in `en_US`: [locale_en_US.properties on GitHub](https://g
 
 **Applying changes:**
 - Restart the server, **or**
-- Run `/mcmmoreloadlocale` (alias: `/mcreloadlocale`) — affects the locale file only, not config files. Requires the `mcmmo.commands.reloadlocale` permission.
+- Run `/mcmmoreloadlocale` (alias: `/mcreloadlocale`), affects the locale file only, not config files. Requires the `mcmmo.commands.reloadlocale` permission.
 
 > If a key is missing from all locale files, mcMMO will display `!key.name!` literally in chat. If you see this in-game, the key is absent from your override file and the bundled locales.
 {.is-info}
@@ -70,7 +70,7 @@ The master key list is in `en_US`: [locale_en_US.properties on GitHub](https://g
 
 mcMMO locale files support three color code formats. All three work everywhere in the locale.
 
-### Format 1 — `&` codes (standard Minecraft)
+### Format 1, `&` codes (standard Minecraft)
 
 The familiar `&` prefix followed by a single character:
 
@@ -100,7 +100,7 @@ mcMMO.Template.Prefix=&6(&amcMMO&6) &7{0}
 
 ---
 
-### Format 2 — `[[NAME]]` tokens (mcMMO named colors)
+### Format 2, `[[NAME]]` tokens (mcMMO named colors)
 
 mcMMO's own color token format. Useful when you want readable names in your locale file instead of codes.
 
@@ -136,7 +136,7 @@ Skills.Overhaul.Header=[[DARK_AQUA]][[BOLD]]{0}
 
 ---
 
-### Format 3 — `&#RRGGBB` hex colors
+### Format 3, `&#RRGGBB` hex colors
 
 Full 24-bit RGB color support. Use a standard web hex code prefixed with `&`:
 

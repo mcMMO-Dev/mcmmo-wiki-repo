@@ -12,15 +12,56 @@ dateCreated: 2022-07-17T14:29:42.727Z
 
 The Woodcutting skill rewards players for chopping wood. It grants double drops (Harvest Lumber), triple drops (Clean Cuts), instant leaf destruction (Leaf Blower), an active ability to fell entire trees (Tree Feller), and sapling or vanilla XP orb drops during Tree Feller (Knock on Wood).
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Gathering |
+| **Primary tool** | Axe |
+| **Super ability** | Tree Feller |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
-XP is earned by breaking log blocks. XP values are determined per material in `experience.yml`.
+XP is earned by breaking log, wood, and a few related blocks with an axe. Per-block XP values are configured in `experience.yml` under `Experience_Values.Woodcutting`. The default values are listed below.
+
+### Logs and wood
+
+| Wood type | Log | Stripped Log | Wood (bark) | Stripped Wood |
+|-----------|----:|-------------:|------------:|--------------:|
+| Oak | 70 | 70 | 70 | 70 |
+| Spruce | 80 | 80 | 70 | 80 |
+| Birch | 90 | 90 | 70 | 90 |
+| Jungle | 100 | 100 | 70 | 100 |
+| Acacia | 90 | 90 | 70 | 90 |
+| Dark Oak | 90 | 90 | 70 | 90 |
+| Cherry | 105 | 105 | 105 | 70 |
+| Mangrove | 95 | 110 | 80 |  |
+| Pale Oak | 130 | 130 | 110 | 90 |
+| Crimson (Stem / Hyphae) | 35 | 50 | 50 | 50 |
+| Warped (Stem / Hyphae) | 35 | 50 | 50 | 50 |
+
+### Other Woodcutting blocks
+
+| Block | XP |
+|-------|---:|
+| Shroomlight | 100 |
+| Mushroom Stem | 80 |
+| Red Mushroom Block | 70 |
+| Brown Mushroom Block | 70 |
+| Mangrove Roots | 10 |
+| Nether Wart Block | 1 |
+| Warped Wart Block | 1 |
+
+> Leaf blocks broken via Leaf Blower do **not** grant Woodcutting XP. Only logs, wood, and the blocks above grant XP.
+{.is-info}
 
 ## Sub-Skills
 
 ### Harvest Lumber
 
-**Ranks:** 1 — Unlocks at level 1
+**Ranks:** 1, Unlocks at level 1
 
 Harvest Lumber is a passive sub-skill that grants a chance to receive a double drop of the wood you break. The chance scales linearly from 0% at level 0 to **100%** at level 1000.
 
@@ -35,7 +76,7 @@ Harvest Lumber is a passive sub-skill that grants a chance to receive a double d
 
 ### Clean Cuts
 
-**Ranks:** 1 — Unlocks at level 1000
+**Ranks:** 1, Unlocks at level 1000
 
 Clean Cuts is a passive sub-skill that grants a chance to receive a **triple drop** of the wood you break. It rolls independently from Harvest Lumber; if Clean Cuts procs, the player receives two bonus logs (for three total). If Harvest Lumber procs but Clean Cuts does not, the player receives one bonus log (for two total).
 
@@ -66,7 +107,7 @@ Leaf Blower allows players to instantly break leaf blocks and other non-wood tre
 
 ### Tree Feller
 
-**Ranks:** 5 — Unlocks at level 50
+**Ranks:** 5, Unlocks at level 50
 
 Tree Feller is an active ability that must be armed by right-clicking with an axe while not looking at a block. When active, breaking any log block causes the entire connected tree (all attached logs and non-wood tree parts) to be felled at once. XP is awarded for each log block removed.
 
@@ -93,7 +134,7 @@ Higher ranks increase the maximum number of blocks that can be felled in one use
 
 ### Knock on Wood
 
-**Ranks:** 2 — Unlocks at level 300
+**Ranks:** 2, Unlocks at level 300
 
 Knock on Wood triggers during Tree Feller. When active:
 
@@ -120,3 +161,10 @@ Knock on Wood triggers during Tree Feller. When active:
 | `/woodcutting` | Display your Woodcutting skill stats and sub-skill information. |
 | `/mctop woodcutting` | View the Woodcutting leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)
+- [Configuration](/config)

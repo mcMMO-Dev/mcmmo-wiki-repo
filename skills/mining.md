@@ -10,20 +10,133 @@ dateCreated: 2022-07-17T14:27:25.815Z
 
 # Mining
 
-**Mining** is a [skill](/skills) that rewards breaking stone and ore blocks with a pickaxe. It increases bonus drops from mining and is unique in having two Super Abilities — Super Breaker for mining and Blast Mining for TNT.
+**Mining** is a [skill](/skills) that rewards breaking stone and ore blocks with a pickaxe. It increases bonus drops from mining and is unique in having two Super Abilities, Super Breaker for mining and Blast Mining for TNT.
+
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Gathering |
+| **Primary tool** | Pickaxe (and TNT for Blast Mining) |
+| **Super ability** | Super Breaker · Blast Mining |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | Smelting (with Repair) |
 
 ## Experience Gain
 
-Experience is earned by breaking blocks with a pickaxe. The full list is configurable per server, but by default it covers all ore blocks (including Deepslate variants), stone-type blocks, and various Nether blocks.
+Experience is earned by breaking blocks with a pickaxe. Per-block XP values are configured in `experience.yml` under `Experience_Values.Mining` and can be customised per server. The default values are listed below.
 
-| Category | Examples |
-|----------|---------|
-| Overworld ores | Coal, Iron, Gold, Diamond, Emerald, Redstone, Lapis, Copper ore |
-| Deepslate ores | Deepslate variants of all overworld ores |
-| Stone variants | Stone, Cobblestone, Deepslate, Cobbled Deepslate, Andesite, Diorite, Granite, Sandstone |
-| Nether | Netherrack, Ancient Debris, Nether Gold Ore, Nether Quartz Ore, Basalt, Blackstone, Nether Bricks |
-| End | End Stone |
-| Other | Obsidian, Glowstone, Amethyst clusters and buds, Tuff, Calcite |
+### Ores
+
+| Block | XP |
+|-------|---:|
+| Ancient Debris | 7777 |
+| Deepslate Diamond Ore | 3600 |
+| Diamond Ore | 2400 |
+| Deepslate Copper Ore | 1900 |
+| Deepslate Gold Ore | 1900 |
+| Deepslate Emerald Ore | 1700 |
+| Copper Ore | 1400 |
+| Deepslate Lapis Ore | 1400 |
+| Deepslate Iron Ore | 1300 |
+| Gold Ore | 1300 |
+| Nether Gold Ore | 1300 |
+| Emerald Ore | 1000 |
+| Iron Ore | 900 |
+| Deepslate Redstone Ore | 900 |
+| Lapis Lazuli Ore | 800 |
+| Deepslate Coal Ore | 700 |
+| Redstone Ore | 600 |
+| Coal Ore | 400 |
+| Nether Quartz Ore | 300 |
+| Gilded Blackstone | 200 |
+
+### Stone & terrain
+
+| Block | XP |
+|-------|---:|
+| Reinforced Deepslate | 500 |
+| Smooth Basalt | 300 |
+| Obsidian | 150 |
+| Blackstone | 55 |
+| Basalt | 40 |
+| Mud Bricks | 40 |
+| Dripstone Block | 35 |
+| Deepslate | 30 |
+| Magma Block | 30 |
+| Mossy Cobblestone | 30 |
+| Packed Mud | 30 |
+| Sandstone | 30 |
+| Terracotta | 30 |
+| Andesite | 15 |
+| Blue Ice | 15 |
+| Cobbled Deepslate | 15 |
+| Diorite | 15 |
+| End Stone | 15 |
+| Glowstone | 15 |
+| Granite | 15 |
+| Netherrack | 15 |
+| Packed Ice | 15 |
+| Stone | 15 |
+| Tuff | 10 |
+| Crimson Nylium | 5 |
+| Warped Nylium | 5 |
+
+### Decorative & polished blocks
+
+| Block | XP |
+|-------|---:|
+| Crying Obsidian | 3000 |
+| Purpur Pillar | 250 |
+| Purpur Stairs | 250 |
+| Purpur Block | 200 |
+| Purpur Slab | 150 |
+| Red Sandstone | 100 |
+| Chain | 100 |
+| Prismarine / Prismarine Bricks / Dark Prismarine | 70 |
+| Sea Lantern | 70 |
+| Nether Bricks (all variants) | 50 |
+| Stone Bricks (all variants) | 50 |
+| End Bricks | 50 |
+| Coloured Terracotta (all 16 colours) | 50 |
+
+### Amethyst
+
+| Block | XP |
+|-------|---:|
+| Amethyst Block | 500 |
+| Budding Amethyst | 400 |
+| Amethyst Cluster | 60 |
+| Large Amethyst Bud | 30 |
+| Medium Amethyst Bud | 20 |
+| Small Amethyst Bud | 10 |
+
+### Sculk
+
+| Block | XP |
+|-------|---:|
+| Sculk Shrieker | 12 |
+| Sculk Catalyst | 10 |
+| Sculk Sensor | 6 |
+| Sculk | 4 |
+| Sculk Vein | 3 |
+
+### Coral blocks (broken with a pickaxe)
+
+| Block | XP |
+|-------|---:|
+| Horn Coral Block | 125 |
+| Fire Coral Block | 90 |
+| Brain Coral Block | 80 |
+| Tube Coral Block | 75 |
+| Bubble Coral Block | 70 |
+
+### Other
+
+| Block | XP |
+|-------|---:|
+| Bone Block | 500 |
+| Calcite | 400 |
 
 ## Double Drops
 
@@ -58,7 +171,7 @@ Skills:
 > Unlocks at level **1000**.
 {.is-info}
 
-When Double Drops triggers, Mother Lode can fire a **second** bonus drop roll on top of it — effectively tripling yields. Mother Lode only rolls after Double Drops succeeds, so both sub-skills must fire for a triple drop to occur.
+When Double Drops triggers, Mother Lode can fire a **second** bonus drop roll on top of it, effectively tripling yields. Mother Lode only rolls after Double Drops succeeds, so both sub-skills must fire for a triple drop to occur.
 
 The chance scales from **0%** at level 1000 to **50%** at level **10000**.
 
@@ -77,7 +190,7 @@ The chance scales from **0%** at level 1000 to **50%** at level **10000**.
 > Unlocks at level **50**.
 {.is-info}
 
-An active ability. Right-click to ready your pickaxe, then break any compatible block within ~4 seconds to activate Super Breaker. While active, a temporary Efficiency enchant buff is applied to your pickaxe, dramatically increasing mining speed. Triple Drops are also enabled — if Double Drops triggers while Super Breaker is active, the drop becomes a triple instead of a double. Duration scales with your Mining level.
+An active ability. Right-click to ready your pickaxe, then break any compatible block within ~4 seconds to activate Super Breaker. While active, a temporary Efficiency enchant buff is applied to your pickaxe, dramatically increasing mining speed. Triple Drops are also enabled, if Double Drops triggers while Super Breaker is active, the drop becomes a triple instead of a double. Duration scales with your Mining level.
 
 Triple Drops via Super Breaker can be disabled:
 
@@ -108,9 +221,9 @@ Right-click TNT with a Flint and Steel to remotely detonate it. Each rank improv
 | 7 | 850 | 50% | 65% | 30% | ×3 | +4.0 |
 | 8 | 1000 | 100% | 70% | 30% | ×3 | +4.0 |
 
-- **Ore Bonus** — extra chance that ore blocks drop their item rather than the ore block itself.
-- **Debris Reduction** — chance that non-ore blocks (stone, gravel, etc.) drop nothing.
-- **Drop Multiplier** — all items that do drop are multiplied by this factor.
+- **Ore Bonus:** extra chance that ore blocks drop their item rather than the ore block itself.
+- **Debris Reduction:** chance that non-ore blocks (stone, gravel, etc.) drop nothing.
+- **Drop Multiplier:** all items that do drop are multiplied by this factor.
 - At Rank 8, blast self-damage is completely negated.
 
 ## Commands
@@ -120,3 +233,10 @@ Right-click TNT with a Flint and Steel to remotely detonate it. Each rank improv
 | `/mining` | Display your Mining skill stats and sub-skill information. |
 | `/mctop mining` | View the Mining leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Smelting](skills/smelting.md): child skill that draws from Mining and Repair
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

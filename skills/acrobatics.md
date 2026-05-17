@@ -15,6 +15,19 @@ The Acrobatics skill rewards graceful movement. It grants a chance to negate fal
 > Unlike most mcMMO skills, Acrobatics gains XP through two separate paths: fall damage awards XP directly (no sub-skill needs to proc), but Roll XP and Dodge XP are only awarded when those sub-skills successfully activate.
 {.is-info}
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Passive / defensive |
+| **Primary tool** | None (triggered by movement / damage) |
+| **Super ability** | None |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
+> **Compared to vanilla:** Feather Falling reduces fall damage by a fixed percentage. Acrobatics' Roll and Graceful Roll instead have a *chance* to fully cancel the fall damage, scaling with skill level. Both can stack, Feather Falling reduces the incoming damage before mcMMO checks for a roll.
+{.is-info}
+
 ## XP Gain
 
 | Source | XP formula |
@@ -23,7 +36,7 @@ The Acrobatics skill rewards graceful movement. It grants a chance to negate fal
 | Successful Roll or Graceful Roll | `80 × damage that would have been taken (HP)` |
 | Successful Dodge | `120 × damage dodged (HP)` |
 
-> The Feather Falling enchantment doubles Acrobatics XP earned from falls regardless of enchantment level, but it also reduces base fall damage — so both effects combine.
+> The Feather Falling enchantment doubles Acrobatics XP earned from falls regardless of enchantment level, but it also reduces base fall damage, so both effects combine.
 {.is-info}
 
 ### XP from Falls
@@ -87,7 +100,7 @@ The proc chance scales linearly: 1% per level, reaching **100%** at level 1000.
 
 ### Dodge
 
-**Ranks:** 1 — Unlocks at level 1
+**Ranks:** 1, Unlocks at level 1
 
 Dodge gives a chance to halve incoming damage from attacks and other harmful sources. The proc chance scales linearly from 0% at level 0 to **20%** at level 1000.
 
@@ -118,3 +131,10 @@ Skills:
 | `/acrobatics` | Display your Acrobatics skill stats and sub-skill information. |
 | `/mctop acrobatics` | View the Acrobatics leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)
+- [Configuration](/config)

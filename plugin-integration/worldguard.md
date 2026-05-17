@@ -34,5 +34,5 @@ Set flags on a region using the standard WorldGuard flag command:
 
 Regions inherit the server-wide default (`allow`) when a flag is not explicitly set.
 
-> WorldGuard flags provide finer-grained control than the [World Blacklist](/config/world-blacklist), which disables mcMMO for an entire world.
+> WorldGuard flags provide finer-grained control than the [World Blacklist](/config/world-blacklist): which disables mcMMO for an entire world.
 {.is-info}

@@ -15,6 +15,16 @@ dateCreated: 2024-04-13T18:16:00.881Z
 
 The Maces skill governs combat with maces. XP is earned by striking mobs or players with a mace. Levelling Maces unlocks passive damage bonuses, a slowness-on-hit effect, and a PvP damage multiplier.
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Combat (melee) |
+| **Primary tool** | Mace |
+| **Super ability** | None |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 XP is granted each time a mace strike lands on a mob or player. The amount is determined by the target's entity type, following the same combat XP table used by other weapon skills.
@@ -115,3 +125,10 @@ See the [Limit Break](/skills/limit-break) page for details on armour quality sc
 | `/maces` | Display your Maces skill stats and sub-skill information. |
 | `/mctop maces` | View the Maces leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

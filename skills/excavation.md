@@ -12,6 +12,16 @@ dateCreated: 2022-07-17T01:36:33.657Z
 
 The Excavation skill governs digging with shovels. XP is earned by breaking compatible blocks with a shovel. Levelling Excavation unlocks the Archaeology passive (treasure drops from soil and sediment blocks) and the Giga Drill Breaker active ability.
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Gathering |
+| **Primary tool** | Shovel |
+| **Super ability** | Giga Drill Breaker |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
+
 ## XP Gain
 
 XP is granted each time you break a compatible block while holding a shovel. The amount depends on the block type:
@@ -102,13 +112,13 @@ Each treasure also has an independent drop chance (configurable in `treasures.ym
 
 ### Giga Drill Breaker
 
-**Ranks:** 1 — Unlocks at level 50
+**Ranks:** 1, Unlocks at level 50
 
 Giga Drill Breaker is an active ability that dramatically boosts your digging speed and treasure finds. To activate it, right-click with a shovel while holding it to enter the "ready" state, then break any compatible Excavation block.
 
 **While active:**
 - Your shovel is temporarily enchanted with **Efficiency +5** (on top of any existing Efficiency), enabling near-instant block breaking for compatible blocks.
-- Treasure rolls are **tripled** for the activated block — three independent rolls are made instead of one.
+- Treasure rolls are **tripled** for the activated block, three independent rolls are made instead of one.
 - XP from that block is also **tripled** (three separate XP gains apply).
 
 **Duration** formula: `2 + floor(min(skillLevel, 1000) / 50)` seconds. A player at level 50 gets 3 seconds; the maximum at level 1000 is 22 seconds.
@@ -137,3 +147,10 @@ After the ability ends, the tool's temporary enchant is removed and the ability 
 | `/excavation` | Display your Excavation skill stats and sub-skill information. |
 | `/mctop excavation` | View the Excavation leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)
+- [Configuration](/config)

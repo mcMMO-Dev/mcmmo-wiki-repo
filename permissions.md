@@ -25,22 +25,22 @@ The authoritative source for all permissions is [plugin.yml](https://github.com/
 ## Key Permission Nodes
 
 ### Player Permissions (included in `mcmmo.defaults`)
-- `mcmmo.skills.all` — Access to all mcMMO skills
-- `mcmmo.chat.partychat` — Use party chat
-- `mcmmo.chat.colors` — See mcMMO chat colors
-- `mcmmo.broadcast.levelup` — Receive level-up broadcast messages
-- `mcmmo.motd` — See the mcMMO MOTD
-- `mcmmo.commands.defaults` — Access to standard player commands
+- `mcmmo.skills.all`, Access to all mcMMO skills
+- `mcmmo.chat.partychat`, Use party chat
+- `mcmmo.chat.colors`, See mcMMO chat colors
+- `mcmmo.broadcast.levelup`, Receive level-up broadcast messages
+- `mcmmo.motd`, See the mcMMO MOTD
+- `mcmmo.commands.defaults`, Access to standard player commands
 
 ### Operator Permissions (included in `mcmmo.defaultsop`)
-- `mcmmo.chat.adminchat` — Use admin chat
-- `mcmmo.commands.defaultsop` — Access to operator-level commands
-- `mcmmo.item.all` — Access to all mcMMO items
-- `mcmmo.tools.all` — Access to all mcMMO tools
+- `mcmmo.chat.adminchat`, Use admin chat
+- `mcmmo.commands.defaultsop`, Access to operator-level commands
+- `mcmmo.item.all`, Access to all mcMMO items
+- `mcmmo.tools.all`, Access to all mcMMO tools
 
 ### Admin Permissions (included in `mcmmo.all`)
-- `mcmmo.admin` — Full admin access
-- `mcmmo.bypass.all` — Bypass all mcMMO restrictions
+- `mcmmo.admin`, Full admin access
+- `mcmmo.bypass.all`, Bypass all mcMMO restrictions
 
 ## Ability Permissions
 

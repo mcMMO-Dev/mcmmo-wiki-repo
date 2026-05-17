@@ -21,6 +21,6 @@ The world blacklist is configured in `config.yml`. Add the names of worlds you w
 
 ## WorldGuard Integration
 
-If you have WorldGuard installed, mcMMO also supports per-region control via WorldGuard flags. This gives you finer control than the world blacklist — you can disable mcMMO in specific regions rather than entire worlds.
+If you have WorldGuard installed, mcMMO also supports per-region control via WorldGuard flags. This gives you finer control than the world blacklist, you can disable mcMMO in specific regions rather than entire worlds.
 
 See the [WorldGuard Integration](/plugin-integration/worldguard) page for the full list of supported flags and usage instructions.

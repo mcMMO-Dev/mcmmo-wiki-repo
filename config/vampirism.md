@@ -33,4 +33,4 @@ When a player is killed by another player with Vampirism enabled:
 
 ## Hardcore Mode Interaction
 
-Vampirism and [Hardcore Mode](/config/hardcore-mode) are independent — each can be enabled without the other. When both are enabled, a killed player suffers both penalties separately: the killer first steals a portion of the victim's levels via Vampirism, and then the victim loses an additional portion of their levels as the Hardcore death penalty.
+Vampirism and [Hardcore Mode](/config/hardcore-mode) are independent, each can be enabled without the other. When both are enabled, a killed player suffers both penalties separately: the killer first steals a portion of the victim's levels via Vampirism, and then the victim loses an additional portion of their levels as the Hardcore death penalty.

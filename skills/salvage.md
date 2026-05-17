@@ -15,6 +15,19 @@ The Salvage skill lets you break down tools and armor at a Salvage Anvil (a **go
 > Salvage is a **child skill** of Repair and Fishing. Your Salvage level equals the average of your Repair and Fishing levels: `Salvage level = floor((Repair + Fishing) / 2)`. You cannot level Salvage directly -- improve Repair and Fishing to increase it.
 {.is-info}
 
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Utility / crafting (child skill) |
+| **Primary tool** | Gold Block (Salvage Anvil) |
+| **Super ability** | None |
+| **Parent skill(s)** | Repair + Fishing |
+| **Child skill(s)** | None |
+
+> **Compared to vanilla:** the vanilla Grindstone strips enchantments and returns a small amount of XP, but never returns any of the item's crafting materials. The mcMMO Salvage Anvil (gold block) instead returns a portion of the original crafting materials and can optionally extract one enchantment as an enchanted book.
+{.is-info}
+
 ## Usage
 
 Place a gold block to create a Salvage Anvil. Hold the item to salvage in your main hand and right-click the anvil. You will be prompted to confirm; right-click again within 3 seconds to proceed.
@@ -97,3 +110,11 @@ The maximum enchantment level kept or downgraded to is capped at `MaxEnchantLeve
 | `/salvage` | Display your Salvage skill stats and sub-skill information. |
 | `/mctop salvage` | View the Salvage leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
+
+## See Also
+
+- [Repair](skills/repair.md): parent skill
+- [Fishing](skills/fishing.md): parent skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)

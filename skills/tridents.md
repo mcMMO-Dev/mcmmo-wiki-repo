@@ -13,7 +13,17 @@ dateCreated: 2024-04-13T18:14:01.830Z
 > Tridents is a newer skill that is still being expanded. Some features and balance may change in future releases. Join the [mcMMO Discord](https://discord.gg/mcmmo) for the latest news.
 {.is-warning}
 
-The Tridents skill governs combat with tridents. XP is earned by striking mobs or players with a trident — both melee (close-range) and thrown (ranged) hits grant XP. Levelling Tridents unlocks passive damage bonuses that scale with your skill level.
+The Tridents skill governs combat with tridents. XP is earned by striking mobs or players with a trident, both melee (close-range) and thrown (ranged) hits grant XP. Levelling Tridents unlocks passive damage bonuses that scale with your skill level.
+
+## At a glance
+
+| | |
+|---|---|
+| **Category** | Combat (melee + ranged) |
+| **Primary tool** | Trident |
+| **Super ability** | None |
+| **Parent skill(s)** | None |
+| **Child skill(s)** | None |
 
 ## XP Gain
 
@@ -109,3 +119,9 @@ See [Limit Break](/skills/limit-break) for full details on the damage formula an
 | `/mctop tridents` | View the Tridents leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
 
+## See Also
+
+- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Skill summary](/skills)
+- [Commands](/Commands)
+- [Permissions](/permissions)
