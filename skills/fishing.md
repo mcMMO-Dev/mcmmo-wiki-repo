@@ -171,6 +171,10 @@ Each catch makes a single 0-100 roll (modified by the rod's Luck of the Sea ench
 
 The pool of items in each rarity tier (`Fishing:` section of `fishing_treasures.yml`) is fully customisable per server. Default Common items include leather armour, wooden tools, and lapis; Uncommon includes stone and copper tools, golden armour, and iron/gold ingots; Rare includes iron tools, bow, ender pearl, blaze rod, and name tag; Epic includes iron armour and ghast tear; Legendary and Mythic include the rarest fish, music discs, totems, and similar high-value items.
 
+---
+
+### Shake
+
 **Ranks:** 8 -- Unlocks at level 150
 
 Shake allows you to cast your fishing line at a mob that is in water and force it to drop its held item (the same drops as using the Looting enchantment on that mob type). The mob is not harmed. The proc chance per rank is a fixed value from the config.
