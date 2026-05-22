@@ -219,9 +219,8 @@ The maximum chance and the level at which it caps are configurable:
 Arcane Forging is a passive sub-skill that gives enchanted items a chance to retain their enchantments when repaired at the mcMMO Anvil. Without Arcane Forging, all enchantments are stripped on repair.
 
 For each enchantment on the item, two rolls are made:
-1. **Keep roll** -- the enchantment is preserved at its current level (capped at `MaxEnchantLevel`).
-2. **Downgrade roll** (if keep fails) -- the enchantment is reduced by one level.
-3. If both rolls fail, the enchantment is lost.
+1. **Keep roll** -- if this succeeds, the enchantment is carried forward to the downgrade check; if it fails, the enchantment is lost.
+2. **Downgrade roll** (only if keep succeeds) -- if this succeeds, the enchantment is reduced by one level; if it fails, the enchantment is preserved at its current level (capped at `MaxEnchantLevel`).
 
 **Chance values per rank (defaults):**
 
