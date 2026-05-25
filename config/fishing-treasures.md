@@ -129,7 +129,7 @@ Shake:
 |-------|-------------|
 | `Amount` | Number of the item dropped. |
 | `XP` | Bonus Fishing XP from this shake drop. |
-| `Drop_Chance` | Percent chance (0–100) per shake. Multiple entries are evaluated independently. |
+| `Drop_Chance` | Weight in the drop selection (0–100). Entries are accumulated in order; the first entry whose cumulative weight exceeds the random roll wins. Only **one item** drops per shake. If the total of all entries is less than 100, the remainder is a chance of nothing dropping. |
 | `Drop_Level` | Minimum Fishing level (Standard mode) required. Multiplied ×10 for RetroMode. |
 
 ### Default Shake Drops (selected)
@@ -141,8 +141,8 @@ Shake:
 | Chicken | Feather (33%), Raw Chicken (33%), Egg (33%) | |
 | Cow | Beef (49%), Leather (49%), Milk Bucket (2%) | |
 | Creeper | Gunpowder (99%), Creeper Head (1%) | |
-| Skeleton | Bone (49%), Arrow (49%), Bow (1%), Skeleton Skull (1%) | |
-| Zombie | Rotten Flesh (98%), Iron Ingot (1%), Zombie Head (1%) | |
+| Skeleton | Bone (49%), Arrow ×2 (49%), Skeleton Skull (2%) | |
+| Zombie | Rotten Flesh (98%), Zombie Head (2%) | |
 | Enderman | Ender Pearl (100%) | |
 
 To add shake drops for additional mobs, add a new block using the Bukkit `EntityType` name as the key.
@@ -155,3 +155,82 @@ To add shake drops for additional mobs, add a new block using the Bukkit `Entity
 - **Adding a new item:** Add an entry under `Fishing:` with any valid material name and assign a rarity. The item will automatically be included in the rarity pool.
 - **Tier count:** The number of tiers (8) matches the number of Treasure Hunter ranks and cannot be changed without modifying the source.
 - **Enchanted books vs item drops:** These are two independent rolls. A single catch can yield a regular item, an enchanted book, both, or neither.
+
+---
+
+## Examples
+
+### Adding a new fishing item
+
+To add a Nether Star as a MYTHIC fishing treasure:
+
+```yaml
+Fishing:
+    NETHER_STAR:
+        Amount: 1
+        XP: 5000
+        Rarity: MYTHIC
+```
+
+The item is automatically included in the MYTHIC loot pool. Its drop rates are determined by the `MYTHIC` column in `Item_Drop_Rates`.
+
+### Moving an item to a different rarity
+
+To make Iron Chestplate drop as `RARE` instead of `EPIC`, change its `Rarity` field:
+
+```yaml
+Fishing:
+    IRON_CHESTPLATE:
+        Amount: 1
+        XP: 200
+        Rarity: RARE
+```
+
+The item then only drops according to the RARE percentage column in `Item_Drop_Rates`. Rarity affects both how often the item drops and at what tier it becomes available.
+
+### Adding a Shake drop for an existing mob
+
+To make Endermen drop 2 Ender Pearls instead of the default 1:
+
+```yaml
+Shake:
+    ENDERMAN:
+        ENDER_PEARL:
+            Amount: 2
+            XP: 0
+            Drop_Chance: 100.0
+            Drop_Level: 0
+```
+
+### Adding Shake drops for a new mob
+
+To add shake drops for a Warden (not present by default), use the Bukkit `EntityType` name as the key:
+
+```yaml
+Shake:
+    WARDEN:
+        SCULK_CATALYST:
+            Amount: 1
+            XP: 500
+            Drop_Chance: 65.0
+            Drop_Level: 0
+        ECHO_SHARD:
+            Amount: 1
+            XP: 1000
+            Drop_Chance: 35.0
+            Drop_Level: 0
+```
+
+The `Drop_Chance` values act as weights in a single random selection — only **one item** drops per shake. The chances are accumulated in order, so the first entry has the highest effective priority. When the total sums to 100, something always drops; if it sums to less, the remaining probability results in nothing dropping.
+
+### Granting bonus XP for rare catches
+
+To award extra Fishing XP when a player catches a Diamond Sword (currently 200 XP), increase its `XP` value:
+
+```yaml
+Fishing:
+    DIAMOND_SWORD:
+        Amount: 1
+        XP: 1000
+        Rarity: LEGENDARY
+```

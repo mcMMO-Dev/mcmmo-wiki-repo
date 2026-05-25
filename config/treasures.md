@@ -52,35 +52,50 @@ Both sections share the same field structure:
 
 The `Excavation:` section lists items that can be found by the Archaeology sub-skill. The items are drawn from a wide range of blocks including dirt, grass, sand, gravel, clay, soul sand, mycelium, mud, and muddy mangrove roots.
 
+### Block Groups
+
+Several entries share a large common block list. The shorthand labels used in the table below refer to these exact block sets.
+
+> These groups reflect the **default** configuration. Any entry's `Drops_From` list can be freely changed — these names are just a reading convenience for this page.
+{.is-info}
+
+| Label | Blocks |
+|-------|--------|
+| All dig blocks | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil, Mud |
+| Dig blocks (no Mud) | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
+| Dig blocks (no Clay or Mud) | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Mycelium, Soul Sand, Soul Soil |
+| Dirt variants, sand, and mycelium | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Mycelium |
+| Soil and mud | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
+
 ### Selected Default Entries
 
-| Item | Drop Chance | Level Req (Standard) | Drops From |
-|------|-------------|---------------------|------------|
-| Glowstone Dust | 5.0% | 5 | Dirt, Sand, Grass, Mycelium |
-| Gunpowder | 10.0% | 10 | Gravel |
-| Bone | 10.0% | 20 | Gravel, Mud |
-| Slime Ball | 5.0% | 15 | Clay |
-| String | 5.0% | 25 | Clay |
-| Cobweb | 5.0% | 75 | Clay |
-| Egg | 1.0% | 25 | Grass Block |
-| Red / Brown Mushroom | 0.5% | 50 | Dirt, Podzol, Grass, Mycelium, Mud |
-| Cocoa Beans | 1.33% | 35 | Dirt, Grass, Mycelium, Mud |
-| Diamond | 0.13% | 35 | Dirt, Sand, Gravel, Clay, Soul Sand |
-| Music Disc 13 / Cat | 0.05% | 25 | All common dig blocks |
-| Name Tag | 0.05% | 25 | All common dig blocks |
-| Apple | 0.1% | 25 | Grass Block, Mycelium |
-| Bucket | 0.1% | 50 | Clay |
-| Clock | 0.1% | 50 | Clay |
-| Spyglass | 0.1% | 7 | Mud, Dirt |
-| Potato | 3.0% | 10 | Dirt, Mud |
-| Stick | 2.0% | 1 | Mud, Muddy Mangrove Roots |
-| Feather | 1.0% | 5 | Mud |
-| Trident | 0.02% | 40 | Mud, Clay, Muddy Mangrove Roots |
-| Soul Sand | 0.5% | 65 | Sand, Red Sand |
-| Netherrack | 0.5% | 85 | Gravel |
-| Quartz | 0.5% | 85 | Dirt, Sand, Gravel, Soul Sand |
-| CAKE | 0.05% | 75 | All common dig blocks |
-| Heart of the Sea | 0.01% | 90 | Mud |
+| Item | Drop Chance | Level Req (Retro) | Drops From |
+|------|-------------|------------------|------------|
+| Glowstone Dust | 5.0% | 50 | Dirt variants, sand, and mycelium |
+| Gunpowder | 10.0% | 100 | Gravel |
+| Bone | 10.0% | 200 | Gravel, Mud |
+| Slime Ball | 5.0% | 150 | Clay |
+| String | 5.0% | 250 | Clay |
+| Cobweb | 5.0% | 750 | Clay |
+| Egg | 1.0% | 250 | Grass Block |
+| Red / Brown Mushroom | 0.5% | 500 | Soil and mud |
+| Cocoa Beans | 1.33% | 350 | Soil and mud |
+| Diamond | 0.13% | 350 | All dig blocks |
+| Music Disc 13 / Cat | 0.05% | 250 | Dig blocks (no Mud) |
+| Name Tag | 0.05% | 250 | Dig blocks (no Mud) |
+| Apple | 0.1% | 250 | Grass Block, Mycelium |
+| Bucket | 0.1% | 500 | Clay |
+| Clock | 0.1% | 500 | Clay |
+| Spyglass | 0.1% | 70 | Mud, Dirt |
+| Potato | 3.0% | 100 | Dirt, Mud |
+| Stick | 2.0% | 10 | Mud, Muddy Mangrove Roots |
+| Feather | 1.0% | 50 | Mud |
+| Trident | 0.02% | 400 | Mud, Clay, Muddy Mangrove Roots |
+| Soul Sand | 0.5% | 650 | Sand, Red Sand |
+| Netherrack | 0.5% | 850 | Gravel |
+| Quartz | 0.5% | 850 | Dig blocks (no Clay or Mud) |
+| Cake | 0.05% | 750 | Dig blocks (no Mud) |
+| Heart of the Sea | 0.01% | 900 | Mud |
 
 > The `Drop_Chance` is evaluated per item entry, so at high levels a single block break can drop multiple different items simultaneously.
 {.is-info}
@@ -119,9 +134,16 @@ The `Drops_From` field uses special category names rather than individual block 
 
 ---
 
-## Adding Custom Treasures
+## Examples
 
-To add a new treasure, add a new block under the appropriate section:
+Valid material names for all entries are Bukkit `Material` enum names (see the [Spigot Javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)). Names are case-insensitive.
+
+> The full entry must be present. mcMMO loads each material key completely from the file — you cannot partially override a single field.
+{.is-info}
+
+### Adding a new Excavation drop
+
+To add Emeralds as a rare find from dirt and gravel, unlocked at level 400 (Retro):
 
 ```yaml
 Excavation:
@@ -135,4 +157,63 @@ Excavation:
         Drops_From: [Dirt, Gravel, Sand, Clay]
 ```
 
-Valid material names are Bukkit `Material` enum names (see the [Spigot Javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)). Names are case-insensitive.
+### Making an existing Excavation item rarer
+
+The default Diamond has a `Drop_Chance` of 0.13. To tighten that to 0.05%:
+
+```yaml
+Excavation:
+    DIAMOND:
+        Amount: 1
+        XP: 1000
+        Drop_Chance: 0.05
+        Level_Requirement:
+            Standard_Mode: 35
+            Retro_Mode: 350
+        Drops_From: [Dirt, Coarse_Dirt, Podzol, Grass_Block, Sand, Red_Sand, Gravel, Clay, Mycelium, Soul_Sand, Soul_Soil, Mud]
+```
+
+### Restricting an item to fewer block types
+
+To limit Diamond drops to Clay only, change the `Drops_From` line:
+
+```yaml
+        Drops_From: [Clay]
+```
+
+Use the same list format when expanding an item to more blocks — e.g. `[Dirt, Sand, Gravel, Clay, Soul_Sand, Mud]`.
+
+### Adding a Hylian Luck drop
+
+To add a small chance to find a Totem of Undying when breaking flower pots:
+
+```yaml
+Hylian_Luck:
+    TOTEM_OF_UNDYING:
+        Amount: 1
+        XP: 5000
+        Drop_Chance: 0.01
+        Level_Requirement:
+            Standard_Mode: 0
+            Retro_Mode: 0
+        Drops_From: [Pots]
+```
+
+> The `Drop_Chance` here interacts with the Hylian Luck proc chance configured in `advanced.yml` (`HylianLuck.ChanceMax`, default `10.0%` at max level). A 0.01% `Drop_Chance` combined with a 10% proc chance means the effective per-break chance at max level is roughly 0.001%.
+{.is-info}
+
+### Raising XP for a high-value find
+
+To make finding a Heart of the Sea also award bonus Excavation XP, increase its `XP` value (default is 9999 — the highest in the file):
+
+```yaml
+Excavation:
+    HEART_OF_THE_SEA:
+        Amount: 1
+        XP: 50000
+        Drop_Chance: 0.01
+        Level_Requirement:
+            Standard_Mode: 90
+            Retro_Mode: 900
+        Drops_From: [Mud]
+```

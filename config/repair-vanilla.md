@@ -62,7 +62,7 @@ By default the file includes every repairable vanilla item grouped by material t
 | Diamond | Diamond tools and armour | `DIAMOND` |
 | Netherite | Netherite tools and armour | `NETHERITE_INGOT` |
 
-Other repairable items include the Elytra, Turtle Shell, Shield, Bow, Crossbow, Trident, and Fishing Rod.
+Other repairable items include the Elytra, Shield, Bow, Crossbow, Trident, and Fishing Rod.
 
 ---
 
@@ -72,3 +72,75 @@ Other repairable items include the Elytra, Turtle Shell, Shield, Bow, Crossbow, 
 - **To require a skill level**, set `MinimumLevel` to the desired Standard mode level.
 - **To grant more XP for repairing endgame gear**, increase `XpMultiplier` (e.g. `2.0` for netherite items).
 - **To add a custom item**, create a new entry under `Repairables:` and fill in all required fields.
+
+---
+
+## Examples
+
+> `MinimumLevel` is always specified in **Standard mode** units regardless of your server's level mode. Retro mode players see 10× this value in-game (e.g. `MinimumLevel: 75` = level 750 in Retro mode).
+{.is-info}
+
+### Gating Elytra repair behind a skill level
+
+By default any player can repair an Elytra. To require Repair level 750 (Retro):
+
+```yaml
+Repairables:
+    ELYTRA:
+        MinimumLevel: 75
+        XpMultiplier: 3
+        ItemType: OTHER
+        ItemMaterialCategory: OTHER
+        RepairMaterial: PHANTOM_MEMBRANE
+        MinimumQuantity: 8
+        MaximumDurability: 432
+```
+
+### Changing the repair material for Trident
+
+By default Tridents are repaired with Prismarine Crystals. To change this to Nautilus Shells:
+
+```yaml
+Repairables:
+    TRIDENT:
+        MinimumLevel: 0
+        XpMultiplier: 3
+        ItemType: TOOL
+        ItemMaterialCategory: OTHER
+        RepairMaterial: NAUTILUS_SHELL
+        MinimumQuantity: 1
+        MaximumDurability: 250
+```
+
+Trident is not auto-detected from the material name, so all seven fields must be present in the entry. Change only the fields you want, keeping the rest at their defaults.
+
+### Raising the XP reward for repairing high-tier gear
+
+To make repairing Netherite Swords award twice as much XP as the default (default is `0.6`), raise `XpMultiplier`:
+
+```yaml
+Repairables:
+    NETHERITE_SWORD:
+        MinimumLevel: 0
+        XpMultiplier: 1.2
+```
+
+The two-field short form works for any standard vanilla item where mcMMO can auto-detect the repair material and durability.
+
+### Adding a custom or modded item
+
+For a hypothetical mod item `MYTHRIL_SWORD` with 2000 durability, repairable with Amethyst Shards:
+
+```yaml
+Repairables:
+    MYTHRIL_SWORD:
+        MinimumLevel: 0
+        XpMultiplier: 2.0
+        ItemType: TOOL
+        ItemMaterialCategory: OTHER
+        RepairMaterial: AMETHYST_SHARD
+        MinimumQuantity: 2
+        MaximumDurability: 2000
+```
+
+See [Mods Support](/plugin-integration/plugin-support) for the full custom item workflow.
