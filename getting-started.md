@@ -26,7 +26,7 @@ You don't need to do anything special to start. Mine a block, swing your sword, 
 - Type `/<skillname>` (such as `/mining` or `/archery`) to see the sub-skills you've unlocked and what they do at your current level.
 - The skill that levels is the skill that matches the activity. Mining with a pickaxe levels Mining; chopping wood with an axe levels Woodcutting; using the wrong tool gives no XP.
 - Skills level much faster when you focus on one or two at a time rather than spreading effort across all of them.
-- Combat and gathering skills have a **Super Ability**. When you swing a compatible tool, right-click once to ready the ability and again to trigger it for a short burst of power. Super Abilities have a cooldown.
+- Some combat and gathering skills have a **Super Ability**. When you swing a compatible tool, right-click once to ready the ability and again to trigger it for a short burst of power. Super Abilities have a cooldown.
 
 ## How XP works
 
@@ -63,7 +63,6 @@ Most combat and gathering skills have an active **Super Ability**:
 | Unarmed | Berserk | Right-click with an empty hand |
 | Axes | Skull Splitter | Right-click while holding an axe |
 | Swords | Serrated Strikes | Right-click while holding a sword |
-| Archery | Explosive Shot | Charged shot mechanic |
 
 Each ability has a cooldown (configured server-side, often around 4 minutes). When ready again, you'll see a refresh notification.
 

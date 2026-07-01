@@ -18,7 +18,7 @@ The Archery skill enhances combat with bows. Levelling Archery boosts arrow dama
 |---|---|
 | **Category** | Combat (ranged) |
 | **Primary tool** | Bow |
-| **Super ability** | Explosive Shot |
+| **Super ability** | None |
 | **Parent skill(s)** | None |
 | **Child skill(s)** | None |
 

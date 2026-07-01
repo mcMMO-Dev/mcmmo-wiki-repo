@@ -96,7 +96,7 @@ Woodcutting is all about chopping down trees.
 |-------|----------|--------------|---------------|----------------|
 | [Acrobatics](skills/acrobatics.md) | Passive / defensive | none (movement) | none |  |
 | [Alchemy](skills/alchemy.md) | Utility | Brewing Stand | none |  |
-| [Archery](skills/archery.md) | Combat (ranged) | Bow | Explosive Shot |  |
+| [Archery](skills/archery.md) | Combat (ranged) | Bow | None |  |
 | [Axes](skills/axes.md) | Combat (melee) | Axe | Skull Splitter |  |
 | [Crossbows](skills/crossbows.md) | Combat (ranged) | Crossbow | None | none |
 | [Excavation](skills/excavation.md) | Gathering | Shovel | Giga Drill Breaker |  |
