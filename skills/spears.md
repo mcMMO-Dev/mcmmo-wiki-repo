@@ -127,7 +127,7 @@ By default, Limit Break only applies in PvP. PvE can be enabled via `Skills.Gene
 
 ## See Also
 
-- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Limit Break](/skills/limit-break): armor-scaling bonus damage shared by every combat skill
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)

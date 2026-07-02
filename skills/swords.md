@@ -179,7 +179,7 @@ See [Limit Break](/skills/limit-break) for full details on the damage formula an
 
 ## See Also
 
-- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Limit Break](/skills/limit-break): armor-scaling bonus damage shared by every combat skill
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)

@@ -236,7 +236,7 @@ Right-click TNT with a Flint and Steel to remotely detonate it. Each rank improv
 
 ## See Also
 
-- [Smelting](skills/smelting.md): child skill that draws from Mining and Repair
+- [Smelting](/skills/smelting): child skill that draws from Mining and Repair
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)

@@ -135,8 +135,8 @@ Understanding the Art multiplies the vanilla Minecraft XP dropped when a furnace
 
 ## See Also
 
-- [Mining](skills/mining.md): parent skill
-- [Repair](skills/repair.md): parent skill
+- [Mining](/skills/mining): parent skill
+- [Repair](/skills/repair): parent skill
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)
