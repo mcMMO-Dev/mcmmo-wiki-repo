@@ -87,6 +87,24 @@ Tick damage is applied twice per second.
 
 Serrated Strikes is an active ability that must be armed by right-clicking with a sword while not looking at a block. When active, the next sword attack deals 25% of the hit's damage to all enemies within **2.5 blocks** of the primary target and also applies Rupture to each one.
 
+Duration scales with your Swords level, starting at 3 seconds at level 50 and gaining 1 second every additional 50 levels, up to a default maximum of 1000 seconds.
+
+| Swords Level | Duration |
+|-------------:|---------:|
+| 50           | 3s       |
+| 100          | 4s       |
+| 200          | 6s       |
+| 500          | 12s      |
+| 1000         | 22s      |
+| 2000         | 42s      |
+
+| Property | Key | Default | Description |
+|----------|-----|---------|-------------|
+| Unlock level | `skillranks.yml` → `Swords.SerratedStrikes.RetroMode.Rank_1` | `50` | Minimum skill level to unlock this ability |
+| Cooldown | `config.yml` → `Abilities.Cooldowns.Serrated_Strikes` | `240s` | Seconds before the ability can be activated again |
+| Max duration | `config.yml` → `Abilities.Max_Seconds.Serrated_Strikes` | `0` (no cap) | Per-ability duration ceiling in seconds. Only takes effect if lower than the global duration cap; 0 disables this cap entirely |
+| Global duration cap | `advanced.yml` → `Skills.General.Ability.Length.RetroMode.CapLevel` | `1000s` | Maximum duration for all super abilities |
+
 The maximum number of additional targets hit by the AoE scales with weapon material:
 
 | Weapon material | Max additional targets |

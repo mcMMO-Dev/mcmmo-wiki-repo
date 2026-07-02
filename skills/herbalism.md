@@ -205,6 +205,24 @@ The proc chance scales linearly from 0% at level 0 to **100%** at level 1000. Gr
 
 Green Terra is an active ability that must be armed by right-clicking with a hoe while not looking at a block. When active, interacting with dirt blocks converts them into farmland, and Green Thumb procs automatically without a chance roll for the duration.
 
+Duration scales with your Herbalism level, starting at 3 seconds at level 50 and gaining 1 second every additional 50 levels, up to a default maximum of 1000 seconds.
+
+| Herbalism Level | Duration |
+|----------------:|---------:|
+| 50              | 3s       |
+| 100             | 4s       |
+| 200             | 6s       |
+| 500             | 12s      |
+| 1000            | 22s      |
+| 2000            | 42s      |
+
+| Property | Key | Default | Description |
+|----------|-----|---------|-------------|
+| Unlock level | `skillranks.yml` → `Herbalism.GreenTerra.RetroMode.Rank_1` | `50` | Minimum skill level to unlock this ability |
+| Cooldown | `config.yml` → `Abilities.Cooldowns.Green_Terra` | `240s` | Seconds before the ability can be activated again |
+| Max duration | `config.yml` → `Abilities.Max_Seconds.Green_Terra` | `0` (no cap) | Per-ability duration ceiling in seconds. Only takes effect if lower than the global duration cap; 0 disables this cap entirely |
+| Global duration cap | `advanced.yml` → `Skills.General.Ability.Length.RetroMode.CapLevel` | `1000s` | Maximum duration for all super abilities |
+
 ---
 
 ### Hylian Luck

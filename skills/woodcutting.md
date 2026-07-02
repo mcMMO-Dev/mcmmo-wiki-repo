@@ -113,6 +113,24 @@ Tree Feller is an active ability that must be armed by right-clicking with an ax
 
 Tree Feller causes extra durability damage to the axe proportional to the number of blocks felled. If the axe would break during Tree Feller, it splinters at the first block and Tree Feller is cancelled.
 
+Duration scales with your Woodcutting level, starting at 3 seconds at level 50 and gaining 1 second every additional 50 levels, up to a default maximum of 1000 seconds.
+
+| Woodcutting Level | Duration |
+|------------------:|---------:|
+| 50                | 3s       |
+| 100               | 4s       |
+| 200               | 6s       |
+| 500               | 12s      |
+| 1000              | 22s      |
+| 2000              | 42s      |
+
+| Property | Key | Default | Description |
+|----------|-----|---------|-------------|
+| Unlock level | `skillranks.yml` → `Woodcutting.TreeFeller.RetroMode.Rank_1` | `50` | Minimum skill level to unlock this ability |
+| Cooldown | `config.yml` → `Abilities.Cooldowns.Tree_Feller` | `240s` | Seconds before the ability can be activated again |
+| Max duration | `config.yml` → `Abilities.Max_Seconds.Tree_Feller` | `0` (no cap) | Per-ability duration ceiling in seconds. Only takes effect if lower than the global duration cap; 0 disables this cap entirely |
+| Global duration cap | `advanced.yml` → `Skills.General.Ability.Length.RetroMode.CapLevel` | `1000s` | Maximum duration for all super abilities |
+
 Higher ranks increase the maximum number of blocks that can be felled in one use (the tree feller threshold is also configurable in `config.yml`).
 
 | Rank | Unlock level |
