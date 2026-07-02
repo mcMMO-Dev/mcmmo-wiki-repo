@@ -130,7 +130,6 @@ Understanding the Art multiplies the vanilla Minecraft XP dropped when a furnace
 | Command | Description |
 |---------|-------------|
 | `/smelting` | Display your Smelting skill stats and sub-skill information. |
-| `/mctop smelting` | View the Smelting leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
 
 ## See Also
