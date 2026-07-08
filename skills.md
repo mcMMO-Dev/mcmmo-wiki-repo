@@ -94,25 +94,25 @@ Woodcutting is all about chopping down trees.
 
 | Skill | Category | Primary tool | Super ability | Parent / child |
 |-------|----------|--------------|---------------|----------------|
-| [Acrobatics](skills/acrobatics.md) | Passive / defensive | none (movement) | none |  |
-| [Alchemy](skills/alchemy.md) | Utility | Brewing Stand | none |  |
-| [Archery](skills/archery.md) | Combat (ranged) | Bow | None |  |
-| [Axes](skills/axes.md) | Combat (melee) | Axe | Skull Splitter |  |
-| [Crossbows](skills/crossbows.md) | Combat (ranged) | Crossbow | None | none |
-| [Excavation](skills/excavation.md) | Gathering | Shovel | Giga Drill Breaker |  |
-| [Fishing](skills/fishing.md) | Gathering | Fishing Rod | none | parent of Salvage |
-| [Herbalism](skills/herbalism.md) | Gathering | Hoe | Green Terra |  |
-| [Maces](skills/maces.md) | Combat (melee) | Mace | None | none |
-| [Mining](skills/mining.md) | Gathering | Pickaxe (+ TNT) | Super Breaker · Blast Mining | parent of Smelting |
-| [Repair](skills/repair.md) | Utility | Iron Block | none | parent of Salvage and Smelting |
-| [Salvage](skills/salvage.md) | Utility *(child)* | Gold Block | none | child of Repair + Fishing |
-| [Smelting](skills/smelting.md) | Utility *(child)* | Furnace | none | child of Mining + Repair |
-| [Spears](skills/spears.md) | Combat (melee) | Spear | None | none |
-| [Swords](skills/swords.md) | Combat (melee) | Sword | Serrated Strikes |  |
-| [Taming](skills/taming.md) | Combat (support) | Bone / pets | none |  |
-| [Tridents](skills/tridents.md) | Combat (mixed) | Trident | None | none |
-| [Unarmed](skills/unarmed.md) | Combat (melee) | Fists | Berserk |  |
-| [Woodcutting](skills/woodcutting.md) | Gathering | Axe | Tree Feller |  |
+| [Acrobatics](skills/acrobatics.md) | Passive / defensive | None (movement) | None | None |
+| [Alchemy](skills/alchemy.md) | Utility | Brewing Stand | None | None |
+| [Archery](skills/archery.md) | Combat (ranged) | Bow | None | None |
+| [Axes](skills/axes.md) | Combat (melee) | Axe | Skull Splitter | None |
+| [Crossbows](skills/crossbows.md) | Combat (ranged) | Crossbow | None | None |
+| [Excavation](skills/excavation.md) | Gathering | Shovel | Giga Drill Breaker | None |
+| [Fishing](skills/fishing.md) | Gathering | Fishing Rod | None | Parent of Salvage |
+| [Herbalism](skills/herbalism.md) | Gathering | Hoe | Green Terra | None |
+| [Maces](skills/maces.md) | Combat (melee) | Mace | None | None |
+| [Mining](skills/mining.md) | Gathering | Pickaxe (+ TNT) | Super Breaker · Blast Mining | Parent of Smelting |
+| [Repair](skills/repair.md) | Utility | Iron Block | None | Parent of Salvage and Smelting |
+| [Salvage](skills/salvage.md) | Utility *(child)* | Gold Block | None | Child of Repair + Fishing |
+| [Smelting](skills/smelting.md) | Utility *(child)* | Furnace | None | Child of Mining + Repair |
+| [Spears](skills/spears.md) | Combat (melee) | Spear | None | None |
+| [Swords](skills/swords.md) | Combat (melee) | Sword | Serrated Strikes | None |
+| [Taming](skills/taming.md) | Combat (support) | Bone / pets | None | None |
+| [Tridents](skills/tridents.md) | Combat (mixed) | Trident | None | None |
+| [Unarmed](skills/unarmed.md) | Combat (melee) | Fists | Berserk | None |
+| [Woodcutting](skills/woodcutting.md) | Gathering | Axe | Tree Feller | None |
 
 ## See Also
 
