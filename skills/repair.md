@@ -260,8 +260,8 @@ Players with the `mcmmo.perks.repair.arcanebypass` permission always keep enchan
 
 ## See Also
 
-- [Salvage](skills/salvage.md): child skill that draws from Repair and Fishing
-- [Smelting](skills/smelting.md): child skill that draws from Repair and Mining
+- [Salvage](/skills/salvage.md): child skill that draws from Repair and Fishing
+- [Smelting](/skills/smelting.md): child skill that draws from Repair and Mining
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)

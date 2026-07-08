@@ -151,7 +151,7 @@ Against mobs (when PvE is enabled), the full ×1.00 modifier always applies. See
 
 ## See Also
 
-- [Limit Break](skills/limit-break.md): armor-scaling bonus damage shared by every combat skill
+- [Limit Break](/skills/limit-break): armor-scaling bonus damage shared by every combat skill
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)

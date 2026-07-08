@@ -113,8 +113,8 @@ The maximum enchantment level kept or downgraded to is capped at `MaxEnchantLeve
 
 ## See Also
 
-- [Repair](skills/repair.md): parent skill
-- [Fishing](skills/fishing.md): parent skill
+- [Repair](/skills/repair): parent skill
+- [Fishing](/skills/fishing): parent skill
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)

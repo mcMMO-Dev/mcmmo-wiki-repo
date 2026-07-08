@@ -256,7 +256,7 @@ When a Shake roll succeeds on an eligible mob, one item is selected from that mo
 
 ## See Also
 
-- [Salvage](skills/salvage.md): child skill that draws from Fishing and Repair
+- [Salvage](/skills/salvage): child skill that draws from Fishing and Repair
 - [Skill summary](/skills)
 - [Commands](/Commands)
 - [Permissions](/permissions)
