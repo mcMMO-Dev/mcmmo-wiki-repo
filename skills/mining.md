@@ -190,7 +190,26 @@ The chance scales from **0%** at level 1000 to **50%** at level **10000**.
 > Unlocks at level **50**.
 {.is-info}
 
-An active ability. Right-click to ready your pickaxe, then break any compatible block within ~4 seconds to activate Super Breaker. While active, a temporary Efficiency enchant buff is applied to your pickaxe, dramatically increasing mining speed. Triple Drops are also enabled, if Double Drops triggers while Super Breaker is active, the drop becomes a triple instead of a double. Duration scales with your Mining level.
+An active ability. Right-click to ready your pickaxe, then break any compatible block within ~4 seconds to activate Super Breaker. While active, your pickaxe is temporarily enchanted with Efficiency at the level set by `EnchantBuff` (default: **5**), on top of any existing Efficiency, dramatically increasing mining speed. Triple Drops are also enabled, if Double Drops triggers while Super Breaker is active, the drop becomes a triple instead of a double. When the ability ends, the temporary enchant is removed and the ability enters a cooldown.
+
+Duration scales with your Mining level, starting at 3 seconds at level 50 and gaining 1 second every additional 50 levels, up to a default maximum of 1000 seconds.
+
+| Mining Level | Duration |
+|-------------:|---------:|
+| 50           | 3s       |
+| 100          | 4s       |
+| 200          | 6s       |
+| 500          | 12s      |
+| 1000         | 22s      |
+| 2000         | 42s      |
+
+| Property | Key | Default | Description |
+|----------|-----|---------|-------------|
+| Unlock level | `skillranks.yml` → `Mining.SuperBreaker.RetroMode.Rank_1` | `50` | Minimum skill level to unlock this ability |
+| Cooldown | `config.yml` → `Abilities.Cooldowns.Super_Breaker` | `240s` | Seconds before the ability can be activated again |
+| Max duration | `config.yml` → `Abilities.Max_Seconds.Super_Breaker` | `0` (no cap) | Per-ability duration ceiling in seconds. Only takes effect if lower than the global duration cap; 0 disables this cap entirely |
+| Global duration cap | `advanced.yml` → `Skills.General.Ability.Length.RetroMode.CapLevel` | `1000s` | Maximum duration for all super abilities |
+| EnchantBuff | `advanced.yml` → `Skills.General.Ability.EnchantBuff` | `5` | Efficiency enchantment level applied to the pickaxe during the ability |
 
 Triple Drops via Super Breaker can be disabled:
 
