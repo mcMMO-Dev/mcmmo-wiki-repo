@@ -2,7 +2,7 @@
 title: Install or Update mcMMO
 description: Instructions on how to install or update mcMMO
 published: true
-date: 2026-06-07T00:00:00.000Z
+date: 2026-07-09T00:00:00.000Z
 tags: install, update
 editor: markdown
 dateCreated: 2022-07-17T22:27:04.825Z
@@ -12,14 +12,14 @@ dateCreated: 2022-07-17T22:27:04.825Z
 
 ## Pre-Requisites
 
--   Recommended to use the latest version of Java Minecraft
+-   Use a version of Java Minecraft supported by your mcMMO version (current mcMMO releases support Minecraft 1.20.5 and newer)
 -   Use a compatible version of Spigot, Paper or Folia
 
 > mcMMO officially supports Spigot, Paper, and Folia. Any support outside of these platforms is unsupported at best.
 
 
-Modern versions of mcMMO expect you to be running the latest available Java Minecraft release, however older versions of mcMMO are still available and should work perfectly fine for those playing on legacy versions.  
-mcMMO is a plugin for the Spigot API, which makes running Spigot or Paper a requirement, other forks of Spigot/Paper may work but for those wanting a painless installation and having everything just work we officially recommend sticking to Spigot or Paper.  
+Modern versions of mcMMO support a range of Minecraft versions — currently Minecraft 1.20.5 and newer — so you are not required to run the very latest release. For versions of the game older than that, legacy versions of mcMMO are still available and should work perfectly fine.  
+mcMMO is a plugin for the Spigot API, which makes running Spigot or Paper a requirement, other forks of Spigot/Paper may work but for those wanting a painless installation and having everything just work we officially recommend sticking to Spigot or Paper. mcMMO also supports Folia, however Folia is aimed at advanced users and we only recommend it if you already know you need it.  
 Historically very old versions of mcMMO ran directly against CraftBukkit (the spiritual predecessor to Spigot) but this is no longer the case and mcMMO will not work if you are just running CraftBukkit.
 
 ## Installing the newest mcMMO
@@ -36,7 +36,7 @@ Upgrading mcMMO is meant to be as simple as possible, you are never required to 
 3.  Place mcMMO.jar in /path/to/your/spigot-or-paper-or-folia-server/plugins/ directory
 4.  Replace the existing mcMMO.jar
 
-Congratulations, you have upgraded mcMMO. Make sure you are running a compatible version of Java Minecraft and Spigot/Paper. The newest versions of mcMMO target the latest versions of Java Minecraft and therefor may not work with older versions.
+Congratulations, you have upgraded mcMMO. Make sure you are running a compatible version of Java Minecraft and Spigot/Paper. The newest versions of mcMMO support a range of Minecraft versions (currently 1.20.5 and newer) — if you are playing on an older version of the game, simply use an older legacy version of mcMMO.
 
 # Config Updates
 
