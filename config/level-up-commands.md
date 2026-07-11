@@ -52,7 +52,7 @@ Commands run once per milestone reached, even when several levels are gained at 
 
 Malformed entries are skipped with a console warning naming the entry, so one broken entry never stops the rest of the file from loading.
 
-For colored or hoverable messages, run a `tellraw` command instead of `say` — the shipped `fancy_message` example in the default file shows the format. Color codes like `&6` are not translated inside commands.
+Color codes like `&6` are not translated inside commands; for styled messages use a JSON component command instead (see below).
 
 ## Example
 
@@ -71,6 +71,34 @@ level_up_commands:
         commands:
             - "say {@player} has reached power level {@power_level}!"
 ```
+
+## JSON component messages
+
+For colored, formatted, or hoverable messages, use vanilla `tellraw`, which takes a JSON chat component. `tellraw` also sends a system message, so it avoids the `[Not Secure]` console tag that `say` and `me` produce on modern Minecraft.
+
+Minecraft 1.21.5 renamed the hover event keys and made JSON parsing strict, so the JSON differs by server version.
+
+On Minecraft 1.21.5 and newer, use `hover_event` with `value`:
+
+```yaml
+fancy_message:
+    skills: all
+    levels: [ 250 ]
+    commands:
+        - 'tellraw {@player} {"text":"","extra":[{"text":"Milestone! ","color":"gold","bold":true},{"text":"[{@skill} {@level}]","color":"aqua","underlined":true,"hover_event":{"action":"show_text","value":"Keep it up, {@player}! Power level: {@power_level}"}},{"text":" (hover for details)","color":"gray","italic":true}]}'
+```
+
+On older versions, use `hoverEvent` with `contents`:
+
+```yaml
+fancy_message:
+    skills: all
+    levels: [ 250 ]
+    commands:
+        - 'tellraw {@player} {"text":"","extra":[{"text":"Milestone! ","color":"gold","bold":true},{"text":"[{@skill} {@level}]","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":"Keep it up, {@player}! Power level: {@power_level}"}},{"text":" (hover for details)","color":"gray","italic":true}]}'
+```
+
+Both produce a gold "Milestone!" banner with an aqua, underlined skill tag that shows extra detail when hovered.
 
 ## For developers
 
