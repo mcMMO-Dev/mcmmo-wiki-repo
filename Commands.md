@@ -104,7 +104,7 @@ Commands intended for server administrators to manage mcMMO settings and users.
 | `/mmoshowdb`         | None              | Shows the current database type being used by mcMMO.           | `mcmmo.commands.mmoshowdb`    |
 | `/mmoxpbar`          | `/xpbarsettings`  | Change XP bar settings.                                        | `mcmmo.commands.mmoxpbar`     |
 | `/skillreset`        | None              | Resets the level of one or all of your skills.                 | `mcmmo.commands.skillreset`   |
-| `/xprate`            | `/mcxprate`       | Show or modify the XP rate, globally or for a single skill, or start an XP event. | `mcmmo.commands.xprate`       |
+| `/xprate`            | `/mcxprate`       | Show or modify the XP rate, globally or for a single skill, or start an XP event. See [XP Rate Events](/xprate). | `mcmmo.commands.xprate`       |
 
 `/addxp`, `/addlevels`, and `/mmoedit` accept `-s` as the last argument to run silently, suppressing the messages they would otherwise send.
 
