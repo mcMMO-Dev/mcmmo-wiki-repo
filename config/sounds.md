@@ -2,7 +2,7 @@
 title: sounds.yml
 description: mcMMO sound event configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -36,7 +36,7 @@ Each sound event has three common fields:
 | `Pitch` | Playback pitch (1.0 = normal). Lower = deeper, higher = sharper. |
 | `CustomSoundId` | Optional Bukkit sound ID string (e.g. `minecraft:entity.player.levelup`). Leave blank (`''`) to use the default mcMMO sound. |
 
-> `FIZZ` and `POP` do not have a `Pitch` field — their pitch is randomised on each play.
+> `FIZZ` and `POP` do not have a `Pitch` field; their pitch is randomised on each play.
 {.is-info}
 
 ---
@@ -61,7 +61,7 @@ Each sound event has three common fields:
 | `ABILITY_ACTIVATED_BERSERK` | `true` | Berserk specifically. |
 | `TIRED` | `true` | Super ability expired (tool unreadied). |
 | `BLEED` | `true` | Bleed proc (Swords). |
-| `CRIPPLE` | `true` | Cripple / serrated strikes effect. |
+| `CRIPPLE` | `true` | Maces Cripple effect. The default sound is the mace smash ground sound, which exists on Minecraft 1.21 and newer. |
 
 ---
 
@@ -78,3 +78,5 @@ LEVEL_UP:
 ```
 
 The ID format is `namespace:path` matching your resource pack's `sounds.json`.
+
+Sound IDs that cannot be resolved (for example a typo in `CustomSoundId`) log a single warning and are skipped.

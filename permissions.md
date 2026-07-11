@@ -2,7 +2,7 @@
 title: Permissions
 description: mcMMO permissions info
 published: true
-date: 2024-11-24T01:48:31.847Z
+date: 2026-07-11T00:00:00.000Z
 tags: config, perks, permissions
 editor: markdown
 dateCreated: 2022-07-17T22:30:51.370Z
@@ -68,6 +68,10 @@ For example:
 - `mcmmo.commands.mmoedit`
 - `mcmmo.commands.mcremove`
 
+Some nodes worth knowing about:
+- `mcmmo.commands.xprate.show`, View the current XP rates with `/xprate` (granted by default)
+- `mcmmo.commands.inspect.far`, Inspect far away players and offline players with `/inspect`
+
 ## Perk Permissions
 
 Perk permissions grant players special bonuses so long as the permission node is active. They follow the pattern:
@@ -77,6 +81,15 @@ mcmmo.perks.<perk>
 ```
 
 Use `mcmmo.perks.*` to grant all perks. Perks can include things like double XP rates or reduced cooldowns, configurable in `advanced.yml`.
+
+The XP boost perks multiply a player's XP gains and come in four strengths:
+
+- `mcmmo.perks.xp.10percentboost.all`
+- `mcmmo.perks.xp.25percentboost.all`
+- `mcmmo.perks.xp.50percentboost.all`
+- `mcmmo.perks.xp.150percentboost.all`
+
+Replace `.all` with a skill name to boost a single skill instead, e.g. `mcmmo.perks.xp.25percentboost.mining`.
 
 ## Limit Break Permissions
 

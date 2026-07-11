@@ -2,7 +2,7 @@
 title: experience.yml
 description: mcMMO XP formula, multipliers, and per-action XP value configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -37,7 +37,8 @@ These flags prevent common XP farming exploits. All default to `true` unless not
 | `ExploitFix.UnsafeEnchantments` | `false` | Block unsafe enchantment levels being applied via mcMMO. |
 | `ExploitFix.Fishing` | `true` | Prevents many fishing location exploits. |
 | `ExploitFix.EndermanEndermiteFarms` | `true` | Reduces XP from enderman/endermite exploits. |
-| `ExploitFix.Acrobatics` | `true` | Prevent intentional fall XP farming. |
+| `ExploitFix.Acrobatics` | `true` | Prevent intentional fall XP farming with Roll (teleport cooldowns, same-spot lockouts, and related checks). |
+| `ExploitFix.AcrobaticsDodgeXpFarming` | `true` | Stop a single mob from granting Dodge XP indefinitely. A mob grants Dodge XP for up to 6 dodges and recovers after 60 seconds without being dodged. |
 | `ExploitFix.LavaStoneAndCobbleFarming` | `true` | Block lava-stone/cobble generator XP farms. |
 | `ExploitFix.TreeFellerReducedXP` | `true` | Reduce XP from Tree Feller to prevent it being used for fast woodcutting XP. |
 | `ExploitFix.PistonCheating` | `true` | Block piston-pushed block exploits. |
@@ -65,7 +66,7 @@ The XP bars appear as boss bars above the screen.
 | `Experience_Bars.Enable` | `true` | Master toggle for all XP bars. |
 | `Experience_Bars.Update.Party` | `true` | Update bar when XP comes from a party member's action. |
 | `Experience_Bars.Update.Passive` | `true` | Update bar for passive XP gains (smelting, brewing). |
-| `Experience_Bars.ThisMayCauseLag.AlwaysUpdateTitlesWhenXPIsGained.Enable` | `false` | Refresh the title text on every XP gain. Expensive — leave off. |
+| `Experience_Bars.ThisMayCauseLag.AlwaysUpdateTitlesWhenXPIsGained.Enable` | `false` | Refresh the title text on every XP gain. Expensive; leave off. |
 
 Each skill can be individually toggled and styled:
 

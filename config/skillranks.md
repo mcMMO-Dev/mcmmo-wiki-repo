@@ -2,7 +2,7 @@
 title: skillranks.yml
 description: Sub-skill rank unlock level configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -19,7 +19,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 ## Overview
 
-Every sub-skill with multiple ranks has a block in this file with separate entries for **Standard** mode and **RetroMode**. RetroMode is cosmetically 10× higher — the underlying gameplay is identical.
+Every sub-skill with multiple ranks has a block in this file with separate entries for **Standard** mode and **RetroMode**. RetroMode is cosmetically 10× higher; the underlying gameplay is identical.
 
 ```yaml
 Fishing:
@@ -36,7 +36,7 @@ Fishing:
             ...
 ```
 
-You **cannot** add or remove ranks via this file — the number of ranks per sub-skill is hardcoded. You can only change the level at which each rank unlocks.
+You **cannot** add or remove ranks via this file; the number of ranks per sub-skill is hardcoded. You can only change the level at which each rank unlocks.
 
 Setting all ranks of a sub-skill to `0` gives all players the most powerful version immediately.
 
@@ -72,7 +72,7 @@ Setting all ranks of a sub-skill to `0` gives all players the most powerful vers
 | Taming | BeastLore (1), Gore (1), CallOfTheWild (1), Pummel (1), FastFoodService (1), EnvironmentallyAware (1), ThickFur (1), HolyHound (1), ShockProof (1), SharpenedClaws (1) |
 | Tridents | TridentsLimitBreak (10), Impale (10) |
 | Unarmed | UnarmedLimitBreak (10), Berserk (1), ArrowDeflect (1), Disarm (1), IronGrip (1), SteelArmStyle (20) |
-| Woodcutting | TreeFeller (5), HarvestLumber (1), CleanCuts (1), KnockOnWood (2), LeafBlower (3) |
+| Woodcutting | TreeFeller (5), HarvestLumber (1), CleanCuts (1), KnockOnWood (2), LeafBlower (1) |
 
 > **Smelting note:** `UnderstandingTheArt` is the internal YAML key for the Second Smelt sub-skill. `FuelEfficiency` has 3 ranks, not 8.
 {.is-info}

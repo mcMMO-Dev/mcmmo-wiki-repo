@@ -2,7 +2,7 @@
 title: Acrobatics
 description: "Information about the Acrobatics skill."
 published: true
-date: 2022-08-08T16:22:50.747Z
+date: 2026-07-11T00:00:00.000Z
 tags: skills, acrobatics
 editor: markdown
 dateCreated: 2022-07-16T20:35:16.605Z
@@ -69,6 +69,15 @@ ExploitFix:
 ```
 
 Setting `ExploitFix.Acrobatics` to `false` disables all of the above protections. Players can then repeatedly trigger fall damage and Roll from the same location indefinitely, accumulating XP without engaging in normal gameplay. This is intended for servers that deliberately allow accelerated levelling or do not mind AFK farming.
+
+Dodge XP has its own protection: a single mob grants Dodge XP for up to **6 dodges** and recovers after **60 seconds** without being dodged, so a trapped mob cannot be used as an endless XP source.
+
+```yml
+ExploitFix:
+    AcrobaticsDodgeXpFarming: true
+```
+
+Setting `ExploitFix.AcrobaticsDodgeXpFarming` to `false` disables the Dodge XP limit.
 
 ## Sub-Skills
 

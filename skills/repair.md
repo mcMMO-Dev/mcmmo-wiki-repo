@@ -2,7 +2,7 @@
 title: Repair
 description: "Information about the Repair skill."
 published: true
-date: 2024-11-24T01:41:51.767Z
+date: 2026-07-11T00:00:00.000Z
 tags: repair, skills
 editor: markdown
 dateCreated: 2022-07-17T14:28:35.051Z
@@ -157,7 +157,9 @@ Each item below can be repaired at the mcMMO Anvil with the listed material. `XP
 3. Right-click the iron block. A confirmation prompt appears.
 4. Right-click again within 3 seconds to confirm -- one repair material is consumed and durability is restored.
 
-> The confirmation step can be disabled via `general.yml` (`Repair.Confirm_Required`).
+The confirming click must be made while holding the same item that triggered the prompt; switching items starts a new prompt, and the prompted item cannot be otherwise used while the confirmation is pending.
+
+> The confirmation step can be disabled via `config.yml` (`Skills.Repair.Confirm_Required`).
 {.is-info}
 
 Items can only be repaired if your Repair skill is at or above the item's `MinimumLevel` configured in `repair.vanilla.yml`. A warning message is shown if your level is too low.

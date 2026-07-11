@@ -2,7 +2,7 @@
 title: advanced.yml
 description: Advanced per-skill tuning configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -10,12 +10,12 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 # advanced.yml
 
-`advanced.yml` exposes the numeric tuning knobs for almost every mcMMO sub-skill — chance caps, damage modifiers, bonus levels, and more. Default values can be viewed [on GitHub](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/advanced.yml).
+`advanced.yml` exposes the numeric tuning knobs for almost every mcMMO sub-skill: chance caps, damage modifiers, bonus levels, and more. Default values can be viewed [on GitHub](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/advanced.yml).
 
 > This file is intended for advanced users. Most servers will not need to change anything here. Changes require a full server restart.
 {.is-warning}
 
-> Sub-skill rank unlock levels are **not** in this file — those are in [`skillranks.yml`](/config/skillranks).
+> Sub-skill rank unlock levels are **not** in this file; those are in [`skillranks.yml`](/config/skillranks).
 {.is-info}
 
 ---
@@ -32,7 +32,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 ### Action Bar Notifications
 
-The `Feedback.ActionBarNotifications` block controls which mcMMO messages appear on the action bar (the line just above the hotbar) versus being sent to chat. Each entry has:
+The `Feedback.ActionBarNotifications` block controls which mcMMO messages appear on the action bar (the line just above the hotbar) versus being sent to chat. Most entries have:
 
 | Sub-key | Description |
 |---------|-------------|
@@ -46,9 +46,10 @@ Selected entries (many more exist in the file):
 | `AbilityOff` | `true` |
 | `AbilityCoolDown` | `true` |
 | `LevelUps` | `true` (also copies to chat) |
-| `SubSkillUnlocked` | `true` |
 | `ExperienceGain` | `true` |
 | `SubSkillFailed` | `false` |
+
+The `SubSkillUnlocked` entry works differently: it uses `SendToActionBar` instead of `Enabled`, and it defaults to `false`, keeping skill rank unlock messages in chat. Setting `SendToActionBar` to `true` moves them to the action bar, with `SendCopyOfMessageToChat` deciding whether the chat still gets a copy. A leftover `Enabled` key under `SubSkillUnlocked` is ignored.
 
 ---
 
@@ -192,12 +193,13 @@ Blast Mining procs when you detonate TNT while crouching. These values tune each
 
 | Key | Default | Description |
 |-----|---------|-------------|
+| `RemoteDetonationDistance` | `100` | Maximum distance in blocks from which TNT can be remotely detonated. |
 | `Bonus_Drops.Enabled` | `true` | Master toggle for all blast mining bonus drops. Set to `false` to disable ore bonuses, debris reduction, and drop multipliers from blast mining entirely. |
-| `BlastDamageDecrease.Rank_1–8` | — | % of TNT explosion damage negated (0 / 0 / 0 / 25 / 25 / 50 / 50 / 100). |
-| `OreBonus.Rank_1–8` | — | % extra ores received (35 / 40 / 45 / 50 / 55 / 60 / 65 / 70). |
-| `DebrisReduction.Rank_1–8` | — | % fewer non-ore drops (10 / 20 / 30 / 30 / 30 / 30 / 30 / 30). |
-| `DropMultiplier.Rank_1–8` | — | Times each ore drops (1 / 1 / 1 / 1 / 2 / 2 / 3 / 3). |
-| `BlastRadiusModifier.Rank_1–8` | — | Extra blast radius added (1 / 1 / 2 / 2 / 3 / 3 / 4 / 4). |
+| `BlastDamageDecrease.Rank_1–8` | per rank | % of TNT explosion damage negated (0 / 0 / 0 / 25 / 25 / 50 / 50 / 100). |
+| `OreBonus.Rank_1–8` | per rank | % extra ores received (35 / 40 / 45 / 50 / 55 / 60 / 65 / 70). |
+| `DebrisReduction.Rank_1–8` | per rank | % fewer non-ore drops (10 / 20 / 30 / 30 / 30 / 30 / 30 / 30). |
+| `DropMultiplier.Rank_1–8` | per rank | Times each ore drops (1 / 1 / 1 / 1 / 2 / 2 / 3 / 3). |
+| `BlastRadiusModifier.Rank_1–8` | per rank | Extra blast radius added (1 / 1 / 2 / 2 / 3 / 3 / 4 / 4). |
 
 ---
 
@@ -236,7 +238,7 @@ Blast Mining procs when you detonate TNT while crouching. These values tune each
 | `SecondSmelt.MaxBonusLevel.Standard` | `100` | Level where Second Smelt reaches `ChanceMax`. |
 | `VanillaXPMultiplier.Rank_1–8` | `1–5×` | Per-rank multiplier on vanilla furnace XP orbs. |
 
-> `FluxMining` (mine ores to get smelted output directly) is configured here but its settings have no practical effect — it was removed from gameplay.
+> `FluxMining` (mine ores to get smelted output directly) is configured here but its settings have no practical effect; it was removed from gameplay.
 {.is-warning}
 
 ---

@@ -2,7 +2,7 @@
 title: Herbalism
 description: "Information about the Herbalism skill."
 published: true
-date: 2024-11-24T01:41:48.891Z
+date: 2026-07-11T00:00:00.000Z
 tags: skills, herbalism
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -25,6 +25,8 @@ The Herbalism skill rewards players for growing and harvesting plants. Levelling
 ## XP Gain
 
 XP is earned by breaking herb and plant blocks (wheat, carrots, potatoes, beetroot, nether wart, cactus, cocoa, sugar cane, mushrooms, flowers, etc.). Only mature crops award the full XP value; immature crops award reduced or no XP depending on configuration. Per-block XP values are configured in `experience.yml` under `Experience_Values.Herbalism`. The default values are listed below.
+
+Multi-block plants (bamboo, sugar cane, kelp, cactus, chorus trees, and hanging vines) grant XP for the rest of the plant as those blocks break, so breaking the bottom block pays XP for the whole stalk.
 
 ### Crops
 
@@ -183,6 +185,8 @@ Supported crops: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Cocoa Beans, T
 
 The proc chance scales linearly from 0% at level 0 to **100%** at level 1000. Green Thumb always activates (no chance roll) while Green Terra is active.
 
+Green Thumb can also convert blocks: right-clicking dirt, dirt path, cobblestone, cobblestone wall, or stone brick blocks while holding Wheat Seeds consumes one seed for a Green Thumb chance to convert the block into its Green Terra equivalent (a grass block or the mossy variant). The seed is consumed even when the conversion fails.
+
 | Rank | Unlock level |
 |------|-------------|
 | 1 | 250 |
@@ -203,7 +207,7 @@ The proc chance scales linearly from 0% at level 0 to **100%** at level 1000. Gr
 
 **Ranks:** 1 -- Unlocks at level 50
 
-Green Terra is an active ability that must be armed by right-clicking with a hoe while not looking at a block. When active, interacting with dirt blocks converts them into farmland, and Green Thumb procs automatically without a chance roll for the duration.
+Green Terra is an active ability that must be armed by right-clicking with a hoe while not looking at a block. When active, interacting with dirt or dirt path blocks converts them into grass blocks, cobblestone into mossy cobblestone, cobblestone walls into mossy cobblestone walls, and stone bricks into mossy stone bricks. Green Thumb also procs automatically without a chance roll for the duration.
 
 ---
 

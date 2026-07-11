@@ -2,7 +2,7 @@
 title: Commands
 description: mcMMO commands
 published: true
-date: 2024-11-24T02:53:25.157Z
+date: 2026-07-11T00:00:00.000Z
 tags: commands
 editor: markdown
 dateCreated: 2024-11-24T01:51:14.196Z
@@ -104,7 +104,9 @@ Commands intended for server administrators to manage mcMMO settings and users.
 | `/mmoshowdb`         | None              | Shows the current database type being used by mcMMO.           | `mcmmo.commands.mmoshowdb`    |
 | `/mmoxpbar`          | `/xpbarsettings`  | Change XP bar settings.                                        | `mcmmo.commands.mmoxpbar`     |
 | `/skillreset`        | None              | Resets the level of one or all of your skills.                 | `mcmmo.commands.skillreset`   |
-| `/xprate`            | `/mcxprate`       | Modify the XP rate or start an event.                          | `mcmmo.commands.xprate`       |
+| `/xprate`            | `/mcxprate`       | Show or modify the XP rate, globally or for a single skill, or start an XP event. | `mcmmo.commands.xprate`       |
+
+`/addxp`, `/addlevels`, and `/mmoedit` accept `-s` as the last argument to run silently, suppressing the messages they would otherwise send.
 
 ---
 
@@ -115,9 +117,9 @@ Additional commands for various functionalities within mcMMO.
 | Command         | Aliases   | Description                                               | Permission                    |
 |-----------------|-----------|-----------------------------------------------------------|-------------------------------|
 | `/mcability`    | None      | Toggle whether abilities get readied on right-click.      | `mcmmo.commands.mcability`    |
+| `/mclevelupsound` | `/levelupsound` | Toggle the mcMMO level-up sound on/off.           | `mcmmo.commands.mclevelupsound` |
 | `/mcnotify`     | `/notify` | Toggle mcMMO abilities chat display notifications on/off. | `mcmmo.commands.mcnotify`     |
 | `/mcscoreboard` | `/mcsb`   | Manage your mcMMO Scoreboard.                             | `mcmmo.commands.mcscoreboard` |
-| `/mmocompat`    | None      | Provides information about server compatibility and mode. | None                          |
 
 ## Removed Commands
 These commands existed for a brief period of time in older versions of mcMMO.
@@ -126,5 +128,6 @@ These commands existed for a brief period of time in older versions of mcMMO.
 |--------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|-
 | `/hardcore`  | `/mchardcore`                                                                                                | Modify the mcMMO hardcore percentage or toggle hardcore mode (removed). | `mcmmo.commands.hardcore` |
 | `/mcfools`   | `/macho`, `/jumping`, `/throwing`, `/wrecking`, `/walking`, `/swimming`, `/falling`, `/climbing`, `/flying`, `/diving`, `/piggy` | April Fools command (removed). | `mcmmo.commands.mcfools` |
+| `/mmocompat` | None                                                                                                         | Provided information about server compatibility and mode (removed). | None |
 | `/vampirism` | `/mcvampirism`                                                                                               | Modify the mcMMO vampirism percentage or toggle vampirism mode (removed). | `mcmmo.commands.vampirism` |
 

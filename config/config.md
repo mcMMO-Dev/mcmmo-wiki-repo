@@ -2,7 +2,7 @@
 title: config.yml
 description: Main mcMMO configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -21,7 +21,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `General.RetroMode.Enabled` | `true` | Scales mcMMO to 0–1000 skill levels (10× multiplier on all level requirements). Pure cosmetic — the underlying math is identical to Standard mode. |
+| `General.RetroMode.Enabled` | `true` | Scales mcMMO to 0–1000 skill levels (10× multiplier on all level requirements). Pure cosmetic; the underlying math is identical to Standard mode. |
 | `General.Locale` | `en_US` | Locale file to use for all mcMMO messages. See [Locale](/locale). |
 | `General.MOTD_Enabled` | `true` | Show an mcMMO message of the day when players join. |
 | `General.AdminNotifications` | `true` | Send admin-level notices (e.g. config warnings) to operators. |
@@ -62,6 +62,20 @@ mcMMO can display stats in the Minecraft sidebar scoreboard.
 | `Scoreboard.Tips_Amount` | `5` | How many times to show scoreboard usage tips per session. `0` = never. |
 
 Each command type (`Rank`, `Top`, `Stats`, `Inspect`, `Cooldown`, `Skill`) has its own `Print` (chat output), `Board` (sidebar), and `Display_Time` (seconds before clearing, `-1` = permanent) settings.
+
+---
+
+## Leaderboards
+
+These settings control how often mcMMO refreshes cached leaderboard data and how much of it the PlaceholderAPI leaderboard placeholders can serve. See the [placeholders page](/placeholders) for the placeholder list.
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `General.Leaderboards.Refresh_Interval_Seconds.FlatFile` | `600` | How often FlatFile leaderboards are rebuilt. Affects `/mctop`, `/mcrank`, and the leaderboard placeholders. Rebuilding scans the whole user file, which is expensive on large servers. |
+| `General.Leaderboards.Refresh_Interval_Seconds.SQL` | `60` | How often the PlaceholderAPI leaderboard cache refreshes on SQL databases. `/mctop` and `/mcrank` on SQL are unaffected and always query live data. |
+| `General.PlaceholderAPI.Leaderboards.Max_Tracked_Rank` | `100` | Highest leaderboard position the placeholders serve; requests above it return an empty string. Clamped between 10 and 1000, since higher values use more memory and read more database rows on every refresh. |
+
+Both intervals have a 60 second minimum. Leaderboard placeholder refreshes pause while no leaderboard placeholder is in use and resume on the next request.
 
 ---
 
@@ -119,8 +133,8 @@ By default mcMMO uses a flat-file database. To use MySQL instead:
 ## Hardcore Mode & Vampirism
 
 Configured here but documented on their own pages:
-- [Hardcore Mode](/config/hardcore-mode) — death penalty (lose skill levels on death).
-- [Vampirism](/config/vampirism) — PvP skill stealing.
+- [Hardcore Mode](/config/hardcore-mode) - death penalty (lose skill levels on death).
+- [Vampirism](/config/vampirism) - PvP skill stealing.
 
 ---
 
@@ -257,7 +271,7 @@ Notable skill-specific settings:
 | `Anvil_Material` | `GOLD_BLOCK` | Block that acts as the mcMMO salvage anvil. |
 | `Confirm_Required` | `true` | Require a second tap to confirm salvaging enchanted items. |
 
-### Taming — Call of the Wild
+### Taming: Call of the Wild
 Each pet type (Wolf, Ocelot, Horse) can be configured with the item needed to summon it, amount required, number summoned, duration, and per-player limit.
 
 ### Unarmed

@@ -2,7 +2,7 @@
 title: Salvage
 description: "Information about the Salvage skill."
 published: true
-date: 2024-11-24T01:59:07.533Z
+date: 2026-07-11T00:00:00.000Z
 tags: salvage, skills
 editor: markdown
 dateCreated: 2024-11-24T01:59:07.533Z
@@ -30,7 +30,10 @@ The Salvage skill lets you break down tools and armor at a Salvage Anvil (a **go
 
 ## Usage
 
-Place a gold block to create a Salvage Anvil. Hold the item to salvage in your main hand and right-click the anvil. You will be prompted to confirm; right-click again within 3 seconds to proceed.
+Place a gold block to create a Salvage Anvil. Hold the item to salvage in your main hand and right-click the anvil. You will be prompted to confirm; right-click again within 3 seconds to proceed. The confirming click must be made while holding the same item that triggered the prompt; switching items starts a new prompt, and the prompted item cannot be otherwise used while the confirmation is pending.
+
+> The confirmation step can be disabled via `config.yml` (`Skills.Salvage.Confirm_Required`).
+{.is-info}
 
 > Items that are unbreakable or have custom model data (when disallowed by config) cannot be salvaged.
 {.is-warning}

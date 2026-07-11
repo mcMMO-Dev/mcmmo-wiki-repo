@@ -2,7 +2,7 @@
 title: Mining
 description: Information about the Mining skill.
 published: true
-date: 2026-05-11T00:00:00.000Z
+date: 2026-07-11T00:00:00.000Z
 tags: mining, skills
 editor: markdown
 dateCreated: 2022-07-17T14:27:25.815Z
@@ -208,7 +208,7 @@ Skills:
 > Unlocks at level **100**.
 {.is-info}
 
-Right-click TNT with a Flint and Steel to remotely detonate it. Each rank improves ore yield, reduces debris drops, reduces self-damage from the explosion, multiplies dropped items, and expands the blast radius.
+Crouch and right-click while looking at TNT, holding a pickaxe or a Flint and Steel, to remotely detonate it from up to **100 blocks** away (configurable with `Skills.Mining.BlastMining.RemoteDetonationDistance` in [`advanced.yml`](/config/advanced)). Each rank improves ore yield, reduces debris drops, reduces self-damage from the explosion, multiplies dropped items, and expands the blast radius.
 
 | Rank | Unlock | Blast Dmg Reduction | Ore Bonus | Debris Reduction | Drop Multiplier | Radius Bonus |
 |-----:|-------:|--------------------:|----------:|-----------------:|----------------:|-------------:|
@@ -225,6 +225,24 @@ Right-click TNT with a Flint and Steel to remotely detonate it. Each rank improv
 - **Debris Reduction:** chance that non-ore blocks (stone, gravel, etc.) drop nothing.
 - **Drop Multiplier:** all items that do drop are multiplied by this factor.
 - At Rank 8, blast self-damage is completely negated.
+
+## Bigger Bombs
+
+**Ranks:** 1
+
+> Unlocks at level **100**.
+{.is-info}
+
+Increases the blast radius of your Blast Mining explosions. The bonus radius grows with your Blast Mining rank; see the Radius Bonus column in the Blast Mining table.
+
+## Demolitions Expertise
+
+**Ranks:** 1
+
+> Unlocks at level **100**.
+{.is-info}
+
+Reduces the damage you take from your own Blast Mining explosions. The reduction grows with your Blast Mining rank; see the Blast Dmg Reduction column in the Blast Mining table.
 
 ## Commands
 

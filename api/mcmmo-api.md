@@ -2,7 +2,7 @@
 title: mcMMO API
 description: mcMMO API
 published: true
-date: 2024-11-24T02:18:42.087Z
+date: 2026-07-11T00:00:00.000Z
 tags: api
 editor: markdown
 dateCreated: 2024-11-24T02:14:07.767Z
@@ -112,3 +112,32 @@ public class MyListener implements Listener {
     }
 }
 ```
+
+## Running commands or code on level up
+
+mcMMO can dispatch commands or call back into your plugin when players level up. Registrations return a `UUID` you can use to unregister later; they survive mcMMO config reloads and are removed automatically when your plugin is disabled.
+
+```java
+import com.gmail.nossr50.api.LevelUpCommandAPI;
+import com.gmail.nossr50.commands.levelup.LevelUpCommand;
+import com.gmail.nossr50.datatypes.skills.PrimarySkillType;
+import java.util.Set;
+import java.util.UUID;
+
+// Dispatch a command when a player reaches Mining 100
+UUID commandId = LevelUpCommandAPI.registerCommand(myPlugin, LevelUpCommand.builder()
+        .withSkill(PrimarySkillType.MINING)
+        .withLevels(Set.of(100))
+        .command("say {@player} mastered {@skill}!")
+        .build());
+
+// Or run your own code on every level up
+UUID handlerId = LevelUpCommandAPI.registerHandler(myPlugin,
+        (player, skill, levelsGained, powerLevel) -> {
+            // your logic here
+        });
+
+LevelUpCommandAPI.unregister(commandId);
+```
+
+Server owners can also configure level up commands without a plugin; see [level_up_commands.yml](/config/level-up-commands).
