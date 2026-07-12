@@ -2,7 +2,7 @@
 title: Commands
 description: mcMMO commands
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: commands
 editor: markdown
 dateCreated: 2024-11-24T01:51:14.196Z
@@ -89,20 +89,20 @@ Commands intended for server administrators to manage mcMMO settings and users.
 |----------------------|-------------------|----------------------------------------------------------------|-------------------------------|
 | `/addlevels`         | None              | Adds mcMMO levels to a user.                                   | `mcmmo.commands.addlevels`    |
 | `/addxp`             | None              | Adds mcMMO XP to a user.                                       | `mcmmo.commands.addxp`        |
-| `/inspect`           | None              | Inspect another player's mcMMO stats.                          | `mcmmo.commands.inspect`      |
+| `/inspect`           | `/mcinspect`, `/mmoinspect` | Inspect another player's mcMMO stats.                | `mcmmo.commands.inspect`      |
 | `/mcchatspy`         | None              | Toggle mcMMO Party Chat spying on/off.                         | `mcmmo.commands.mcchatspy`    |
 | `/mcconvert`         | None              | Converts between different database and formula types.         | `mcmmo.commands.mcconvert`    |
-| `/mccooldown`        | None              | Shows remaining cooldowns for mcMMO abilities.                 | `mcmmo.commands.mccooldown`   |
+| `/mccooldown`        | `/mccooldowns`    | Shows remaining cooldowns for mcMMO abilities.                 | `mcmmo.commands.mccooldown`   |
 | `/mcgod`             | None              | Toggle mcMMO god-mode on/off.                                  | `mcmmo.commands.mcgod`        |
 | `/mcmmoreloadlocale` | `/mcreloadlocale` | Reloads mcMMO locale settings.                                 | `mcmmo.commands.reloadlocale` |
 | `/mcpurge`           | None              | Purge users with 0 power level and/or inactive for months.     | `mcmmo.commands.mcpurge`      |
 | `/mcrefresh`         | None              | Refresh all cooldowns for mcMMO abilities.                     | `mcmmo.commands.mcrefresh`    |
 | `/mcremove`          | None              | Remove a user from the mcMMO database.                         | `mcmmo.commands.mcremove`     |
-| `/mmodebug`          | None              | Displays debug information for mcMMO.                          | `mcmmo.commands.mmodebug`     |
+| `/mmodebug`          | `/mcmmodebugmode` | Displays debug information for mcMMO.                          | None                          |
 | `/mmoedit`           | None              | Edit the mcMMO skill values for a user.                        | `mcmmo.commands.mmoedit`      |
-| `/mmoinfo`           | None              | Displays version and server info for mcMMO.                    | `mcmmo.commands.mmoinfo`      |
+| `/mmoinfo`           | `/mcinfo`         | Read details about a skill or mechanic.                       | `mcmmo.commands.mmoinfo`      |
 | `/mmoshowdb`         | None              | Shows the current database type being used by mcMMO.           | `mcmmo.commands.mmoshowdb`    |
-| `/mmoxpbar`          | `/xpbarsettings`  | Change XP bar settings.                                        | `mcmmo.commands.mmoxpbar`     |
+| `/mmoxpbar`          | `/xpbarsettings`  | Change XP bar settings.                                        | None                          |
 | `/skillreset`        | None              | Resets the level of one or all of your skills.                 | `mcmmo.commands.skillreset`   |
 | `/xprate`            | `/mcxprate`       | Show or modify the XP rate, globally or for a single skill, or start an XP event. See [XP Rate Events](/xprate). | `mcmmo.commands.xprate`       |
 
