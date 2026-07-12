@@ -36,24 +36,24 @@ The Acrobatics skill rewards graceful movement. It grants a chance to negate fal
 | Successful Roll or Graceful Roll | `600 × damage that would have been taken (HP)` |
 | Successful Dodge | `800 × damage dodged (HP)` |
 
-> The Feather Falling enchantment doubles Acrobatics XP earned from falls regardless of enchantment level, but it also reduces base fall damage, so both effects combine.
+> mcMMO multiplies fall XP by `FeatherFall_Multiplier` (default 2.0) when you wear boots enchanted with Feather Falling, at any level. Because that multiplier applies to the damage actually taken and Feather Falling also lowers that damage, at most fall heights the two effects roughly cancel and the XP stays close to the no-enchant value. A true doubling only happens on falls large enough that the reduced damage still reaches the 20 HP clamp.
 {.is-info}
 
 ### XP from Falls
 
 Fall and Roll XP are calculated from the damage taken, capped at 20 HP. A fall that would deal 20 or more HP of damage therefore awards the same XP; only Dodge XP is uncapped.
 
-The table below shows approximate XP earned per fall at various fall heights, with and without Feather Falling IV:
+The table below shows approximate XP earned per fall at various fall heights, without armor enchantments:
 
-| Blocks fallen | Damage (HP) | XP (no FF) | XP (Feather Falling IV) |
-|--------------|------------|-----------|------------------------|
-| 4 | 1 | 600 | 1200 |
-| 8 | 5 | 3000 | 6000 |
-| 12 | 9 | 5400 | 10800 |
-| 16 | 13 | 7800 | 15600 |
-| 24 | 21 (capped at 20) | 12000 | 24000 |
+| Blocks fallen | Damage (HP) | XP |
+|--------------|------------|-----|
+| 4 | 1 | 600 |
+| 8 | 5 | 3000 |
+| 12 | 9 | 5400 |
+| 16 | 13 | 7800 |
+| 24 | 21 (capped at 20) | 12000 |
 
-> Values assume no armor damage reduction, no potions, and no enchantments other than Feather Falling where noted. Actual XP scales with actual damage taken.
+> Values assume no armor damage reduction, no potions, and no armor enchantments. Actual XP scales with actual damage taken.
 {.is-warning}
 
 ### Anti-Exploit
