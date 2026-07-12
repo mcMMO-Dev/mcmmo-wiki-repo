@@ -128,10 +128,10 @@ The `mcmmo.commands.party` permission node tree covers every party subcommand. S
 | `mcmmo.commands.party.itemshare` | Use `/party itemshare`. |
 | `mcmmo.commands.party.xpshare` | Use `/party xpshare`. |
 
-See [Permissions](permissions.md) for the complete list.
+See [Permissions](/permissions) for the complete list.
 
 ## See Also
 
-- [Commands](Commands.md): full command reference, including `/party` subcommands
-- [Permissions](permissions.md)
-- [Configuration](config.md)
+- [Commands](/Commands): full command reference, including `/party` subcommands
+- [Permissions](/permissions)
+- [Configuration](/config)
