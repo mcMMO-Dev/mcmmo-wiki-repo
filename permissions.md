@@ -2,7 +2,7 @@
 title: Permissions
 description: mcMMO permissions info
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, perks, permissions
 editor: markdown
 dateCreated: 2022-07-17T22:30:51.370Z
@@ -51,9 +51,9 @@ mcmmo.ability.<skill>.<ability>
 ```
 
 For example:
-- `mcmmo.ability.swords.serrated_strikes`
-- `mcmmo.ability.mining.super_breaker`
-- `mcmmo.ability.axes.skull_splitter`
+- `mcmmo.ability.swords.serratedstrikes`
+- `mcmmo.ability.mining.superbreaker`
+- `mcmmo.ability.axes.skullsplitter`
 
 ## Command Permissions
 
@@ -80,26 +80,30 @@ Perk permissions grant players special bonuses so long as the permission node is
 mcmmo.perks.<perk>
 ```
 
-Use `mcmmo.perks.*` to grant all perks. Perks can include things like double XP rates or reduced cooldowns, configurable in `advanced.yml`.
+Use `mcmmo.perks.*` to grant all perks. Perks can include things like boosted XP rates or reduced ability cooldowns. Most perk strengths are fixed by which permission node a player holds.
 
-The XP boost perks multiply a player's XP gains and come in four strengths:
+The XP boost perks multiply a player's XP gains and come in several families. The percentage boosts are:
 
 - `mcmmo.perks.xp.10percentboost.all`
 - `mcmmo.perks.xp.25percentboost.all`
 - `mcmmo.perks.xp.50percentboost.all`
 - `mcmmo.perks.xp.150percentboost.all`
 
+There are also flat-multiplier families, `mcmmo.perks.xp.double.all` (2x), `mcmmo.perks.xp.triple.all` (3x), and `mcmmo.perks.xp.quadruple.all` (4x), plus `mcmmo.perks.xp.customboost.all`, whose multiplier is set by `Experience_Formula.Custom_XP_Perk.Boost` in `experience.yml`.
+
 Replace `.all` with a skill name to boost a single skill instead, e.g. `mcmmo.perks.xp.25percentboost.mining`.
 
 ## Limit Break Permissions
 
-Each combat skill's Limit Break ability can be individually controlled:
+Each combat skill's Limit Break ability can be individually controlled. The node repeats the skill name with no separator:
 
 ```
-mcmmo.ability.<skill>.limit_break
+mcmmo.ability.<skill>.<skill>limitbreak
 ```
 
 For example:
-- `mcmmo.ability.swords.swords_limit_break`
-- `mcmmo.ability.axes.axes_limit_break`
-- `mcmmo.ability.archery.archery_limit_break`
+- `mcmmo.ability.swords.swordslimitbreak`
+- `mcmmo.ability.axes.axeslimitbreak`
+- `mcmmo.ability.archery.archerylimitbreak`
+- `mcmmo.ability.maces.maceslimitbreak`
+- `mcmmo.ability.tridents.tridentslimitbreak`
