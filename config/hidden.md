@@ -2,7 +2,7 @@
 title: hidden.yml
 description: Hidden (internal) mcMMO configuration reference.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -22,6 +22,3 @@ dateCreated: 2026-05-17T00:00:00.000Z
 | Key | Default | Description |
 |-----|---------|-------------|
 | `Options.EnchantmentBuffs` | `true` | When `true`, Super Breaker and Giga Drill Breaker are buffed by granting a temporary high-level efficiency enchantment on the tool. When `false`, a haste potion effect is used instead. Enchantment buffs are generally more compatible with custom tools. |
-
-> `Options.Chunklets` and `Options.ConversionRate` appear in this file but are **never read by the code** and have no effect. Both are dead configuration keys left over from older versions. Do not rely on them.
-{.is-danger}
