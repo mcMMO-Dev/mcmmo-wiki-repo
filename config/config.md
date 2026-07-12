@@ -2,7 +2,7 @@
 title: config.yml
 description: Main mcMMO configuration reference.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -61,7 +61,7 @@ mcMMO can display stats in the Minecraft sidebar scoreboard.
 | `Scoreboard.Show_Stats_After_Login` | `false` | Automatically show `/mcstats` scoreboard on login. |
 | `Scoreboard.Tips_Amount` | `5` | How many times to show scoreboard usage tips per session. `0` = never. |
 
-Each command type (`Rank`, `Top`, `Stats`, `Inspect`, `Cooldown`, `Skill`) has its own `Print` (chat output), `Board` (sidebar), and `Display_Time` (seconds before clearing, `-1` = permanent) settings.
+Each command type (`Rank`, `Top`, `Stats`, `Inspect`, `Cooldown`) has its own `Print` (chat output), `Board` (sidebar), and `Display_Time` (seconds before clearing, `-1` = permanent) settings. The `Skill` type (used by the `/<skillname>` commands such as `/mining`) has only `Board` and `Display_Time`; its stats always print to chat, so it has no `Print` option.
 
 ---
 
@@ -84,8 +84,27 @@ Both intervals have a 60 second minimum. Leaderboard placeholder refreshes pause
 | Key | Default | Description |
 |-----|---------|-------------|
 | `Mob_Healthbar.Enabled` | `true` | Show a health bar above mobs when hit. |
-| `Mob_Healthbar.Display_Type` | `HEARTS` | Default display style: `HEARTS`, `BAR`, or `DISABLED`. Players can override with `/mcmmo`.  |
+| `Mob_Healthbar.Display_Type` | `HEARTS` | Server-wide display style: `HEARTS`, `BAR`, or `DISABLED`. |
 | `Mob_Healthbar.Display_Time` | `3` | Seconds to display the health bar. |
+
+---
+
+## Particles
+
+Cosmetic firework and particle effects. Fireworks fire on super-ability activation/deactivation and on level-up milestones; the remaining toggles are particle effects shown when specific mechanics trigger.
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `Particles.Ability_Activation` | `false` | Launch a firework when a player activates a super ability. |
+| `Particles.Ability_Deactivation` | `false` | Launch a firework when a super ability ends. |
+| `Particles.Bleed` | `true` | Show particles when a Bleed/Rupture effect deals damage. |
+| `Particles.Dodge` | `true` | Show particles when a player dodges an attack. |
+| `Particles.Flux` | `true` | Show particles for the Flux Mining effect. |
+| `Particles.Greater_Impact` | `true` | Show particles when Greater Impact knocks back a target. |
+| `Particles.Call_of_the_Wild` | `true` | Show particles when Call of the Wild summons a pet. |
+| `Particles.Cripple` | `true` | Show particles when Cripple triggers. |
+| `Particles.LevelUp_Enabled` | `true` | Launch a firework when a player reaches a level-up milestone. |
+| `Particles.LevelUp_Tier` | `100` | Launch the level-up firework every N levels. |
 
 ---
 
