@@ -215,7 +215,7 @@ Green Terra is an active ability that must be armed by right-clicking with a hoe
 
 **Ranks:** 0 (passive, no rank unlock required)
 
-Hylian Luck gives a chance to find hidden treasures by breaking small plants (short grass, ferns, and dead bushes), saplings, flowers, and flower pots while holding a **sword**. Only a sword triggers it, and it does not fire on grass blocks. Flower pots yield the rarest finds (emerald, diamond, gold nugget, or copper nugget). The treasure pool is defined in `treasures.yml` under `Hylian_Luck`. The chance scales from 0% to **10%** at level 1000.
+Hylian Luck gives a chance to find hidden treasures by breaking small plants (short grass, ferns, and dead bushes), saplings, certain small flowers (poppies, dandelions, blue orchids, alliums, azure bluets, and the four tulips), and flower pots while holding a **sword**. Only a sword triggers it, and it does not fire on grass blocks. Flower pots yield the rarest finds (emerald, diamond, gold nugget, or copper nugget). The treasure pool is defined in `treasures.yml` under `Hylian_Luck`. The chance scales from 0% to **10%** at level 1000.
 
 When Hylian Luck procs, the block is broken and a treasure item is spawned instead.
 
