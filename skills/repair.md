@@ -113,7 +113,7 @@ Each item below can be repaired at the mcMMO Anvil with the listed material. `XP
 | Diamond Pickaxe / Axe | 1 |
 | Diamond Helmet / Chestplate / Leggings / Boots | 6 |
 
-**Netherite tier** -- repair material: Netherite Ingot.
+**Netherite tier** -- repair material: Netherite Scrap.
 
 | Item | XP mult. |
 |------|---------:|
