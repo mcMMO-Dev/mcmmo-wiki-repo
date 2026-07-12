@@ -19,7 +19,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 ## Overview
 
-Every sub-skill with multiple ranks has a block in this file with separate entries for **Standard** mode and **RetroMode**. RetroMode is cosmetically 10× higher; the underlying gameplay is identical.
+Every sub-skill with ranks has a block in this file with separate entries for **Standard** mode and **RetroMode**. RetroMode is cosmetically 10× higher; the underlying gameplay is identical.
 
 ```yaml
 Fishing:
