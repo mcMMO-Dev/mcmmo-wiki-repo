@@ -2,7 +2,7 @@
 title: Herbalism
 description: "Information about the Herbalism skill."
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, herbalism
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -50,7 +50,7 @@ Multi-block plants (bamboo, sugar cane, kelp, cactus, chorus trees, and hanging 
 |-------|---:|
 | Wither Rose | 500 |
 | Allium | 300 |
-| Azure Bluet / Blue Orchid / Cornflower / Lily of the Valley / Orange Tulip / Oxeye Daisy / Pink Tulip / Red Tulip / White Tulip | 150 |
+| Azure Bluet / Blue Orchid / Cornflower / Golden Dandelion / Lily of the Valley / Orange Tulip / Oxeye Daisy / Pink Tulip / Red Tulip / White Tulip | 150 |
 | Dandelion / Poppy | 100 |
 | Eyeblossom / Open Eyeblossom / Closed Eyeblossom | 66 |
 | Cactus Flower | 60 |
@@ -215,7 +215,7 @@ Green Terra is an active ability that must be armed by right-clicking with a hoe
 
 **Ranks:** 0 (passive, no rank unlock required)
 
-Hylian Luck gives a chance to find hidden treasures by breaking grass blocks, dead bushes, ferns, and similar vegetation with a sword or other eligible tool. The treasure pool is defined in `treasures.yml` under `Hylian_Luck`. The chance scales from 0% to **10%** at level 1000.
+Hylian Luck gives a chance to find hidden treasures by breaking small plants (short grass, ferns, and dead bushes), saplings, flowers, and flower pots while holding a **sword**. Only a sword triggers it, and it does not fire on grass blocks. Flower pots yield the rarest finds (emerald, diamond, gold nugget, or copper nugget). The treasure pool is defined in `treasures.yml` under `Hylian_Luck`. The chance scales from 0% to **10%** at level 1000.
 
 When Hylian Luck procs, the block is broken and a treasure item is spawned instead.
 
