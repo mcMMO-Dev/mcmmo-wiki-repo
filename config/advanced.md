@@ -318,8 +318,8 @@ Rupture applies a damage-over-time effect. Each rank has independent settings fo
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `Impale.Base_Damage` | `1.0` | Flat damage bonus applied at rank 1 (in half-hearts). |
-| `Impale.Rank_Damage_Multiplier` | `0.5` | Additional damage bonus per rank after rank 1. |
+| `Impale.Base_Damage` | `1.0` | Flat base component of the bonus damage (in half-hearts). |
+| `Impale.Rank_Damage_Multiplier` | `0.5` | Damage added per rank. Total bonus = `Base_Damage + rank × Rank_Damage_Multiplier`, so rank 1 already gives 1.5. |
 
 ---
 
