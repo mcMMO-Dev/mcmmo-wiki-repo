@@ -2,7 +2,7 @@
 title: Salvage
 description: "Information about the Salvage skill."
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: salvage, skills
 editor: markdown
 dateCreated: 2024-11-24T01:59:07.533Z
@@ -37,6 +37,9 @@ Place a gold block to create a Salvage Anvil. Hold the item to salvage in your m
 
 > Items that are unbreakable or have custom model data (when disallowed by config) cannot be salvaged.
 {.is-warning}
+
+> Most items can be salvaged at any Salvage level, but Diamond gear requires Salvage level 50 and Netherite gear requires Salvage level 100. These per-item minimums are set in `salvage.vanilla.yml` and are not scaled by Retro mode, so the same values apply in both Standard and Retro mode.
+{.is-info}
 
 ## Sub-Skills
 
@@ -101,7 +104,7 @@ The maximum enchantment level kept or downgraded to is capped at `MaxEnchantLeve
 | `ExtractFullEnchant.Rank_N` | (see table) | Full extract chance per rank |
 | `ExtractPartialEnchant.Rank_N` | (see table) | Partial extract chance per rank |
 
-> Players with the `mcmmo.perks.salvage.arcanebypass` permission always extract enchantments at full level without any chance of loss.
+> Players with the `mcmmo.perks.bypass.salvageenchant` permission always extract enchantments at full level without any chance of loss.
 {.is-info}
 
 ---
