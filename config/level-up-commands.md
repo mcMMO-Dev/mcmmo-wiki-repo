@@ -2,7 +2,7 @@
 title: level_up_commands.yml
 description: Run commands when players reach chosen skill levels or power levels.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-07-11T00:00:00.000Z
@@ -42,7 +42,7 @@ Commands can include the following placeholders:
 | `{@skill}` | The localized name of the skill that leveled up (skill triggers only). |
 | `{@level}` | The milestone level that was reached (skill triggers only). |
 | `{@power_level}` | The milestone power level for `power_levels` triggers, otherwise the player's current power level. |
-| `{@mining_level}` | The player's current level in that skill. Works for every skill, e.g. `{@herbalism_level}`, `{@archery_level}`. |
+| `{@mining_level}` | The player's current level in that skill. Works for every non-child skill, e.g. `{@herbalism_level}`, `{@archery_level}`. The child skills Salvage and Smelting have no token, so `{@salvage_level}` and `{@smelting_level}` are left unchanged. |
 
 When PlaceholderAPI is installed, PlaceholderAPI placeholders in commands are also resolved against the player who leveled up, including [mcMMO's own placeholders](/placeholders), e.g. `%player_world%` or `%mcmmo_power_level%`.
 
