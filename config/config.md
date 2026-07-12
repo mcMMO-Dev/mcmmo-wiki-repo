@@ -91,20 +91,15 @@ Both intervals have a 60 second minimum. Leaderboard placeholder refreshes pause
 
 ## Particles
 
-Cosmetic firework and particle effects. Fireworks fire on super-ability activation/deactivation and on level-up milestones; the remaining toggles are particle effects shown when specific mechanics trigger.
+Cosmetic effects shown when specific mechanics trigger. Most are particle toggles; `Particles.Cripple` instead gates the Cripple proc sound and message.
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `Particles.Ability_Activation` | `false` | Launch a firework when a player activates a super ability. |
-| `Particles.Ability_Deactivation` | `false` | Launch a firework when a super ability ends. |
 | `Particles.Bleed` | `true` | Show particles when a Bleed/Rupture effect deals damage. |
 | `Particles.Dodge` | `true` | Show particles when a player dodges an attack. |
-| `Particles.Flux` | `true` | Show particles for the Flux Mining effect. |
 | `Particles.Greater_Impact` | `true` | Show particles when Greater Impact knocks back a target. |
 | `Particles.Call_of_the_Wild` | `true` | Show particles when Call of the Wild summons a pet. |
-| `Particles.Cripple` | `true` | Show particles when Cripple triggers. |
-| `Particles.LevelUp_Enabled` | `true` | Launch a firework when a player reaches a level-up milestone. |
-| `Particles.LevelUp_Tier` | `100` | Launch the level-up firework every N levels. |
+| `Particles.Cripple` | `true` | Play the Cripple proc sound and send the proc message when Cripple triggers. It does not render particles. |
 
 ---
 
