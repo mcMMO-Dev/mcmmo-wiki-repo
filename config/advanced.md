@@ -2,7 +2,7 @@
 title: advanced.yml
 description: Advanced per-skill tuning configuration reference.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -194,11 +194,9 @@ Blast Mining procs when you detonate TNT while crouching. These values tune each
 | Key | Default | Description |
 |-----|---------|-------------|
 | `RemoteDetonationDistance` | `100` | Maximum distance in blocks from which TNT can be remotely detonated. |
-| `Bonus_Drops.Enabled` | `true` | Master toggle for all blast mining bonus drops. Set to `false` to disable ore bonuses, debris reduction, and drop multipliers from blast mining entirely. |
+| `Bonus_Drops.Enabled` | `true` | Master toggle for Blast Mining's bonus ore drops. Set to `false` to stop Blast Mining from producing extra copies of mined ores. |
 | `BlastDamageDecrease.Rank_1–8` | per rank | % of TNT explosion damage negated (0 / 0 / 0 / 25 / 25 / 50 / 50 / 100). |
 | `OreBonus.Rank_1–8` | per rank | % extra ores received (35 / 40 / 45 / 50 / 55 / 60 / 65 / 70). |
-| `DebrisReduction.Rank_1–8` | per rank | % fewer non-ore drops (10 / 20 / 30 / 30 / 30 / 30 / 30 / 30). |
-| `DropMultiplier.Rank_1–8` | per rank | Times each ore drops (1 / 1 / 1 / 1 / 2 / 2 / 3 / 3). |
 | `BlastRadiusModifier.Rank_1–8` | per rank | Extra blast radius added (1 / 1 / 2 / 2 / 3 / 3 / 4 / 4). |
 
 ---
@@ -252,7 +250,6 @@ Blast Mining procs when you detonate TNT while crouching. These values tune each
 | `CounterAttack.ChanceMax` | `30.0` | Maximum Counter Attack chance (%). |
 | `CounterAttack.DamageModifier` | `2.0` | Incoming damage is divided by this modifier and reflected back. |
 | `SerratedStrikes.DamageModifier` | `4.0` | AoE splash damage modifier for Serrated Strikes. |
-| `SerratedStrikes.BleedTicks` | `5` | Bleed duration (in ticks) applied by Serrated Strikes. |
 
 ### Rupture
 
@@ -263,7 +260,6 @@ Rupture applies a damage-over-time effect. Each rank has independent settings fo
 | `Rupture.Chance_To_Apply_On_Hit.Rank_1–4` | Proc chance (15 / 33 / 40 / 66 %). |
 | `Rupture.Duration_In_Seconds` | How long Rupture lasts (default 5 s for both PvP and PvE). |
 | `Rupture.Tick_Interval_Damage` | Damage per tick (pure damage, ignores armour). Different per PvP and PvE. |
-| `Rupture.Explosion_Damage` | Damage if Rupture expires without being refreshed (reduced by armour). |
 
 ---
 
@@ -314,3 +310,22 @@ Rupture applies a damage-over-time effect. Each rank has independent settings fo
 |-----|---------|-------------|
 | `Maces.Crush.Base_Damage` | `0.5` | Flat damage bonus applied at rank 1. |
 | `Maces.Crush.Rank_Damage_Multiplier` | `1.0` | Additional damage per rank beyond rank 1. |
+| `Maces.Cripple.Chance_To_Apply_On_Hit.Rank_1–4` | `10 / 15 / 20 / 33` | Per-rank chance (%) to apply Cripple (slow) on hit. |
+
+---
+
+## Tridents
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `Impale.Base_Damage` | `1.0` | Flat damage bonus applied at rank 1 (in half-hearts). |
+| `Impale.Rank_Damage_Multiplier` | `0.5` | Additional damage bonus per rank after rank 1. |
+
+---
+
+## Spears
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `SpearMastery.Rank_Damage_Multiplier` | `0.4` | Bonus damage added per rank. |
+| `Momentum.Chance_To_Apply_On_Hit.Rank_1–10` | `5 / 10 / 15 / 20 / 25 / 30 / 35 / 40 / 45 / 50` | Per-rank chance (%) to apply Momentum on hit. |
