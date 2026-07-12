@@ -2,7 +2,7 @@
 title: mcMMO API
 description: mcMMO API
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: api
 editor: markdown
 dateCreated: 2024-11-24T02:14:07.767Z
@@ -17,7 +17,7 @@ mcMMO is a legacy code base, if you are having difficulty understanding it's arc
 
 # Adding mcMMO to your project
 
-Replace `2.2.052-SNAPSHOT` with the version you want to target.
+Replace `2.3.001-SNAPSHOT` with the version you want to target.
 
 ## Using Maven
 Add to your `pom.xml`:
@@ -32,7 +32,7 @@ Add to your `pom.xml`:
 <dependency>
   <groupId>com.gmail.nossr50.mcMMO</groupId>
   <artifactId>mcMMO</artifactId>
-  <version>2.2.052-SNAPSHOT</version>
+  <version>2.3.001-SNAPSHOT</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -47,7 +47,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.gmail.nossr50.mcMMO:mcMMO:2.2.052-SNAPSHOT'
+    compileOnly 'com.gmail.nossr50.mcMMO:mcMMO:2.3.001-SNAPSHOT'
 }
 ```
 
@@ -58,7 +58,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.2.052-SNAPSHOT")
+    compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.3.001-SNAPSHOT")
 }
 ```
 
@@ -91,15 +91,16 @@ int powerLevel = ExperienceAPI.getPowerLevel(player);
 
 ```java
 import com.gmail.nossr50.api.ExperienceAPI;
-import com.gmail.nossr50.datatypes.skills.PrimarySkillType;
 
-ExperienceAPI.addXp(player, PrimarySkillType.MINING, 500);
+// the skill name is case-insensitive; the last argument is the XP gain reason
+ExperienceAPI.addXP(player, "Mining", 500, "UNKNOWN");
 ```
 
 ## Listening to mcMMO events
 
 ```java
-import com.gmail.nossr50.events.skills.McMMOPlayerLevelUpEvent;
+import com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent;
+import com.gmail.nossr50.datatypes.skills.PrimarySkillType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
