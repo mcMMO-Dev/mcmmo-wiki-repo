@@ -2,7 +2,7 @@
 title: itemweights.yml
 description: Item weight configuration for party equal-share mode.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -42,13 +42,13 @@ If an item is not listed, the `Default` weight (`5`) is used.
 | Golden tools and armour | `75` | |
 | Iron tools and armour | `60` | |
 
-Items use their Bukkit `Material` enum name (case-insensitive in this file, but exact name required).
+Item weight keys use the title-case form of the Bukkit `Material` name: each word is capitalised and the words are joined with underscores, so `DIAMOND_SWORD` becomes `Diamond_Sword`. These keys are case-sensitive and must match that exact form.
 
 ---
 
 ## Party_Shareables
 
-The `Party_Shareables.Misc_Items` list defines which items are eligible to be shared via the **Misc** share category. By default this includes a broad set of weapons and armour. You can add or remove items using their exact `Material` name.
+The `Party_Shareables.Misc_Items` list defines which items are eligible to be shared via the **Misc** share category. By default this includes a broad set of weapons and armour. You can add or remove items using their `Material` name. Entries here are matched case-insensitively, so `Diamond_Sword`, `DIAMOND_SWORD`, and `diamond_sword` all resolve to the same item.
 
 ```yaml
 Party_Shareables:
