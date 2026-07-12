@@ -2,7 +2,7 @@
 title: Skills
 description: View an overview of all mcMMO Skills!
 published: true
-date: 2024-11-24T01:59:07.533Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills
 editor: markdown
 dateCreated: 2022-07-16T20:23:34.236Z
@@ -94,31 +94,31 @@ Woodcutting is all about chopping down trees.
 
 | Skill | Category | Primary tool | Super ability | Parent / child |
 |-------|----------|--------------|---------------|----------------|
-| [Acrobatics](skills/acrobatics.md) | Passive / defensive | None (movement) | None | None |
-| [Alchemy](skills/alchemy.md) | Utility | Brewing Stand | None | None |
-| [Archery](skills/archery.md) | Combat (ranged) | Bow | None | None |
-| [Axes](skills/axes.md) | Combat (melee) | Axe | Skull Splitter | None |
-| [Crossbows](skills/crossbows.md) | Combat (ranged) | Crossbow | None | None |
-| [Excavation](skills/excavation.md) | Gathering | Shovel | Giga Drill Breaker | None |
-| [Fishing](skills/fishing.md) | Gathering | Fishing Rod | None | Parent of Salvage |
-| [Herbalism](skills/herbalism.md) | Gathering | Hoe | Green Terra | None |
-| [Maces](skills/maces.md) | Combat (melee) | Mace | None | None |
-| [Mining](skills/mining.md) | Gathering | Pickaxe (+ TNT) | Super Breaker · Blast Mining | Parent of Smelting |
-| [Repair](skills/repair.md) | Utility | Iron Block | None | Parent of Salvage and Smelting |
-| [Salvage](skills/salvage.md) | Utility *(child)* | Gold Block | None | Child of Repair + Fishing |
-| [Smelting](skills/smelting.md) | Utility *(child)* | Furnace | None | Child of Mining + Repair |
-| [Spears](skills/spears.md) | Combat (melee) | Spear | None | None |
-| [Swords](skills/swords.md) | Combat (melee) | Sword | Serrated Strikes | None |
-| [Taming](skills/taming.md) | Combat (support) | Bone / pets | None | None |
-| [Tridents](skills/tridents.md) | Combat (mixed) | Trident | None | None |
-| [Unarmed](skills/unarmed.md) | Combat (melee) | Fists | Berserk | None |
-| [Woodcutting](skills/woodcutting.md) | Gathering | Axe | Tree Feller | None |
+| [Acrobatics](/skills/acrobatics) | Passive / defensive | None (movement) | None | None |
+| [Alchemy](/skills/alchemy) | Utility | Brewing Stand | None | None |
+| [Archery](/skills/archery) | Combat (ranged) | Bow | None | None |
+| [Axes](/skills/axes) | Combat (melee) | Axe | Skull Splitter | None |
+| [Crossbows](/skills/crossbows) | Combat (ranged) | Crossbow | None | None |
+| [Excavation](/skills/excavation) | Gathering | Shovel | Giga Drill Breaker | None |
+| [Fishing](/skills/fishing) | Gathering | Fishing Rod | None | Parent of Salvage |
+| [Herbalism](/skills/herbalism) | Gathering | Hoe | Green Terra | None |
+| [Maces](/skills/maces) | Combat (melee) | Mace | None | None |
+| [Mining](/skills/mining) | Gathering | Pickaxe (+ TNT) | Super Breaker · Blast Mining | Parent of Smelting |
+| [Repair](/skills/repair) | Utility | Iron Block | None | Parent of Salvage and Smelting |
+| [Salvage](/skills/salvage) | Utility *(child)* | Gold Block | None | Child of Repair + Fishing |
+| [Smelting](/skills/smelting) | Utility *(child)* | Furnace | None | Child of Mining + Repair |
+| [Spears](/skills/spears) | Combat (melee) | Spear | None | None |
+| [Swords](/skills/swords) | Combat (melee) | Sword | Serrated Strikes | None |
+| [Taming](/skills/taming) | Combat (support) | Bone / pets | None | None |
+| [Tridents](/skills/tridents) | Combat (mixed) | Trident | None | None |
+| [Unarmed](/skills/unarmed) | Combat (melee) | Fists | Berserk | None |
+| [Woodcutting](/skills/woodcutting) | Gathering | Axe | Tree Feller | None |
 
 ## See Also
 
-- [Getting Started](getting-started.md): new-player walkthrough
-- [Limit Break](skills/limit-break.md): armour-scaling bonus damage shared by combat skills
-- [Commands](Commands.md)
-- [Permissions](permissions.md)
-- [Parties](parties.md)
-- [Configuration](config.md)
+- [Getting Started](/getting-started): new-player walkthrough
+- [Limit Break](/skills/limit-break): armour-scaling bonus damage shared by combat skills
+- [Commands](/Commands)
+- [Permissions](/permissions)
+- [Parties](/parties)
+- [Configuration](/config)
