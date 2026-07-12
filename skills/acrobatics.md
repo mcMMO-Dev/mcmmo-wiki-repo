@@ -2,7 +2,7 @@
 title: Acrobatics
 description: "Information about the Acrobatics skill."
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, acrobatics
 editor: markdown
 dateCreated: 2022-07-16T20:35:16.605Z
@@ -32,24 +32,26 @@ The Acrobatics skill rewards graceful movement. It grants a chance to negate fal
 
 | Source | XP formula |
 |--------|-----------|
-| Taking fall damage (no roll) | `120 × damage taken (HP)` |
-| Successful Roll or Graceful Roll | `80 × damage that would have been taken (HP)` |
-| Successful Dodge | `120 × damage dodged (HP)` |
+| Taking fall damage (no roll) | `600 × damage taken (HP)` |
+| Successful Roll or Graceful Roll | `600 × damage that would have been taken (HP)` |
+| Successful Dodge | `800 × damage dodged (HP)` |
 
 > The Feather Falling enchantment doubles Acrobatics XP earned from falls regardless of enchantment level, but it also reduces base fall damage, so both effects combine.
 {.is-info}
 
 ### XP from Falls
 
+Fall and Roll XP are calculated from the damage taken, capped at 20 HP. A fall that would deal 20 or more HP of damage therefore awards the same XP; only Dodge XP is uncapped.
+
 The table below shows approximate XP earned per fall at various fall heights, with and without Feather Falling IV:
 
 | Blocks fallen | Damage (HP) | XP (no FF) | XP (Feather Falling IV) |
 |--------------|------------|-----------|------------------------|
-| 4 | 2 | 240 | 480 |
-| 8 | 10 | 1200 | 2400 |
-| 12 | 18 | 2160 | 4320 |
-| 16 | 26 | 3120 | 6240 |
-| 24 | 42 | 5040 | 10080 |
+| 4 | 1 | 600 | 1200 |
+| 8 | 5 | 3000 | 6000 |
+| 12 | 9 | 5400 | 10800 |
+| 16 | 13 | 7800 | 15600 |
+| 24 | 21 (capped at 20) | 12000 | 24000 |
 
 > Values assume no armor damage reduction, no potions, and no enchantments other than Feather Falling where noted. Actual XP scales with actual damage taken.
 {.is-warning}
@@ -58,8 +60,7 @@ The table below shows approximate XP earned per fall at various fall heights, wi
 
 The following protections prevent AFK acrobatics farming (configurable in `experience.yml`):
 
-- A player holding an Ender Pearl while inside a vehicle does not gain XP from falling.
-- Teleporting starts a 5-second cooldown during which fall XP is suppressed.
+- Holding an Ender Pearl in either hand, or being inside a vehicle, suppresses fall XP.
 - Landing repeatedly on the same spot triggers a diminishing-returns lockout.
 - After any successful Roll, a 3-second cooldown applies before another Roll grants XP. Additional falls before the cooldown expires extend it by 10 seconds, plus 1 extra second per subsequent fall.
 
@@ -87,7 +88,7 @@ Setting `ExploitFix.AcrobaticsDodgeXpFarming` to `false` disables the Dodge XP l
 
 Roll gives a chance to negate fall damage when landing. A normal Roll negates up to **7 HP** of fall damage; a **Graceful Roll** (activated by sneaking while falling) doubles the protection cap to **14 HP** and also doubles the proc chance.
 
-The proc chance scales linearly: 1% per level, reaching **100%** at level 1000.
+The proc chance scales linearly, reaching **100%** at level 1000.
 
 | Level | Roll chance | Graceful Roll chance | Max damage negated (Roll) | Max damage negated (Graceful Roll) |
 |-------|------------|---------------------|--------------------------|-----------------------------------|
@@ -115,12 +116,12 @@ Dodge gives a chance to halve incoming damage from attacks and other harmful sou
 
 Dodge will **not** proc if the halved damage would still be lethal (the check uses the reduced value). After a player respawns, there is a short cooldown before Dodge can award XP again.
 
-By default, Dodge does not apply to lightning strikes. This can be changed in `config.yml`:
+By default, Dodge **does** apply to lightning strikes. To stop Dodge from reducing lightning damage, set `Prevent_Dodge_Lightning` to `true` in `config.yml` (it ships as `false`):
 
 ```yml
 Skills:
     Acrobatics:
-        Prevent_Dodge_Lightning: false
+        Prevent_Dodge_Lightning: true
 ```
 
 **Config keys** (`advanced.yml` under `Skills.Acrobatics.Dodge`):
