@@ -57,7 +57,7 @@ The file covers most vanilla repairable items. The Shield, Mace, Elytra, and War
 | Iron | Iron tools and armour | `IRON_INGOT` |
 | Gold | Golden tools and armour | `GOLD_INGOT` |
 | Diamond | Diamond tools and armour | `DIAMOND` |
-| Netherite | Netherite tools and armour | `NETHERITE_INGOT` |
+| Netherite | Netherite tools and armour | `NETHERITE_SCRAP` |
 
 Bows, Crossbows, Fishing Rods, Carrot on a Stick, Shears, and Flint and Steel are also salvageable by default.
 
