@@ -2,7 +2,7 @@
 title: treasures.yml
 description: Excavation Archaeology and Hylian Luck treasure drop configuration reference.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, excavation, herbalism
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -111,7 +111,7 @@ The `Drops_From` field uses special category names rather than individual block 
 | Category | Blocks Included |
 |----------|----------------|
 | `Bushes` | Various shrubs and small plants |
-| `Flowers` | All flower types |
+| `Flowers` | A fixed set of small flowers (poppy, dandelion, blue orchid, allium, azure bluet, and the four tulips) |
 | `Pots` | Flower pots |
 
 ### Default Drops
