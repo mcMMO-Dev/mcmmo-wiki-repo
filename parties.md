@@ -2,7 +2,7 @@
 title: Parties
 description: "Information about the mcMMO party system."
 published: true
-date: 2025-01-01T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: parties, party, mcmmo
 editor: markdown
 dateCreated: 2025-01-01T00:00:00.000Z
@@ -53,12 +53,12 @@ The full party command set lives under `/party <subcommand>`. The most common su
 
 ## Party levelling
 
-A party gains XP every time one of its members earns individual mcMMO XP. The party XP curve uses the regular skill XP formula multiplied by `(member count + Xp_Curve_Modifier)`, so a larger party levels its party slightly faster -- but each individual contributes the same amount.
+A party gains XP every time one of its members earns individual mcMMO XP. The party XP curve uses the regular skill XP formula multiplied by `(online member count + Xp_Curve_Modifier)`, so a larger party levels its party slightly faster -- but each individual contributes the same amount.
 
 Reaching certain party levels unlocks new features:
 
-| Party level | Feature unlocked | Config key (`config.yml` → `Party.Sharing`) |
-|------------:|------------------|---------------------------------------------|
+| Party level | Feature unlocked | Config key (`config.yml` → `Party.Leveling`) |
+|------------:|------------------|----------------------------------------------|
 | 1 | Party Chat (`/p`, `/party chat`) | `Chat_UnlockLevel` (default `1`) |
 | 2 | Party Teleport (`/party teleport`) | `Teleport_UnlockLevel` (default `2`) |
 | 5 | Alliances (`/party alliance`) | `Alliance_UnlockLevel` (default `5`) |
@@ -71,12 +71,12 @@ The level cap defaults to `10` (`Party.Leveling.Level_Cap`) and can be raised to
 
 ### XP Share
 
-When XP Share is unlocked and set to `EQUAL`, any mcMMO XP a party member earns is split equally between all eligible party members within range. A small share bonus is added so two players sharing XP earn slightly more total XP than one player working alone (this offsets the obvious efficiency loss of splitting).
+When XP Share is unlocked and set to `EQUAL`, any mcMMO XP a party member earns is split equally between all eligible party members within range. A share bonus is then applied to the total so that sharing offsets some of the efficiency loss of splitting. The bonus multiplier is `ExpShare_bonus_base` plus `ExpShare_bonus_increase` for each sharing member, up to a maximum of `ExpShare_bonus_cap`.
 
 | Config key (`config.yml` → `Party.Sharing`) | Default | Description |
 |---------------------------------------------|---------|-------------|
-| `ExpShare_bonus_base` | `1.1` | Base XP multiplier when sharing (2 members) |
-| `ExpShare_bonus_increase` | `1.05` | Additional multiplier per extra sharing member |
+| `ExpShare_bonus_base` | `1.1` | Base multiplier applied to shared XP |
+| `ExpShare_bonus_increase` | `1.05` | Added to the multiplier for each sharing member |
 | `ExpShare_bonus_cap` | `1.5` | Maximum total share multiplier |
 | `Range` | `75.0` | Maximum block distance between members for sharing to trigger |
 
@@ -87,7 +87,7 @@ When XP Share is unlocked and set to `EQUAL`, any mcMMO XP a party member earns 
 
 Item Share routes drops from mob kills and (optionally) from gathering skills into the shared pool. It can be configured per category (loot, mining, herbalism, woodcutting, misc) and per mode (`NONE`, `EQUAL`, `RANDOM`). Use `/party itemshare` to set each category at runtime.
 
-`EQUAL` distributes one item to each in-range party member if the stack contains enough; otherwise it falls back to a random recipient. `RANDOM` picks a single random recipient regardless of stack size.
+`EQUAL` awards each item in the stack through a fairness-weighted lottery that favours members who have received less, so drops even out across the party over time. `RANDOM` picks a random recipient independently for each item in the stack.
 
 ## Party features in detail
 
@@ -95,7 +95,7 @@ Item Share routes drops from mob kills and (optionally) from gathering skills in
 |---------|--------------|
 | **Chat** | A separate chat channel visible only to party members. Toggled by `/party chat` or sent ad-hoc with `/p <message>`. |
 | **Teleport** | `/party teleport <player>` warps you to a named party member after a short cast and cooldown. Subject to the per-player cooldown configured in `config.yml`. |
-| **Alliance** | Two parties may ally. Allied party members do not damage each other (when friendly-fire is off), and they share a separate `/a` chat channel. |
+| **Alliance** | Two parties may ally. Allied party members do not damage each other (when friendly-fire is off). |
 | **Item Share** | Mob-drop and gathering-drop items are distributed to in-range party members according to the configured per-category mode. |
 | **XP Share** | mcMMO skill XP is split between all in-range party members, with the small share bonus described above. |
 
