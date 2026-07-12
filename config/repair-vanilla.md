@@ -2,7 +2,7 @@
 title: repair.vanilla.yml
 description: Vanilla item repair configuration reference for mcMMO Repair.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, repair
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -27,7 +27,7 @@ Repairables:
         MinimumLevel: 0
         XpMultiplier: .25
         ItemType: OTHER
-        ItemMaterialCategory: WOOD
+        MaterialType: WOOD
         RepairMaterial: OAK_PLANKS
         MinimumQuantity: 6
         MaximumDurability: 336
@@ -40,8 +40,8 @@ Repairables:
 |-------|-------------|
 | `MinimumLevel` | Minimum Repair skill level required to repair this item. |
 | `XpMultiplier` | Multiplier applied to base Repair XP gained for this item. Higher = more XP per repair. |
-| `ItemType` | `TOOL` or `ARMOR`; affects how Repair Mastery bonus is calculated. |
-| `ItemMaterialCategory` | Material tier: `WOOD`, `STONE`, `LEATHER`, `IRON`, `GOLD`, `DIAMOND`, `NETHERITE`, `STRING`, `OTHER`. Determines base XP. |
+| `ItemType` | `TOOL`, `ARMOR`, or `OTHER`; selects which repair permission node is checked (`toolrepair`, `armorrepair`, or `otherrepair`). |
+| `MaterialType` | Material tier: `WOOD`, `STONE`, `COPPER`, `LEATHER`, `IRON`, `GOLD`, `DIAMOND`, `NETHERITE`, `PRISMARINE`, `STRING`, `OTHER`. Determines base XP. The legacy name `ItemMaterialCategory` is still accepted. |
 | `RepairMaterial` | The Bukkit `Material` name of the item used on the anvil to repair it. |
 | `MinimumQuantity` | Minimum number of repair materials consumed per repair attempt. |
 | `MaximumDurability` | The item's maximum durability. Must match the actual Minecraft value. |
@@ -56,13 +56,14 @@ By default the file includes every repairable vanilla item grouped by material t
 |------|-------------|----------------|
 | Wood | Wooden sword, pickaxe, axe, shovel, hoe | `OAK_PLANKS` |
 | Stone | Stone tools | `COBBLESTONE` |
+| Copper | Copper tools and armour | `COPPER_INGOT` |
 | Leather | Leather helmet, chestplate, leggings, boots | `LEATHER` |
 | Iron | Iron tools and armour | `IRON_INGOT` |
 | Gold | Golden tools and armour | `GOLD_INGOT` |
 | Diamond | Diamond tools and armour | `DIAMOND` |
 | Netherite | Netherite tools and armour | `NETHERITE_INGOT` |
 
-Other repairable items include the Elytra, Shield, Bow, Crossbow, Trident, and Fishing Rod.
+Other repairable items include the Elytra, Shield, Mace, Bow, Crossbow, Trident, Carrot on a Stick, Warped Fungus on a Stick, and Fishing Rod.
 
 ---
 
@@ -77,12 +78,12 @@ Other repairable items include the Elytra, Shield, Bow, Crossbow, Trident, and F
 
 ## Examples
 
-> `MinimumLevel` is always specified in **Standard mode** units regardless of your server's level mode. Retro mode players see 10× this value in-game (e.g. `MinimumLevel: 75` = level 750 in Retro mode).
+> `MinimumLevel` is compared directly against the player's Repair level, using the same number in both Standard and Retro mode. `MinimumLevel: 75` requires Repair level 75 either way.
 {.is-info}
 
 ### Gating Elytra repair behind a skill level
 
-By default any player can repair an Elytra. To require Repair level 750 (Retro):
+By default any player can repair an Elytra. To require Repair level 75:
 
 ```yaml
 Repairables:
@@ -90,7 +91,7 @@ Repairables:
         MinimumLevel: 75
         XpMultiplier: 3
         ItemType: OTHER
-        ItemMaterialCategory: OTHER
+        MaterialType: OTHER
         RepairMaterial: PHANTOM_MEMBRANE
         MinimumQuantity: 8
         MaximumDurability: 432
@@ -106,9 +107,9 @@ Repairables:
         MinimumLevel: 0
         XpMultiplier: 3
         ItemType: TOOL
-        ItemMaterialCategory: OTHER
+        MaterialType: OTHER
         RepairMaterial: NAUTILUS_SHELL
-        MinimumQuantity: 1
+        MinimumQuantity: 16
         MaximumDurability: 250
 ```
 
@@ -137,7 +138,7 @@ Repairables:
         MinimumLevel: 0
         XpMultiplier: 2.0
         ItemType: TOOL
-        ItemMaterialCategory: OTHER
+        MaterialType: OTHER
         RepairMaterial: AMETHYST_SHARD
         MinimumQuantity: 2
         MaximumDurability: 2000
