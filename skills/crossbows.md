@@ -2,7 +2,7 @@
 title: Crossbows
 description: "Information about the Crossbows skill."
 published: true
-date: 2024-11-24T01:41:00.858Z
+date: 2026-07-12T00:00:00.000Z
 tags: crossbow, skills
 editor: markdown
 dateCreated: 2024-04-13T18:01:10.633Z
@@ -104,7 +104,7 @@ Trick Shot allows crossbow bolts to ricochet off solid blocks. When a bolt colli
 **Mechanics:**
 - The reflected bolt inherits damage, critical status, pierce level, knockback, and potion effects from the original.
 - Arrows shot with Infinity cannot be picked up after ricocheting.
-- Very shallow-angle impacts (less than 45 degrees from the block normal) do not ricochet on the first bounce.
+- Near-perpendicular (head-on) impacts, within 45 degrees of the block normal, hit too squarely to ricochet on the first bounce; only glancing (shallow) shots do. Later bounces always ricochet regardless of angle.
 - Ricocheting bolts can deal damage and award XP normally.
 
 ---
