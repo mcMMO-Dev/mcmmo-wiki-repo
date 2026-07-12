@@ -36,7 +36,7 @@ These flags prevent common XP farming exploits. All default to `true` unless not
 | `ExploitFix.COTWBreeding` | `true` | Prevent Call of the Wild summoned mobs from giving taming XP if immediately killed. |
 | `ExploitFix.UnsafeEnchantments` | `false` | Block unsafe enchantment levels being applied via mcMMO. |
 | `ExploitFix.Fishing` | `true` | Prevents many fishing location exploits. |
-| `ExploitFix.EndermanInTheEndGiveFivePercentXp` | `true` | Endermen killed in The End only give 5% of their normal combat XP. |
+| `ExploitFix.EndermanEndermiteFarms` | `true` | Endermen that aggro onto an endermite are flagged and give no combat XP, countering classic End enderman farms. |
 | `ExploitFix.Acrobatics` | `true` | Prevent intentional fall XP farming with Roll (teleport cooldowns, same-spot lockouts, and related checks). |
 | `ExploitFix.AcrobaticsDodgeXpFarming` | `true` | Stop a single mob from granting Dodge XP indefinitely. A mob grants Dodge XP for up to 6 dodges and recovers after 60 seconds without being dodged. |
 | `ExploitFix.LavaStoneAndCobbleFarming` | `true` | Block lava-stone/cobble generator XP farms. |
