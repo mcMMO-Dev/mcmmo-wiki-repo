@@ -2,7 +2,7 @@
 title: Getting Started
 description: "First-time player guide for mcMMO."
 published: true
-date: 2025-01-01T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: getting-started, beginner, mcmmo
 editor: markdown
 dateCreated: 2025-01-01T00:00:00.000Z
@@ -26,7 +26,7 @@ You don't need to do anything special to start. Mine a block, swing your sword, 
 - Type `/<skillname>` (such as `/mining` or `/archery`) to see the sub-skills you've unlocked and what they do at your current level.
 - The skill that levels is the skill that matches the activity. Mining with a pickaxe levels Mining; chopping wood with an axe levels Woodcutting; using the wrong tool gives no XP.
 - Skills level much faster when you focus on one or two at a time rather than spreading effort across all of them.
-- Some combat and gathering skills have a **Super Ability**. When you swing a compatible tool, right-click once to ready the ability and again to trigger it for a short burst of power. Super Abilities have a cooldown.
+- Some combat and gathering skills have a **Super Ability**. Right-click once with a compatible tool to ready the ability, then use the tool (break an eligible block or land a hit) to trigger it for a short burst of power. Super Abilities have a cooldown.
 
 ## How XP works
 
@@ -56,7 +56,7 @@ Most combat and gathering skills have an active **Super Ability**:
 | Skill | Super Ability | Triggered with |
 |-------|---------------|----------------|
 | Mining | Super Breaker (faster ore mining) | Right-click while holding a pickaxe |
-| Mining | Blast Mining (TNT efficiency) | `/blastmining` while detonating TNT remotely |
+| Mining | Blast Mining (TNT efficiency) | Sneak + right-click while holding a pickaxe or the detonator item (default Flint & Steel) to remotely detonate nearby TNT |
 | Excavation | Giga Drill Breaker | Right-click while holding a shovel |
 | Woodcutting | Tree Feller | Right-click while holding an axe |
 | Herbalism | Green Terra | Right-click while holding a hoe |
