@@ -2,7 +2,7 @@
 title: experience.yml
 description: mcMMO XP formula, multipliers, and per-action XP value configuration reference.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -120,14 +120,16 @@ $$\text{XP Required} = \text{multiplier} \times \text{level}^{\text{exponent}} +
 | `Experience_Formula.Mobspawners.Multiplier` | `0` | XP multiplier for mobs from mob spawners. |
 | `Experience_Formula.Nether_Portal.Multiplier` | `0` | XP multiplier for mobs that came through a nether portal. |
 | `Experience_Formula.Breeding.Multiplier` | `1.0` | XP multiplier for player-bred animals. |
+| `Experience_Formula.Player_Tamed.Multiplier` | `0.0` | XP multiplier for mobs tamed by a player (0 = no XP). |
 
 ### Per-Skill Multipliers
 
 ```yaml
-Skill_Multiplier:
-    Mining: 1.0
-    Fishing: 1.0
-    # etc.
+Experience_Formula:
+    Skill_Multiplier:
+        Mining: 1.0
+        Fishing: 1.0
+        # etc.
 ```
 
 These are applied before the Global multiplier. Set a skill to `2.0` to double its XP rate independently.
