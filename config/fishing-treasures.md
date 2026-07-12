@@ -2,7 +2,7 @@
 title: fishing_treasures.yml
 description: Fishing Treasure Hunter, enchantment drop rates, and Shake drop configuration reference.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, fishing
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -10,12 +10,12 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 # fishing_treasures.yml
 
-`fishing_treasures.yml` controls the complete loot tables for the Fishing skill. It has four distinct sections:
+`fishing_treasures.yml` controls the complete loot tables for the Fishing skill. It has five distinct sections:
 
 1. **`Fishing:`** the item pool; items tagged with a rarity
 2. **`Item_Drop_Rates:`** per-tier (rank) % chance to receive an item of each rarity
-3. **`Enchantments_Rarity:`** which enchantments and levels can appear per rarity for enchanted books
-4. **`Enchantment_Drop_Rates:`** per-tier (rank) % chance to receive an enchanted book of each rarity
+3. **`Enchantments_Rarity:`** the Magic Hunter enchantment pool: which enchantments and levels can be applied to a caught item at each rarity
+4. **`Enchantment_Drop_Rates:`** the Magic Hunter roll: per-tier (rank) % chance to enchant a caught item, by rarity
 5. **`Shake:`** mob-specific drop tables for the Shake sub-skill
 
 Default values can be viewed [on GitHub](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/fishing_treasures.yml).
@@ -47,14 +47,14 @@ Fishing:
 
 | Rarity | Items |
 |--------|-------|
-| `COMMON` | Leather armour, wood tools, copper armour, copper tools, lapis lazuli |
+| `COMMON` | Leather armour, wood tools, copper armour, lapis lazuli |
 | `UNCOMMON` | Stone tools, copper tools, golden tools, golden armour, iron/gold ingots |
 | `RARE` | Iron tools, bow, ender pearl, blaze rod, name tag |
 | `EPIC` | Iron armour, ghast tear, 5× diamond |
 | `LEGENDARY` | Diamond tools, diamond armour, nautilus shell, enchanted book, netherite scrap |
 | `MYTHIC` | Netherite tools, netherite armour |
 
-> For enchanted books, you can restrict which enchantments appear by adding an `Enchantments_Whitelist:` or `Enchantments_Blacklist:` block. See the commented example in the default file.
+> An enchanted book comes from the `ENCHANTED_BOOK` entry in the `Fishing:` pool and receives exactly one random enchantment, drawn uniformly from every enchantment and level allowed for it. You can restrict that pool by adding an `Enchantments_Whitelist:` or `Enchantments_Blacklist:` block to the entry; `Enchantments_Rarity` does not apply to books. See the commented example in the default file.
 {.is-info}
 
 ---
@@ -81,7 +81,7 @@ Fishing:
 
 ## Section 3: Enchantments Rarity
 
-`Enchantments_Rarity` defines which enchantments (and at which levels) are available in the enchanted book loot pool at each rarity. A higher number after the enchantment name means a higher enchantment level (e.g. `SHARPNESS: 4` = Sharpness IV).
+`Enchantments_Rarity` defines the Magic Hunter enchantment pool: which enchantments (and at which levels) can be applied to a caught treasure item at each rarity. A higher number after the enchantment name means a higher enchantment level (e.g. `SHARPNESS: 4` = Sharpness IV). This pool is not used for enchanted books, which draw their single enchantment from the whole enchantment list filtered only by their whitelist/blacklist.
 
 | Rarity | Sample Enchantments |
 |--------|-------------------|
@@ -96,7 +96,7 @@ Fishing:
 
 ## Section 4: Enchantment Drop Rates
 
-`Enchantment_Drop_Rates` defines the per-tier (rank) percent chance to receive an enchanted book of each rarity on any given catch. This is a **separate roll** from the Item_Drop_Rates roll: a single catch can produce both a regular item and an enchanted book.
+`Enchantment_Drop_Rates` defines the per-tier (rank) percent chance for Magic Hunter to add enchantments to a caught treasure item, by rarity. When this roll succeeds, mcMMO takes the enchantment set from the matching `Enchantments_Rarity` pool and applies it to the item that was caught. This does not create a separate book: enchanted books drop only as their own `ENCHANTED_BOOK` entry in the `Fishing:` pool, and a book caught this way skips the Magic Hunter roll entirely.
 
 | Tier | COMMON | UNCOMMON | RARE | EPIC | LEGENDARY | MYTHIC |
 |------|--------|---------|------|------|-----------|--------|
@@ -154,7 +154,7 @@ To add shake drops for additional mobs, add a new block using the Bukkit `Entity
 - **Adjusting overall treasure frequency:** Change the percentages in `Item_Drop_Rates` for all tiers.
 - **Adding a new item:** Add an entry under `Fishing:` with any valid material name and assign a rarity. The item will automatically be included in the rarity pool.
 - **Tier count:** The number of tiers (8) matches the number of Treasure Hunter ranks and cannot be changed without modifying the source.
-- **Enchanted books vs item drops:** These are two independent rolls. A single catch can yield a regular item, an enchanted book, both, or neither.
+- **Enchanted books vs item drops:** A catch produces at most one treasure. An enchanted book drops only when the `ENCHANTED_BOOK` pool entry is the one selected; it is not a separate roll layered on top of an item, so a single catch never yields both.
 
 ---
 
