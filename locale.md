@@ -2,7 +2,7 @@
 title: Localization
 description: Information about mcMMO's locale system, color codes, and tooltip customization.
 published: true
-date: 2026-05-14T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: locale
 editor: markdown
 dateCreated: 2022-07-18T00:13:13.163Z
@@ -19,15 +19,24 @@ mcMMO ships with translations for many languages. To switch languages, set `Gene
 | Locale code | Language |
 |-------------|----------|
 | `en_US` | English (default) |
+| `cs_CZ` | Czech |
+| `cy` | Welsh |
+| `da` | Danish |
 | `de` | German |
 | `es` | Spanish |
+| `fi` | Finnish |
 | `fr` | French |
+| `hu_HU` | Hungarian |
 | `it` | Italian |
 | `ja_JP` | Japanese |
 | `ko` | Korean |
+| `lt_LT` | Lithuanian |
+| `nl` | Dutch |
 | `pl` | Polish |
 | `pt_BR` | Portuguese (Brazil) |
 | `ru` | Russian |
+| `sv` | Swedish |
+| `th_TH` | Thai |
 | `zh_CN` | Chinese (Simplified) |
 | `zh_TW` | Chinese (Traditional) |
 
@@ -68,7 +77,7 @@ The master key list is in `en_US`: [locale_en_US.properties on GitHub](https://g
 
 ## Color codes
 
-mcMMO locale files support three color code formats. All three work everywhere in the locale.
+mcMMO locale files support three color code formats. All three work throughout the locale, with one exception noted below for the `&k` obfuscated code.
 
 ### Format 1, `&` codes (standard Minecraft)
 
@@ -97,6 +106,9 @@ The familiar `&` prefix followed by a single character:
 ```properties
 mcMMO.Template.Prefix=&6(&amcMMO&6) &7{0}
 ```
+
+> The `&k` obfuscated code only takes effect in JSON hover and tooltip text. In ordinary chat messages it is printed literally, so use the `[[MAGIC]]` token below when you want obfuscated text in a regular locale string.
+{.is-info}
 
 ---
 
@@ -219,16 +231,23 @@ JSON.SkillUnlockMessage=&6[ mcMMO&e @&3{0} &6Rank &3{1}&6 Unlocked! ]
 
 ### Skill name labels
 
-Skill names shown in chat and tooltips are controlled by `<Skill>.SkillName` keys, not `JSON.*` keys:
+Two separate locale keys control how a skill's name appears, and neither is a `JSON.*` tooltip key:
+
+- `Overhaul.Name.<Skill>` sets the name shown in most player-facing messages. The shipped English values are ordinary capitalized names, for example `Overhaul.Name.Mining=Mining`.
+- `<Skill>.SkillName` sets the FULL-CAPS name used for command headers, scoreboards, and skill-command matching. The shipped English values are upper case, for example `Mining.SkillName=MINING`.
 
 ```properties
-Mining.SkillName=Mining
-Woodcutting.SkillName=Woodcutting
-Herbalism.SkillName=Herbalism
-# ... one per skill
+Overhaul.Name.Mining=Mining
+Overhaul.Name.Woodcutting=Woodcutting
+Overhaul.Name.Herbalism=Herbalism
+
+Mining.SkillName=MINING
+Woodcutting.SkillName=WOODCUTTING
+Herbalism.SkillName=HERBALISM
+# ... one of each per skill
 ```
 
-Override these in `locale_override.properties` to rename a skill for your server.
+To rename a skill everywhere, override both keys in `locale_override.properties`. On locales other than `en_US`, the `SkillName` value additionally works as an accepted command and skill-name argument for that skill, so players can use the translated name. It never removes the built-in English command, and on an `en_US` server overriding `SkillName` does not add a command alias.
 
 ### Sub-skill tip text
 
