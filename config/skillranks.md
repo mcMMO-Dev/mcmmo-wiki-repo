@@ -2,7 +2,7 @@
 title: skillranks.yml
 description: Sub-skill rank unlock level configuration reference.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -60,7 +60,7 @@ Setting all ranks of a sub-skill to `0` gives all players the most powerful vers
 | Axes | AxesLimitBreak (10), SkullSplitter (1), CriticalStrikes (1), GreaterImpact (1), AxeMastery (4), ArmorImpact (20) |
 | Crossbows | CrossbowsLimitBreak (10), PoweredShot (20), TrickShot (3) |
 | Excavation | GigaDrillBreaker (1), Archaeology (8) |
-| Fishing | Mastery (1), MagicHunter (1), IceFishing (1), Shake (8), MasterAngler (8), TreasureHunter (8), FishermansDiet (5) |
+| Fishing | MagicHunter (1), IceFishing (1), Shake (8), MasterAngler (8), TreasureHunter (8), FishermansDiet (5) |
 | Herbalism | DoubleDrops (1), VerdantBounty (1), GreenTerra (1), GreenThumb (4), FarmersDiet (5) |
 | Maces | MacesLimitBreak (10), Cripple (4), Crush (4) |
 | Mining | DoubleDrops (1), SuperBreaker (1), BiggerBombs (1), DemolitionsExpertise (1), MotherLode (1), BlastMining (8) |
@@ -72,9 +72,9 @@ Setting all ranks of a sub-skill to `0` gives all players the most powerful vers
 | Taming | BeastLore (1), Gore (1), CallOfTheWild (1), Pummel (1), FastFoodService (1), EnvironmentallyAware (1), ThickFur (1), HolyHound (1), ShockProof (1), SharpenedClaws (1) |
 | Tridents | TridentsLimitBreak (10), Impale (10) |
 | Unarmed | UnarmedLimitBreak (10), Berserk (1), ArrowDeflect (1), Disarm (1), IronGrip (1), SteelArmStyle (20) |
-| Woodcutting | TreeFeller (5), HarvestLumber (1), CleanCuts (1), KnockOnWood (2), LeafBlower (1) |
+| Woodcutting | TreeFeller (1), HarvestLumber (1), CleanCuts (1), KnockOnWood (2), LeafBlower (1) |
 
-> **Smelting note:** `UnderstandingTheArt` is the internal YAML key for the Second Smelt sub-skill. `FuelEfficiency` has 3 ranks, not 8.
+> **Smelting note:** `UnderstandingTheArt` is the config key for the Understanding The Art sub-skill, which scales the vanilla XP multiplier gained from smelting. It is a separate sub-skill from Second Smelt (the double-output ability), which has no rank block in this file.
 {.is-info}
 
 > Sub-skills not listed above (such as Acrobatics Roll, Archery Daze, Herbalism HylianLuck) scale continuously by level and do not have rank unlock thresholds in this file. Their behaviour is tuned in [`advanced.yml`](/config/advanced).
