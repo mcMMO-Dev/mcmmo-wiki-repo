@@ -2,7 +2,7 @@
 title: Excavation
 description: "Information about the Excavation skill."
 published: true
-date: 2024-11-24T01:43:42.890Z
+date: 2026-07-12T00:00:00.000Z
 tags: excavation, skills
 editor: markdown
 dateCreated: 2022-07-17T01:36:33.657Z
@@ -57,8 +57,8 @@ Archaeology is a passive sub-skill that allows treasures to drop from compatible
 
 Each treasure also has an independent drop chance (configurable in `treasures.yml`). When a treasure successfully drops, there is additionally a `rank × 2 %` chance that vanilla XP orbs worth `rank` points are spawned alongside it.
 
-> Treasure drops are entirely configurable via `treasures.yml`. The min-level values in the table below are raw `treasures.yml` defaults and are not automatically scaled by Retro/Standard mode. Servers running Retro mode may wish to scale treasure min levels accordingly in `treasures.yml`.
-{.is-warning}
+> Treasure drops are entirely configurable via `treasures.yml`. Each treasure ships separate `Standard_Mode` and `Retro_Mode` level requirements, and mcMMO automatically applies the set that matches your server's mode. The **Min level** values below are the Retro-mode defaults.
+{.is-info}
 
 > `treasures.yml` is not automatically updated when mcMMO upgrades. If you have an older `treasures.yml`, new treasures introduced in later releases will not appear until you regenerate or manually update the file.
 {.is-info}
@@ -80,33 +80,34 @@ Each treasure also has an independent drop chance (configurable in `treasures.ym
 
 | Item | Amt | Drop chance | Min level (default) | Treasure XP | Source blocks |
 |------|-----|-------------|-----------|-------------|---------------|
-| Stick | 2 | 2.00 % | 1 | 50 | Mud, Muddy Mangrove Roots |
-| Glowstone Dust | 1 | 5.00 % | 5 | 80 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Mycelium |
-| Feather | 3 | 1.00 % | 5 | 50 | Mud |
-| Spyglass | 1 | 0.10 % | 7 | 500 | Mud, Dirt |
-| Gunpowder | 1 | 10.00 % | 10 | 30 | Gravel |
-| Potato | 1 | 3.00 % | 10 | 50 | Dirt, Mud |
-| Slime Ball | 1 | 5.00 % | 15 | 100 | Clay |
-| Bone | 1 | 10.00 % | 20 | 30 | Gravel, Mud |
-| Apple | 1 | 0.10 % | 25 | 100 | Grass Block, Mycelium |
-| Egg | 1 | 1.00 % | 25 | 100 | Grass Block |
-| String | 1 | 5.00 % | 25 | 200 | Clay |
-| Music Disc 13 | 1 | 0.05 % | 25 | 3000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
-| Music Disc Cat | 1 | 0.05 % | 25 | 3000 | Same as Music Disc 13 |
-| Name Tag | 1 | 0.05 % | 25 | 3000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
-| Cocoa Beans | 1 | 1.33 % | 35 | 100 | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
-| Diamond | 1 | 0.13 % | 35 | 1000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil, Mud |
-| Trident | 1 | 0.02 % | 40 | 100 | Mud, Clay, Muddy Mangrove Roots |
-| Red Mushroom | 1 | 0.50 % | 50 | 80 | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
-| Brown Mushroom | 1 | 0.50 % | 50 | 80 | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
-| Bucket | 1 | 0.10 % | 50 | 100 | Clay |
-| Clock | 1 | 0.10 % | 50 | 100 | Clay |
-| Soul Sand (item) | 1 | 0.50 % | 65 | 80 | Sand, Red Sand |
-| Cake | 1 | 0.05 % | 75 | 3000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
-| Cobweb | 1 | 5.00 % | 75 | 150 | Clay |
-| Quartz | 1 | 0.50 % | 85 | 100 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Mycelium, Soul Sand, Soul Soil |
-| Netherrack | 1 | 0.50 % | 85 | 30 | Gravel |
-| Heart of the Sea | 1 | 0.01 % | 90 | 9999 | Mud |
+| Stick | 2 | 2.00 % | 10 | 50 | Mud, Muddy Mangrove Roots |
+| Glowstone Dust | 1 | 5.00 % | 50 | 80 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Mycelium |
+| Feather | 3 | 1.00 % | 50 | 100 | Mud |
+| Spyglass | 1 | 0.10 % | 70 | 500 | Mud, Dirt |
+| Gunpowder | 1 | 10.00 % | 100 | 30 | Gravel |
+| Potato | 1 | 3.00 % | 100 | 50 | Dirt, Mud |
+| Slime Ball | 1 | 5.00 % | 150 | 100 | Clay |
+| Bone | 1 | 10.00 % | 200 | 30 | Gravel, Mud |
+| Apple | 1 | 0.10 % | 250 | 100 | Grass Block, Mycelium |
+| Egg | 1 | 1.00 % | 250 | 100 | Grass Block |
+| String | 1 | 5.00 % | 250 | 200 | Clay |
+| Music Disc 13 | 1 | 0.05 % | 250 | 3000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
+| Music Disc Bounce | 1 | 0.01 % | 250 | 3000 | Same as Music Disc 13 |
+| Music Disc Cat | 1 | 0.05 % | 250 | 3000 | Same as Music Disc 13 |
+| Name Tag | 1 | 0.05 % | 250 | 3000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
+| Cocoa Beans | 1 | 1.33 % | 350 | 100 | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
+| Diamond | 1 | 0.13 % | 350 | 1000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil, Mud |
+| Trident | 1 | 0.02 % | 400 | 100 | Mud, Clay, Muddy Mangrove Roots |
+| Red Mushroom | 1 | 0.50 % | 500 | 80 | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
+| Brown Mushroom | 1 | 0.50 % | 500 | 80 | Dirt, Coarse Dirt, Podzol, Grass Block, Mycelium, Mud |
+| Bucket | 1 | 0.10 % | 500 | 100 | Clay |
+| Clock | 1 | 0.10 % | 500 | 100 | Clay |
+| Soul Sand (item) | 1 | 0.50 % | 650 | 80 | Sand, Red Sand |
+| Cake | 1 | 0.05 % | 750 | 3000 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Clay, Mycelium, Soul Sand, Soul Soil |
+| Cobweb | 1 | 5.00 % | 750 | 150 | Clay |
+| Quartz | 1 | 0.50 % | 850 | 100 | Dirt, Coarse Dirt, Podzol, Grass Block, Sand, Red Sand, Gravel, Mycelium, Soul Sand, Soul Soil |
+| Netherrack | 1 | 0.50 % | 850 | 30 | Gravel |
+| Heart of the Sea | 1 | 0.01 % | 900 | 9999 | Mud |
 
 ---
 
