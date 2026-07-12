@@ -2,7 +2,7 @@
 title: Configuration
 description: Disambiguation page for configuration files.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2022-07-17T16:49:12.919Z
@@ -30,13 +30,14 @@ Here is the list of all configuration files.
 
 - [`advanced.yml`](/config/advanced) - Advanced configuration.
 - [`chat.yml`](/config/chat) - Settings for the chat channels in mcMMO.
-- [`child.yml`](/config/child) - mcMMO child skill configuration.
 - [`coreskills.yml`](/config/coreskills) - This file includes a few settings for each skill in mcMMO.
+- `custom_item_support.yml` - Settings for allowing mcMMO to interact with custom items (Repair and Salvage on items with custom model data).
 - [`experience.yml`](/config/experience) - Experience configuration.
 - [`fishing_treasures.yml`](/config/fishing-treasures) - Settings for Fishing Treasures / Shake Treasures.
 - [`hidden.yml`](/config/hidden)
 - [`itemweights.yml`](/config/itemweights) - Item Weights configuration
 - [`level_up_commands.yml`](/config/level-up-commands) - Run commands when players reach chosen skill levels or power levels.
+- `party.yml` - Enable or disable the mcMMO party system.
 - [`persistent_data.yml`](/config/persistent-data) - This config allows servers to change which data is persistent.
 - [`potions.yml`](/config/potions) - Settings for Concoctions.
 - [`repair.vanilla.yml`](/config/repair-vanilla) - Repair configuration.
