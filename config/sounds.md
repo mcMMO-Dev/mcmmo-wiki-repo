@@ -2,7 +2,7 @@
 title: sounds.yml
 description: mcMMO sound event configuration reference.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -55,12 +55,9 @@ Each sound event has three common fields:
 | `CHIMAERA_WING` | `true` | Chimaera Wing teleport. |
 | `ROLL_ACTIVATED` | `true` | Acrobatics Roll triggered. |
 | `SKILL_UNLOCKED` | `true` | A new sub-skill rank becomes available. |
-| `DEFLECT_ARROWS` | `true` | Arrow deflected (Unarmed). |
 | `TOOL_READY` | `true` | Tool readied for super ability activation. |
-| `ABILITY_ACTIVATED_GENERIC` | `true` | Generic super ability start. |
-| `ABILITY_ACTIVATED_BERSERK` | `true` | Berserk specifically. |
-| `TIRED` | `true` | Super ability expired (tool unreadied). |
-| `BLEED` | `true` | Bleed proc (Swords). |
+| `ABILITY_ACTIVATED_GENERIC` | `true` | Super ability start. |
+| `BLEED` | `true` | Rupture bleed damage tick (Swords). |
 | `CRIPPLE` | `true` | Maces Cripple effect. The default sound is the mace smash ground sound, which exists on Minecraft 1.21 and newer. |
 
 ---
