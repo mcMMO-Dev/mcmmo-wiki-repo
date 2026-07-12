@@ -2,7 +2,7 @@
 title: Taming
 description: "Information about the Taming skill."
 published: true
-date: 2024-11-24T01:42:03.642Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, taming
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -65,13 +65,13 @@ Beast Lore is an active ability that displays detailed information about a tamed
 
 **Ranks:** 1, Unlocks at level 1
 
-Call of the Wild allows you to summon a temporary tamed companion by right-clicking while holding specific items. Companions persist until they die or you log out.
+Call of the Wild allows you to summon a temporary tamed companion by right-clicking while holding specific items. A summoned companion despawns once its summon lifespan expires (default 240 seconds), or sooner if it dies or you log out. Each companion type also has a per-player cap on how many you can have summoned at once.
 
-| Companion | Item held | Quantity consumed |
-|-----------|-----------|-------------------|
-| Wolf | Bones | 10 |
-| Ocelot / Cat | Raw Fish | 10 |
-| Horse | Apples | 10 |
+| Companion | Item held | Quantity consumed | Summon cap |
+|-----------|-----------|-------------------|-----------:|
+| Wolf | Bones | 10 | 2 |
+| Ocelot / Cat | Cod | 10 | 1 |
+| Horse | Apples | 10 | 1 |
 
 Summoned horses have a random jump strength between the configured minimum and maximum values (default: 0.7–2.0).
 
@@ -88,7 +88,10 @@ Summoned horses have a random jump strength between the configured minimum and m
 
 **Ranks:** 1, Unlocks at level 100
 
-Environmentally Aware prevents lethal fall damage to your wolves. When a wolf you own would take damage that exceeds its remaining HP from a fall or other environmental source, it is automatically teleported to your location instead of dying.
+Environmentally Aware protects your wolves from environmental damage, but it behaves differently depending on the source:
+
+- **Fall damage:** while the sub-skill is unlocked, all fall damage to your wolves is cancelled outright. The wolf is not teleported.
+- **Fire, lava, hot floor, and contact damage:** the wolf is teleported to your location, but only when the hit is survivable (its damage does not exceed the wolf's current HP). The teleport does not cancel the damage, and lethal hits of these types are not intercepted.
 
 ---
 
@@ -126,7 +129,7 @@ Gore gives your wolves a chance to deal **2× damage** and apply a short bleed (
 
 **Ranks:** 1, Unlocks at level 350
 
-Holy Hound converts certain damage types into healing for your wolves. Instead of taking damage from **Magic, Poison, or Wither** effects, the wolf is healed by that amount (up to max HP) and the damage event is cancelled entirely.
+Holy Hound offsets certain damage types with healing for your wolves. When a wolf you own takes **Magic, Poison, or Wither** damage, it is first healed by an amount equal to that damage (capped at its maximum HP), which counteracts the incoming hit. The damage event itself is not cancelled, so the wolf still takes the damage; the pre-heal absorbs it. Because the heal is capped at max HP, a wolf already near full health can end up slightly lower after the exchange.
 
 ---
 
@@ -178,7 +181,7 @@ Shock Proof reduces explosion and lightning damage taken by your wolves by a div
 
 Thick Fur gives your wolves two passive protections:
 - **Physical attacks:** Wolf takes half damage (divisor of 2.0).
-- **Fire damage:** Fire damage is completely cancelled and the wolf''s fire ticks are reset to 0.
+- **Fire damage:** The wolf is extinguished (its fire ticks are reset to 0) so it stops taking further burn damage, but the current fire-tick damage still lands; it is not cancelled.
 
 **Config keys** (`advanced.yml` under `Skills.Taming.ThickFur`):
 
