@@ -2,7 +2,7 @@
 title: Fishing
 description: "Information about the Fishing skill."
 published: true
-date: 2024-11-24T01:41:45.231Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, fishing
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -106,9 +106,9 @@ Magic Hunter enables enchanted books to appear in the Treasure Hunter loot pool.
 
 **Ranks:** 8
 
-Master Angler reduces the minimum and maximum wait time for a bite. Each rank reduces both the minimum and maximum tick wait by a configurable amount per rank (default: 10 ticks per rank for both min and max). Being in a **boat** grants an additional flat reduction on top of the rank-based reduction.
+Master Angler reduces the minimum and maximum wait time for a bite. Each rank reduces both the minimum and maximum tick wait by a configurable amount per rank (default: 10 ticks per rank for min-wait and 30 ticks per rank for max-wait). Being in a **boat** grants an additional flat reduction on top of the rank-based reduction.
 
-Vanilla Lure enchantment is properly accounted for -- at Lure levels above 3, mcMMO applies the bonus manually to avoid a Minecraft engine bug.
+Vanilla Lure enchantment is properly accounted for: mcMMO applies the Lure bonus manually at any Lure level (1 or higher) to avoid a Minecraft engine bug with Lure levels above 3.
 
 | Rank | Unlock level |
 |------|-------------|
@@ -126,7 +126,7 @@ Vanilla Lure enchantment is properly accounted for -- at Lure levels above 3, mc
 | Key | Default | Description |
 |-----|---------|-------------|
 | `Tick_Reduction_Per_Rank.Min_Wait` | `10` | Ticks of min-wait reduction per rank |
-| `Tick_Reduction_Per_Rank.Max_Wait` | `10` | Ticks of max-wait reduction per rank |
+| `Tick_Reduction_Per_Rank.Max_Wait` | `30` | Ticks of max-wait reduction per rank |
 | `Boat_Tick_Reduction.Min_Wait` | `10` | Additional ticks of min-wait reduction when in a boat |
 | `Boat_Tick_Reduction.Max_Wait` | `30` | Additional ticks of max-wait reduction when in a boat |
 | `Tick_Reduction_Caps.Min_Wait` | `40` | Minimum allowed min-wait tick floor |
@@ -138,7 +138,7 @@ Vanilla Lure enchantment is properly accounted for -- at Lure levels above 3, mc
 
 **Ranks:** 8
 
-Treasure Hunter gives a chance to catch bonus treasure items instead of (or in addition to) regular fish. The treasure pool and drop chances are defined in `treasures.yml`. Higher ranks unlock rarer treasures and increase drop chances.
+Treasure Hunter gives a chance to catch bonus treasure items instead of (or in addition to) regular fish. The treasure pool and drop chances are defined in `fishing_treasures.yml`. Higher ranks unlock rarer treasures and increase drop chances.
 
 | Rank | Unlock level |
 |------|-------------|
@@ -177,7 +177,7 @@ The pool of items in each rarity tier (`Fishing:` section of `fishing_treasures.
 
 **Ranks:** 8 -- Unlocks at level 150
 
-Shake allows you to cast your fishing line at a mob that is in water and force it to drop its held item (the same drops as using the Looting enchantment on that mob type). The mob is not harmed. The proc chance per rank is a fixed value from the config.
+Shake allows you to cast your fishing line at a mob that is in water and force it to drop its held item (the same drops as using the Looting enchantment on that mob type). Each successful shake also deals a small amount of damage to the mob (about a quarter of its maximum health, at least 1 and capped at 10), so a mob can usually be shaken about four times before it dies. The proc chance per rank is a fixed value from the config.
 
 | Rank | Unlock level | Proc chance |
 |------|-------------|-------------|
@@ -241,7 +241,7 @@ When a Shake roll succeeds on an eligible mob, one item is selected from that mo
 | Wither Skeleton | Bone (49 %), Coal ×2 (49 %), Wither Skeleton Skull (2 %) |
 | Zombie | Rotten Flesh (98 %), Zombie Head (2 %) |
 
-> Shake never harms the mob. Items beyond those listed here can be added via `fishing_treasures.yml`.
+> Each successful shake deals up to 10 damage (about a quarter of the mob's maximum health), so a mob survives roughly four shakes. Items beyond those listed here can be added via `fishing_treasures.yml`.
 {.is-info}
 
 ---
