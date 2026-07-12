@@ -2,7 +2,7 @@
 title: potions.yml
 description: Alchemy Concoctions ingredient tiers and custom potion definition configuration reference.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, alchemy
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -72,14 +72,11 @@ The `Potions:` section is a complete recipe graph. Each entry defines one potion
 POTION_OF_HEALING:
     Material: POTION
     PotionData:
-        PotionType: HEALING
+        PotionType: INSTANT_HEAL
     Children:
-        GLOWSTONE_DUST: POTION_OF_HEALING_II
-        REDSTONE: POTION_OF_HEALING_EXTENDED
-        GUNPOWDER: SPLASH_POTION_OF_HEALING
         FERMENTED_SPIDER_EYE: POTION_OF_HARMING
-    Effects:
-        - "HEAL 1 1"
+        GLOWSTONE_DUST: POTION_OF_HEALING_II
+        GUNPOWDER: SPLASH_POTION_OF_HEALING
 ```
 
 | Field | Description |
