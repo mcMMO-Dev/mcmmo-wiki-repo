@@ -96,7 +96,7 @@ Fishing:
 
 ## Section 4: Enchantment Drop Rates
 
-`Enchantment_Drop_Rates` defines the per-tier (rank) percent chance for Magic Hunter to add enchantments to a caught treasure item, by rarity. When this roll succeeds, mcMMO takes the enchantment set from the matching `Enchantments_Rarity` pool and applies it to the item that was caught. This does not create a separate book: enchanted books drop only as their own `ENCHANTED_BOOK` entry in the `Fishing:` pool, and a book caught this way skips the Magic Hunter roll entirely.
+`Enchantment_Drop_Rates` defines the per-tier (rank) percent chance for Magic Hunter to add enchantments to a caught treasure item, by rarity. When this roll succeeds, mcMMO filters the matching `Enchantments_Rarity` pool to the enchantments that fit the caught item, shuffles them, and always applies the first; each further enchantment is then half as likely as the one before, and conflicting enchantments are skipped. If nothing in the pool fits the item, no enchantment is applied. This does not create a separate book: enchanted books drop only as their own `ENCHANTED_BOOK` entry in the `Fishing:` pool, and a book caught this way skips the Magic Hunter roll entirely.
 
 | Tier | COMMON | UNCOMMON | RARE | EPIC | LEGENDARY | MYTHIC |
 |------|--------|---------|------|------|-----------|--------|
