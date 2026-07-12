@@ -2,7 +2,7 @@
 title: Tridents
 description: "Information about the Tridents skill."
 published: true
-date: 2024-11-24T01:40:37.274Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, tridents
 editor: markdown
 dateCreated: 2024-04-13T18:14:01.830Z
@@ -27,7 +27,7 @@ The Tridents skill governs combat with tridents. XP is earned by striking mobs o
 
 ## XP Gain
 
-XP is granted each time a trident strike lands on a mob or player. The amount is determined by the target's entity type, following the same combat XP table used by other weapon skills. Players can only grant XP if PvP XP is enabled in `experience.yml` (`PVP.Enabled: true`).
+XP is granted each time a trident strike lands on a mob or player. The amount is determined by the target's entity type, following the same combat XP table used by other weapon skills. Players can only grant XP if PvP XP rewards are enabled in `experience.yml` (`Experience_Values.PVP.Rewards: true`).
 
 ## Sub-Skills
 
@@ -44,25 +44,25 @@ Impale is a passive sub-skill that adds a flat damage bonus to every trident hit
 
 | Rank | Unlock level | Bonus damage (HP) |
 |------|-------------|-------------------|
-| 1    | 50          | 1.0               |
-| 2    | 150         | 1.5               |
-| 3    | 250         | 2.0               |
-| 4    | 350         | 2.5               |
-| 5    | 450         | 3.0               |
-| 6    | 550         | 3.5               |
-| 7    | 650         | 4.0               |
-| 8    | 750         | 4.5               |
-| 9    | 850         | 5.0               |
-| 10   | 1000        | 5.5               |
+| 1    | 50          | 1.5               |
+| 2    | 150         | 2.0               |
+| 3    | 250         | 2.5               |
+| 4    | 350         | 3.0               |
+| 5    | 450         | 3.5               |
+| 6    | 550         | 4.0               |
+| 7    | 650         | 4.5               |
+| 8    | 750         | 5.0               |
+| 9    | 850         | 5.5               |
+| 10   | 1000        | 6.0               |
 
-**Formula:** `bonus = 1.0 + (rank − 1) × 0.5`
+**Formula:** `bonus = 1.0 + rank × 0.5` (equivalently `Base_Damage + rank × Rank_Damage_Multiplier`, using the full rank number)
 
 **Config keys** (`advanced.yml` under `Skills.Tridents.Impale`):
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `Base_Damage` | `1.0` | Flat damage bonus at rank 1 |
-| `Rank_Damage_Multiplier` | `0.5` | Additional damage added per rank beyond rank 1 |
+| `Base_Damage` | `1.0` | Flat base component of the bonus damage |
+| `Rank_Damage_Multiplier` | `0.5` | Damage added per rank (multiplied by the full rank number) |
 
 ---
 
@@ -72,7 +72,7 @@ Impale is a passive sub-skill that adds a flat damage bonus to every trident hit
 
 Tridents Limit Break is a passive sub-skill that adds bonus damage against targets wearing high-quality armor. The raw bonus equals the player's current rank. It is then modified by the target's total armor quality score. By default it only applies in PvP; enabling `Skills.General.LimitBreak.AllowPVE: true` in `advanced.yml` also activates it against mobs.
 
-> Limit Break damage is also multiplied by your attack strength at the moment of the hit.
+> For melee trident strikes, Limit Break damage is also multiplied by your attack strength at the moment of the hit. Thrown-trident Limit Break damage is applied flat, with no attack-strength scaling.
 {.is-info}
 
 | Rank | Unlock level | Raw bonus damage (HP) |
