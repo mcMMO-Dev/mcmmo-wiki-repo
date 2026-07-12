@@ -2,7 +2,7 @@
 title: Mining
 description: Information about the Mining skill.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: mining, skills
 editor: markdown
 dateCreated: 2022-07-17T14:27:25.815Z
@@ -138,6 +138,17 @@ Experience is earned by breaking blocks with a pickaxe. Per-block XP values are 
 | Bone Block | 500 |
 | Calcite | 400 |
 
+### Cinnabar and sulfur
+
+These block families award Mining XP on servers where they are present:
+
+| Block | XP |
+|-------|---:|
+| Cinnabar (all variants) | 40 |
+| Sulfur (all variants) | 40 |
+| Potent Sulfur | 60 |
+| Sulfur Spike | 30 |
+
 ## Double Drops
 
 **Ranks:** 1
@@ -171,16 +182,16 @@ Skills:
 > Unlocks at level **1000**.
 {.is-info}
 
-When Double Drops triggers, Mother Lode can fire a **second** bonus drop roll on top of it, effectively tripling yields. Mother Lode only rolls after Double Drops succeeds, so both sub-skills must fire for a triple drop to occur.
+Mother Lode is rolled **first and independently** whenever you break a compatible block. If the Mother Lode roll succeeds, the block yields a **triple** drop. If it fails, mcMMO falls back to the normal Double Drops roll, which can still produce a double drop. Only the Mother Lode roll needs to succeed for a triple drop, so Double Drops does not have to fire first.
 
-The chance scales from **0%** at level 1000 to **50%** at level **10000**.
+The chance scales linearly with your Mining level (level ÷ 10000 × 50%), with no unlock floor. Mother Lode unlocks at level **1000**, where the chance is already **5%**, and reaches **50%** at level **10000**.
 
 | Level | Mother Lode Chance |
 |------:|-------------------:|
-| 1000 | 0% |
-| 3250 | 12.5% |
-| 5500 | 25% |
-| 7750 | 37.5% |
+| 1000 | 5% |
+| 3250 | 16.25% |
+| 5500 | 27.5% |
+| 7750 | 38.75% |
 | 10000 | 50% |
 
 ## Super Breaker
@@ -208,23 +219,27 @@ Skills:
 > Unlocks at level **100**.
 {.is-info}
 
-Crouch and right-click while looking at TNT, holding a pickaxe or a Flint and Steel, to remotely detonate it from up to **100 blocks** away (configurable with `Skills.Mining.BlastMining.RemoteDetonationDistance` in [`advanced.yml`](/config/advanced)). Each rank improves ore yield, reduces debris drops, reduces self-damage from the explosion, multiplies dropped items, and expands the blast radius.
+Crouch and right-click while looking at TNT, holding a pickaxe or a Flint and Steel, to remotely detonate it from up to **100 blocks** away (configurable with `Skills.Mining.BlastMining.RemoteDetonationDistance` in [`advanced.yml`](/config/advanced)). Each rank improves ore yield, reduces self-damage from the explosion, and expands the blast radius. Higher ranks can also produce bonus copies of ore drops.
 
-| Rank | Unlock | Blast Dmg Reduction | Ore Bonus | Debris Reduction | Drop Multiplier | Radius Bonus |
-|-----:|-------:|--------------------:|----------:|-----------------:|----------------:|-------------:|
-| 1 | 100 | 0% | 35% | 10% | ×1 | +1.0 |
-| 2 | 250 | 0% | 40% | 20% | ×1 | +1.0 |
-| 3 | 350 | 0% | 45% | 30% | ×1 | +2.0 |
-| 4 | 500 | 25% | 50% | 30% | ×1 | +2.0 |
-| 5 | 650 | 25% | 55% | 30% | ×2 | +3.0 |
-| 6 | 750 | 50% | 60% | 30% | ×2 | +3.0 |
-| 7 | 850 | 50% | 65% | 30% | ×3 | +4.0 |
-| 8 | 1000 | 100% | 70% | 30% | ×3 | +4.0 |
+| Rank | Unlock | Blast Dmg Reduction | Ore Bonus | Radius Bonus |
+|-----:|-------:|--------------------:|----------:|-------------:|
+| 1 | 100 | 0% | 35% | +1.0 |
+| 2 | 250 | 0% | 40% | +1.0 |
+| 3 | 350 | 0% | 45% | +2.0 |
+| 4 | 500 | 25% | 50% | +2.0 |
+| 5 | 650 | 25% | 55% | +3.0 |
+| 6 | 750 | 50% | 60% | +3.0 |
+| 7 | 850 | 50% | 65% | +4.0 |
+| 8 | 1000 | 100% | 70% | +4.0 |
 
-- **Ore Bonus:** extra chance that ore blocks drop their item rather than the ore block itself.
-- **Debris Reduction:** chance that non-ore blocks (stone, gravel, etc.) drop nothing.
-- **Drop Multiplier:** all items that do drop are multiplied by this factor.
-- At Rank 8, blast self-damage is completely negated.
+When you detonate TNT, mcMMO cancels the vanilla explosion drops and handles every drop itself:
+
+- **Mining XP:** every destroyed ore always grants Mining XP, whether or not it produces a drop.
+- **Ore drops:** each eligible ore has a drop chance equal to the explosion's yield (30% for a standard TNT blast) multiplied by `1 + Ore Bonus`, capped at 300%. With the shipped defaults this is about 40.5% at rank 1, rising to 51% at rank 8. Drops are rolled with the pickaxe in your hand, so Fortune and Silk Touch apply.
+- **Bonus ore drops:** when an ore drop succeeds and `Bonus_Drops.Enabled` is `true` (the default), there is a further flat 50% chance to spawn extra copies of that drop. The number of extra copies is fixed by rank: none at ranks 1-2, one extra set at ranks 3-6, and two extra sets at ranks 7-8.
+- **Non-ore blocks:** every non-ore block caught in the blast has a flat 10% chance to drop itself, at every rank.
+- **Never dropped:** spawners, infested blocks, and budding amethyst never drop, and player-placed blocks are ignored entirely.
+- **Self-damage:** the Blast Dmg Reduction column reduces the explosion damage you take; at rank 8 it is completely negated.
 
 ## Bigger Bombs
 
