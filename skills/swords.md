@@ -2,7 +2,7 @@
 title: Swords
 description: "Information about the Swords skill."
 published: true
-date: 2024-11-24T01:42:04.578Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, swords
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -32,9 +32,9 @@ XP is earned based on the amount of damage dealt to mobs or players when wieldin
 
 **Ranks:** 2
 
-Stab adds a flat HP bonus to every sword hit. It is always active once unlocked and does not have a proc chance.
+Stab adds bonus HP to every sword hit. It is always active once unlocked and does not have a proc chance. Like the other melee bonuses, this bonus is scaled by the attack strength modifier, so the values below apply at full charge; a partially-charged (spam) hit gets a proportionally smaller bonus.
 
-| Rank | Unlock level | Bonus damage (HP) |
+| Rank | Unlock level | Bonus damage (HP at full charge) |
 |------|-------------|-------------------|
 | 1 | 750 | 2.5 |
 | 2 | 1000 | 4.0 |
@@ -85,7 +85,7 @@ Tick damage is applied twice per second.
 
 **Ranks:** 1 -- Unlocks at level 50
 
-Serrated Strikes is an active ability that must be armed by right-clicking with a sword while not looking at a block. When active, the next sword attack deals 25% of the hit's damage to all enemies within **2.5 blocks** of the primary target and also applies Rupture to each one.
+Serrated Strikes is a super ability that must be armed by right-clicking with a sword while not looking at a block. Activating it opens a timed window during which **every** sword hit deals 25% of that hit's damage (scaled by attack strength) to all enemies within **2.5 blocks** of the primary target and also applies Rupture to each one. The window lasts 2 seconds plus 1 second for every 50 Swords levels (up to 22 seconds at level 1000), after which the ability goes on a 240-second cooldown before it can be armed again.
 
 The maximum number of additional targets hit by the AoE scales with weapon material:
 
@@ -93,10 +93,14 @@ The maximum number of additional targets hit by the AoE scales with weapon mater
 |----------------|----------------------|
 | Wood | 1 |
 | Stone | 2 |
+| Copper | 0 |
 | Iron | 3 |
 | Gold | 1 |
 | Diamond | 4 |
 | Netherite | 5 |
+
+> Copper swords are treated as tier 0 by the area-of-effect, so Serrated Strikes hits no additional targets while you wield one, even though the ability still activates.
+{.is-info}
 
 **Config keys** (`advanced.yml` under `Skills.Swords.SerratedStrikes`):
 
@@ -110,7 +114,7 @@ The maximum number of additional targets hit by the AoE scales with weapon mater
 
 **Ranks:** 1 -- Unlocks at level 200
 
-Counter Attack is a passive proc that triggers when you take damage from a mob or player while holding a sword. On proc, **50%** of the incoming damage is dealt back to the attacker (ignoring their armor). The counter-damage is subject to event cancellation from other plugins.
+Counter Attack is a passive proc that triggers when you take damage from a mob or player while holding a sword. On proc, **50%** of the incoming damage is dealt back to the attacker through the normal damage pipeline, so unlike Rupture it is reduced by the attacker's armor and resistance. The counter-damage is subject to event cancellation from other plugins.
 
 The proc chance scales linearly from 0% at level 0 to **30%** at level 1000.
 
