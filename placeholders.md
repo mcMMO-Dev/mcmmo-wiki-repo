@@ -2,7 +2,7 @@
 title: PlaceholderAPI Placeholders
 description: List of supported placeholders.
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-19T20:46:03.114Z
@@ -39,7 +39,7 @@ The two skill name placeholders follow the server's locale and any locale overri
 
 ## Leaderboards
 
-Leaderboard placeholders return entries from the same leaderboards as `/mctop`. Replace `<skillname>` as above and `<position>` with the leaderboard position you want:
+Leaderboard placeholders return entries from the same leaderboards as `/mctop`. Replace `<skillname>` as above and `<position>` with the leaderboard position you want. The child skills Salvage and Smelting have no leaderboard, so `mctop` placeholders are not available for them:
 
 | Placeholder | Returns | Example |
 |-------------|---------|---------|
@@ -64,7 +64,7 @@ and renders like this:
 #3 Momshroom (1387)
 ```
 
-Positions above `General.PlaceholderAPI.Leaderboards.Max_Tracked_Rank` in config.yml (100 by default), invalid positions, and positions no player currently holds return an empty result. Results come from a cache that refreshes on the `General.Leaderboards.Refresh_Interval_Seconds` schedule; see [config.yml](/config/config).
+Positions above `General.PlaceholderAPI.Leaderboards.Max_Tracked_Rank` in config.yml (100 by default), invalid positions, and positions no player currently holds return an empty result. Results come from a cache that refreshes on a schedule set by `General.Leaderboards.Refresh_Interval_Seconds.SQL` (default 60 seconds) for SQL storage or `General.Leaderboards.Refresh_Interval_Seconds.FlatFile` (default 600 seconds) for flat-file storage; see [config.yml](/config/config).
 
 ## Misc
 
