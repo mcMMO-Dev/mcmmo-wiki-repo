@@ -2,7 +2,7 @@
 title: treasures.yml
 description: Excavation Archaeology and Hylian Luck treasure drop configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config, excavation, herbalism
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -12,8 +12,8 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 `treasures.yml` configures the treasure tables for two Herbalism and Excavation sub-skills:
 
-- **Archaeology** (Excavation) — items found while digging dirt, sand, gravel, clay, and similar blocks
-- **Hylian Luck** (Herbalism) — items found by breaking bushes, flowers, and flower pots
+- **Archaeology** (Excavation): items found while digging dirt, sand, gravel, clay, and similar blocks
+- **Hylian Luck** (Herbalism): items found by breaking bushes, flowers, and flower pots
 
 Default values can be viewed [on GitHub](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/treasures.yml).
 
@@ -56,7 +56,7 @@ The `Excavation:` section lists items that can be found by the Archaeology sub-s
 
 Several entries share a large common block list. The shorthand labels used in the table below refer to these exact block sets.
 
-> These groups reflect the **default** configuration. Any entry's `Drops_From` list can be freely changed — these names are just a reading convenience for this page.
+> These groups reflect the **default** configuration. Any entry's `Drops_From` list can be freely changed; these names are just a reading convenience for this page.
 {.is-info}
 
 | Label | Blocks |
@@ -129,7 +129,7 @@ The `Drops_From` field uses special category names rather than individual block 
 | Gold Nugget | 100% | 0 | Pots |
 | Copper Nugget | 100% | 0 | Pots |
 
-> A 100% `Drop_Chance` here does not mean these always drop — the Hylian Luck sub-skill itself has its own proc chance controlled by `advanced.yml`. These values only govern the distribution once the proc fires.
+> A 100% `Drop_Chance` here does not mean these always drop: the Hylian Luck sub-skill itself has its own proc chance controlled by `advanced.yml`. These values only govern the distribution once the proc fires.
 {.is-warning}
 
 ---
@@ -138,7 +138,7 @@ The `Drops_From` field uses special category names rather than individual block 
 
 Valid material names for all entries are Bukkit `Material` enum names (see the [Spigot Javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)). Names are case-insensitive.
 
-> The full entry must be present. mcMMO loads each material key completely from the file — you cannot partially override a single field.
+> The full entry must be present. mcMMO loads each material key completely from the file; you cannot partially override a single field.
 {.is-info}
 
 ### Adding a new Excavation drop
@@ -181,7 +181,7 @@ To limit Diamond drops to Clay only, change the `Drops_From` line:
         Drops_From: [Clay]
 ```
 
-Use the same list format when expanding an item to more blocks — e.g. `[Dirt, Sand, Gravel, Clay, Soul_Sand, Mud]`.
+Use the same list format when expanding an item to more blocks, e.g. `[Dirt, Sand, Gravel, Clay, Soul_Sand, Mud]`.
 
 ### Adding a Hylian Luck drop
 
@@ -204,7 +204,7 @@ Hylian_Luck:
 
 ### Raising XP for a high-value find
 
-To make finding a Heart of the Sea also award bonus Excavation XP, increase its `XP` value (default is 9999 — the highest in the file):
+To make finding a Heart of the Sea also award bonus Excavation XP, increase its `XP` value (default is 9999, the highest in the file):
 
 ```yaml
 Excavation:

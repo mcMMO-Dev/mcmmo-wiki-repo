@@ -2,7 +2,7 @@
 title: salvage.vanilla.yml
 description: Vanilla item salvage configuration reference for mcMMO Salvage.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config, salvage
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -29,7 +29,7 @@ Salvageables:
         MaximumQuantity: 2
 ```
 
-> For craftable vanilla items (tools, armour) mcMMO auto-detects the salvage material from the crafting recipe — no `SalvageMaterial` field is needed. For non-craftable items (e.g. Elytra), you must specify `SalvageMaterial` explicitly.
+> For craftable vanilla items (tools, armour) mcMMO auto-detects the salvage material from the crafting recipe; no `SalvageMaterial` field is needed. For non-craftable items (e.g. Elytra), you must specify `SalvageMaterial` explicitly.
 {.is-info}
 
 > By default, **diamond items require level 500** and **netherite items require level 1000** Salvage (Retro) before they can be salvaged. Wooden, stone, leather, iron, and gold items have no level requirement.
@@ -39,14 +39,14 @@ Salvageables:
 |-------|-------------|
 | `MinimumLevel` | Minimum Salvage skill level required to salvage this item. |
 | `XpMultiplier` | Multiplier applied to base Salvage XP. |
-| `MaximumQuantity` | Maximum number of `SalvageMaterial` that can be recovered. The actual quantity depends on durability — a full-durability item returns `MaximumQuantity`, a damaged item returns fewer. |
+| `MaximumQuantity` | Maximum number of `SalvageMaterial` that can be recovered. The actual quantity depends on durability: a full-durability item returns `MaximumQuantity`, a damaged item returns fewer. |
 | `SalvageMaterial` | Bukkit `Material` name of the material to recover. |
 
 ---
 
 ## Default Salvageable Items
 
-The file covers most vanilla repairable items. The Shield, Mace, Elytra, and Warped Fungus on a Stick are notable exceptions — they are repairable but **not** salvageable by default. Grouped by tier:
+The file covers most vanilla repairable items. The Shield, Mace, Elytra, and Warped Fungus on a Stick are notable exceptions: they are repairable but **not** salvageable by default. Grouped by tier:
 
 | Tier | Sample Items | Salvage Material |
 |------|-------------|-----------------|
@@ -60,14 +60,14 @@ The file covers most vanilla repairable items. The Shield, Mace, Elytra, and War
 
 Bows, Crossbows, and Fishing Rods are also salvageable by default.
 
-> Elytra is **not** salvageable by default — add it manually as shown below. Trident has an entry but no `SalvageMaterial` and no crafting recipe, so it yields nothing; add `SalvageMaterial` and `MaximumQuantity` to the existing Trident entry to enable salvage.
+> Elytra is **not** salvageable by default; add it manually as shown below. Trident has an entry but no `SalvageMaterial` and no crafting recipe, so it yields nothing; add `SalvageMaterial` and `MaximumQuantity` to the existing Trident entry to enable salvage.
 {.is-info}
 
 ---
 
 ## Tips
 
-- **To cap the return quantity**, lower `MaximumQuantity`. A diamond sword at `MaximumQuantity: 1` can never return more than 1 diamond — `MaximumQuantity` is the absolute ceiling regardless of other skill bonuses.
+- **To cap the return quantity**, lower `MaximumQuantity`. A diamond sword at `MaximumQuantity: 1` can never return more than 1 diamond; `MaximumQuantity` is the absolute ceiling regardless of other skill bonuses.
 - **To require a skill level**, set `MinimumLevel`.
 - **To add a custom item**, add a new entry under `Salvageables:` with all four fields.
 - The material quantity is proportional to remaining durability. An item at 50% durability returns roughly half of `MaximumQuantity`.
@@ -109,7 +109,7 @@ Salvageables:
 
 ### Capping Diamond tool returns
 
-By default a Diamond Sword returns up to 2 diamonds. To ensure no more than 1 is ever returned — even with high Arcane Salvage — lower `MaximumQuantity`:
+By default a Diamond Sword returns up to 2 diamonds. To ensure no more than 1 is ever returned (even with high Arcane Salvage), lower `MaximumQuantity`:
 
 ```yaml
 Salvageables:
@@ -131,4 +131,4 @@ Salvageables:
         MaximumQuantity: 4
 ```
 
-Each Netherite item must be updated individually — there is no global override key.
+Each Netherite item must be updated individually; there is no global override key.

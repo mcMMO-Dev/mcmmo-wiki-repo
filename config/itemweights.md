@@ -2,7 +2,7 @@
 title: itemweights.yml
 description: Item weight configuration for party equal-share mode.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -19,7 +19,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 ## How Equal Sharing Works
 
-When a party uses the **EQUAL** item share mode, items that drop from mcMMO-triggered events (treasure, double drops, etc.) are distributed fairly among nearby party members. The weight of each item influences how the distribution is balanced — higher-weight items are considered more valuable and offset the value of other items received.
+When a party uses the **EQUAL** item share mode, items that drop from mcMMO-triggered events (treasure, double drops, etc.) are distributed fairly among nearby party members. The weight of each item influences how the distribution is balanced: higher-weight items are considered more valuable and offset the value of other items received.
 
 If an item is not listed, the `Default` weight (`5`) is used.
 

@@ -2,7 +2,7 @@
 title: repair.vanilla.yml
 description: Vanilla item repair configuration reference for mcMMO Repair.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config, repair
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -40,7 +40,7 @@ Repairables:
 |-------|-------------|
 | `MinimumLevel` | Minimum Repair skill level required to repair this item. |
 | `XpMultiplier` | Multiplier applied to base Repair XP gained for this item. Higher = more XP per repair. |
-| `ItemType` | `TOOL` or `ARMOR` — affects how Repair Mastery bonus is calculated. |
+| `ItemType` | `TOOL` or `ARMOR`; affects how Repair Mastery bonus is calculated. |
 | `ItemMaterialCategory` | Material tier: `WOOD`, `STONE`, `LEATHER`, `IRON`, `GOLD`, `DIAMOND`, `NETHERITE`, `STRING`, `OTHER`. Determines base XP. |
 | `RepairMaterial` | The Bukkit `Material` name of the item used on the anvil to repair it. |
 | `MinimumQuantity` | Minimum number of repair materials consumed per repair attempt. |

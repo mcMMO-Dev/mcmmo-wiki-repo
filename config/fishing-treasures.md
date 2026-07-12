@@ -2,7 +2,7 @@
 title: fishing_treasures.yml
 description: Fishing Treasure Hunter, enchantment drop rates, and Shake drop configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config, fishing
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -12,11 +12,11 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 `fishing_treasures.yml` controls the complete loot tables for the Fishing skill. It has four distinct sections:
 
-1. **`Fishing:`** — the item pool; items tagged with a rarity
-2. **`Item_Drop_Rates:`** — per-tier (rank) % chance to receive an item of each rarity
-3. **`Enchantments_Rarity:`** — which enchantments and levels can appear per rarity for enchanted books
-4. **`Enchantment_Drop_Rates:`** — per-tier (rank) % chance to receive an enchanted book of each rarity
-5. **`Shake:`** — mob-specific drop tables for the Shake sub-skill
+1. **`Fishing:`** the item pool; items tagged with a rarity
+2. **`Item_Drop_Rates:`** per-tier (rank) % chance to receive an item of each rarity
+3. **`Enchantments_Rarity:`** which enchantments and levels can appear per rarity for enchanted books
+4. **`Enchantment_Drop_Rates:`** per-tier (rank) % chance to receive an enchanted book of each rarity
+5. **`Shake:`** mob-specific drop tables for the Shake sub-skill
 
 Default values can be viewed [on GitHub](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/fishing_treasures.yml).
 
@@ -96,7 +96,7 @@ Fishing:
 
 ## Section 4: Enchantment Drop Rates
 
-`Enchantment_Drop_Rates` defines the per-tier (rank) percent chance to receive an enchanted book of each rarity on any given catch. This is a **separate roll** from the Item_Drop_Rates roll — a single catch can produce both a regular item and an enchanted book.
+`Enchantment_Drop_Rates` defines the per-tier (rank) percent chance to receive an enchanted book of each rarity on any given catch. This is a **separate roll** from the Item_Drop_Rates roll: a single catch can produce both a regular item and an enchanted book.
 
 | Tier | COMMON | UNCOMMON | RARE | EPIC | LEGENDARY | MYTHIC |
 |------|--------|---------|------|------|-----------|--------|
@@ -221,7 +221,7 @@ Shake:
             Drop_Level: 0
 ```
 
-The `Drop_Chance` values act as weights in a single random selection — only **one item** drops per shake. The chances are accumulated in order, so the first entry has the highest effective priority. When the total sums to 100, something always drops; if it sums to less, the remaining probability results in nothing dropping.
+The `Drop_Chance` values act as weights in a single random selection: only **one item** drops per shake. The chances are accumulated in order, so the first entry has the highest effective priority. When the total sums to 100, something always drops; if it sums to less, the remaining probability results in nothing dropping.
 
 ### Granting bonus XP for rare catches
 

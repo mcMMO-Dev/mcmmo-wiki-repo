@@ -2,7 +2,7 @@
 title: chat.yml
 description: mcMMO chat channel configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -46,4 +46,4 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 The visual formatting of chat messages (prefix, colours, layout) is handled through the **locale** system, not through `chat.yml`.
 
-To customise how party chat or admin chat looks, open your locale file and search for `chat` — the relevant locale keys are grouped there. See the [Locale](/locale) page for full details.
+To customise how party chat or admin chat looks, open your locale file and search for `chat`; the relevant locale keys are grouped there. See the [Locale](/locale) page for full details.

@@ -2,7 +2,7 @@
 title: Vampirism
 description: Information about mcMMO's optional vampirism setting
 published: true
-date: 2024-11-24T01:59:07.533Z
+date: 2026-07-11T20:00:00.000Z
 tags: config, vampirism, pvp
 editor: markdown
 dateCreated: 2022-07-17T21:52:03.092Z
@@ -14,7 +14,7 @@ Vampirism is an optional PvP mechanic in mcMMO. When enabled, killing another pl
 
 ## Configuration
 
-Vampirism is configured in `config.yml` under `Hardcore.Vampirism`. There is no single global enable/disable switch — each skill is individually toggled. All skills are **disabled by default**, so Vampirism has no effect until you explicitly enable at least one skill.
+Vampirism is configured in `config.yml` under `Hardcore.Vampirism`. There is no single global enable/disable switch; each skill is individually toggled. All skills are **disabled by default**, so Vampirism has no effect until you explicitly enable at least one skill.
 
 | Key | Default | Description |
 |-----|---------|-------------|
@@ -30,7 +30,7 @@ Vampirism is configured in `config.yml` under `Hardcore.Vampirism`. There is no 
 When a player is killed by another player with Vampirism enabled for at least one skill:
 
 - For each enabled skill, a percentage of the victim's total level is stolen and added directly to the killer's level.
-- Vampirism only triggers on a skill if the victim's level is **at least half** the killer's level in that skill — low-level players cannot be farmed by high-level killers.
+- Vampirism only triggers on a skill if the victim's level is **at least half** the killer's level in that skill, so low-level players cannot be farmed by high-level killers.
 - The formula is: `levelsStolen = floor(victimSkillLevel × leechPercentage / 100)`, with the fractional remainder applied as XP.
 - This only applies to player-vs-player kills, not mob kills.
 

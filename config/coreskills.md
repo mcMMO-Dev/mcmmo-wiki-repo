@@ -2,7 +2,7 @@
 title: coreskills.yml
 description: Enable or disable individual mcMMO skills and sub-skills.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -19,7 +19,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 ## How It Works
 
-The file uses a simple pattern. Every entry defaults to `true` (enabled) — you only need to add entries for things you want to change.
+The file uses a simple pattern. Every entry defaults to `true` (enabled), so you only need to add entries for things you want to change.
 
 **Disable an entire skill** (all sub-skills):
 ```yaml
@@ -40,7 +40,7 @@ The sub-skill name used in the config matches the internal key name. The default
 
 ## Sub-Skill Config Key Names
 
-The key names are derived from the sub-skill's internal name. If you are unsure of the exact key, check the source or experiment — an unrecognised key is simply ignored (defaults to enabled).
+The key names are derived from the sub-skill's internal name. If you are unsure of the exact key, check the source or experiment; an unrecognised key is simply ignored (defaults to enabled).
 
 ### Examples
 
@@ -66,4 +66,4 @@ Unarmed:
 
 - Disabling a **skill** (`Enabled: false` at the skill level) prevents all XP gain and sub-skill procs for that skill.
 - Disabling a **sub-skill** still allows XP gain in the parent skill; it just stops the specific proc from triggering.
-- Permissions can also be used to restrict skills and sub-skills per player or group — see [Permissions](/permissions).
+- Permissions can also be used to restrict skills and sub-skills per player or group; see [Permissions](/permissions).

@@ -2,7 +2,7 @@
 title: potions.yml
 description: Alchemy Concoctions ingredient tiers and custom potion definition configuration reference.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config, alchemy
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -12,8 +12,8 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 `potions.yml` has two major responsibilities:
 
-1. **Concoctions tier ingredient lists** — which brewing stand ingredients are unlocked at each Concoctions rank (Tiers 1–8).
-2. **Potion definitions** — the full recipe graph used by Alchemy's custom brewing system (ingredients, resulting potions, effects, lore).
+1. **Concoctions tier ingredient lists**: which brewing stand ingredients are unlocked at each Concoctions rank (Tiers 1–8).
+2. **Potion definitions**: the full recipe graph used by Alchemy's custom brewing system (ingredients, resulting potions, effects, lore).
 
 Default values can be viewed [on GitHub](https://github.com/mcMMO-Dev/mcMMO/blob/master/src/main/resources/potions.yml).
 
@@ -66,7 +66,7 @@ Tier_Three_Ingredients:
 
 ## Section 2: Potion Definitions
 
-The `Potions:` section is a complete recipe graph. Each entry defines one potion variant — its material, base data, optional colour, optional lore, what ingredients transform it into other potions (`Children`), and what effects it applies.
+The `Potions:` section is a complete recipe graph. Each entry defines one potion variant: its material, base data, optional colour, optional lore, what ingredients transform it into other potions (`Children`), and what effects it applies.
 
 ```yaml
 POTION_OF_HEALING:
@@ -101,7 +101,7 @@ You typically **do not need to edit the `Potions:` section** unless you are:
 
 The default definitions reproduce vanilla Minecraft's complete brewing tree plus custom Concoctions recipes.
 
-> If you only want to control what ingredients players can use, edit the `Concoctions` tiers above — not the full potion graph.
+> If you only want to control what ingredients players can use, edit the `Concoctions` tiers above, not the full potion graph.
 {.is-info}
 
 ---

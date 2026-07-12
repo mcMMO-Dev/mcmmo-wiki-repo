@@ -2,7 +2,7 @@
 title: persistent_data.yml
 description: NBT persistence flags for mcMMO mob tracking.
 published: true
-date: 2026-05-17T00:00:00.000Z
+date: 2026-07-11T20:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -19,7 +19,7 @@ dateCreated: 2026-05-17T00:00:00.000Z
 
 ## Why This Matters
 
-mcMMO tags certain mobs with metadata to prevent XP exploits (e.g., a mob that came from a spawner should give 0 XP). When a mob's flag is **not** saved to disk (`Saved_To_Disk: false`), the flag lives only in memory — if the server restarts or the chunk unloads, the mob "forgets" its tag.
+mcMMO tags certain mobs with metadata to prevent XP exploits (e.g., a mob that came from a spawner should give 0 XP). When a mob's flag is **not** saved to disk (`Saved_To_Disk: false`), the flag lives only in memory; if the server restarts or the chunk unloads, the mob "forgets" its tag.
 
 Enabling persistence (`Saved_To_Disk: true`) solves this but adds a small disk I/O cost every time a chunk containing that type of entity is unloaded. Servers with very large numbers of a given entity type (especially endermen or spawner mobs) should monitor TPS before enabling persistence for those categories.
 
