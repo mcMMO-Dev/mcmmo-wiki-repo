@@ -100,7 +100,6 @@ Commands intended for server administrators to manage mcMMO settings and users.
 | `/mcremove`          | None              | Remove a user from the mcMMO database.                         | `mcmmo.commands.mcremove`     |
 | `/mmodebug`          | `/mcmmodebugmode` | Displays debug information for mcMMO.                          | None                          |
 | `/mmoedit`           | None              | Edit the mcMMO skill values for a user.                        | `mcmmo.commands.mmoedit`      |
-| `/mmoinfo`           | `/mcinfo`         | Read details about a skill or mechanic.                       | `mcmmo.commands.mmoinfo`      |
 | `/mmoshowdb`         | None              | Shows the current database type being used by mcMMO.           | `mcmmo.commands.mmoshowdb`    |
 | `/mmoxpbar`          | `/xpbarsettings`  | Change XP bar settings.                                        | None                          |
 | `/skillreset`        | None              | Resets the level of one or all of your skills.                 | `mcmmo.commands.skillreset`   |
@@ -120,6 +119,7 @@ Additional commands for various functionalities within mcMMO.
 | `/mclevelupsound` | `/levelupsound` | Toggle the mcMMO level-up sound on/off.           | `mcmmo.commands.mclevelupsound` |
 | `/mcnotify`     | `/notify` | Toggle mcMMO abilities chat display notifications on/off. | `mcmmo.commands.mcnotify`     |
 | `/mcscoreboard` | `/mcsb`   | Manage your mcMMO Scoreboard.                             | `mcmmo.commands.mcscoreboard` |
+| `/mmoinfo`      | `/mcinfo` | Read details about a skill or mechanic.                   | `mcmmo.commands.mmoinfo`      |
 
 ## Removed Commands
 These commands existed for a brief period of time in older versions of mcMMO.
