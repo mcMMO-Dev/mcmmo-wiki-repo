@@ -2,7 +2,7 @@
 title: Unarmed
 description: "Information about the Unarmed skill."
 published: true
-date: 2024-11-24T01:42:06.231Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, unarmed
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -72,6 +72,8 @@ Steel Arm Style adds a flat HP bonus to every unarmed hit. It is always active o
 
 Berserk is an active ability that must be armed by right-clicking while bare-handed and not looking at a block. When active, all unarmed hits deal **1.5× damage** multiplied by the current attack strength modifier.
 
+While Berserk is active, your bare fists also instantly break soft blocks: any block affected by Giga Drill Breaker (dirt, sand, gravel, clay, and similar excavation materials), glass, and snow.
+
 ---
 
 ### Arrow Deflect
@@ -126,7 +128,7 @@ Iron Grip is a passive counter-proc that triggers when another player attempts t
 
 **Ranks:** 0 (passive, no rank unlock required)
 
-Block Cracker is a passive ability that automatically converts certain block types into their cracked variants when punched bare-handed. No proc chance is involved, the conversion happens every punch, provided the `Block_Cracker` permission is granted and the feature is enabled in `config.yml`.
+Block Cracker converts certain block types into their cracked variants, but only while your **Berserk** super ability is active and you strike an eligible block bare-handed. No proc chance is involved, the conversion happens on every eligible block hit during Berserk, provided the `Block_Cracker` permission is granted and the feature is enabled in `config.yml`. Ordinary punches outside of Berserk do not crack blocks.
 
 Affected conversions:
 
