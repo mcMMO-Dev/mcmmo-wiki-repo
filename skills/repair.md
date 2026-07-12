@@ -2,7 +2,7 @@
 title: Repair
 description: "Information about the Repair skill."
 published: true
-date: 2026-07-11T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: repair, skills
 editor: markdown
 dateCreated: 2022-07-17T14:28:35.051Z
@@ -136,7 +136,7 @@ Each item below can be repaired at the mcMMO Anvil with the listed material. `XP
 | Bow | 0.5 | |
 | Fishing Rod | 0.5 | |
 | Carrot on a Stick | 0.5 | |
-| Crossbow | 0.5 | 3 string per repair, 326 durability |
+| Crossbow | 0.5 | 3 string per repair |
 | Warped Fungus on a Stick | 0.5 | 3 string per repair, 100 durability |
 
 **Other repairables.**
@@ -174,7 +174,7 @@ Repair Mastery passively increases the durability restored on every repair. The 
 
 | Skill level | Bonus repair |
 |-------------|-------------|
-| 1           | ~2 %        |
+| 1           | ~0.2 %      |
 | 250         | ~50 %       |
 | 500         | ~100 %      |
 | 750         | ~150 %      |
@@ -248,7 +248,7 @@ Enchant loss and downgrades can be disabled globally:
 | `Downgrades_Enabled` | `true` |
 | `MaxEnchantLevel` | `5` |
 
-Players with the `mcmmo.perks.repair.arcanebypass` permission always keep enchantments at full level.
+Players with the `mcmmo.bypass.arcanebypass` permission always keep their enchantments at full level when repairing, and players with `mcmmo.perks.bypass.repairenchant` bypass Arcane Forging entirely so their enchantments are never touched.
 
 ---
 
