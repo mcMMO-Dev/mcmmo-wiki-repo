@@ -61,7 +61,7 @@ By default the file includes every repairable vanilla item grouped by material t
 | Iron | Iron tools and armour | `IRON_INGOT` |
 | Gold | Golden tools and armour | `GOLD_INGOT` |
 | Diamond | Diamond tools and armour | `DIAMOND` |
-| Netherite | Netherite tools and armour | `NETHERITE_INGOT` |
+| Netherite | Netherite tools and armour | `NETHERITE_SCRAP` |
 
 Other repairable items include the Elytra, Shield, Mace, Bow, Crossbow, Trident, Carrot on a Stick, Warped Fungus on a Stick, and Fishing Rod.
 
