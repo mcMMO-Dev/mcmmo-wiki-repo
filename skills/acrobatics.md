@@ -36,7 +36,7 @@ The Acrobatics skill rewards graceful movement. It grants a chance to negate fal
 | Successful Roll or Graceful Roll | `600 × damage that would have been taken (HP)` |
 | Successful Dodge | `800 × damage dodged (HP)` |
 
-> mcMMO multiplies fall XP by `FeatherFall_Multiplier` (default 2.0) when you wear boots enchanted with Feather Falling, at any level. Because that multiplier applies to the damage actually taken and Feather Falling also lowers that damage, at most fall heights the two effects roughly cancel and the XP stays close to the no-enchant value. A true doubling only happens on falls large enough that the reduced damage still reaches the 20 HP clamp.
+> mcMMO multiplies fall XP by `FeatherFall_Multiplier` (default 2.0) when you wear boots enchanted with Feather Falling, at any level. The multiplier applies to the damage actually taken, and Feather Falling also lowers that damage, so the two effects offset each other. At Feather Falling IV the offset is nearly complete and XP at most fall heights stays close to the no-enchant value; lower enchantment levels reduce damage less, so they land between roughly equal and nearly double XP. A true doubling only happens on falls large enough that the reduced damage still reaches the 20 HP clamp.
 {.is-info}
 
 ### XP from Falls
