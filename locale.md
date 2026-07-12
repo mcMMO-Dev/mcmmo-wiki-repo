@@ -107,7 +107,7 @@ The familiar `&` prefix followed by a single character:
 mcMMO.Template.Prefix=&6(&amcMMO&6) &7{0}
 ```
 
-> The `&k` obfuscated code only takes effect in JSON hover and tooltip text. In ordinary chat messages it is printed literally, so use the `[[MAGIC]]` token below when you want obfuscated text in a regular locale string.
+> The `&k` obfuscated code only works in text mcMMO renders through its component pipeline, such as hover text, tooltips, and some notifications like level-up messages. In plain-text messages it is printed literally, so use the `[[MAGIC]]` token below when you want obfuscated text that works everywhere in a regular locale string.
 {.is-info}
 
 ---
