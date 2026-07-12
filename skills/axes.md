@@ -2,7 +2,7 @@
 title: Axes
 description: "Information about the Axes skill."
 published: true
-date: 2024-11-24T01:41:23.115Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, axes
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -32,9 +32,9 @@ XP is earned based on the amount of damage dealt to mobs or players when wieldin
 
 **Ranks:** 4
 
-Axe Mastery adds a flat HP bonus to every axe hit. It is always active once unlocked and does not have a proc chance. The bonus equals `rank × RankDamageMultiplier` (default 1.0), giving +1.0, +2.0, +3.0, and +4.0 HP at ranks 1–4 respectively.
+Axe Mastery adds bonus HP to every axe hit. It is always active once unlocked and does not have a proc chance. The bonus equals `rank × RankDamageMultiplier` (default 1.0), giving +1.0, +2.0, +3.0, and +4.0 HP at ranks 1–4 respectively. Like the other melee bonuses, this bonus is scaled by the attack strength modifier, so those values apply at full charge; a partially-charged (spam) hit gets a proportionally smaller bonus.
 
-| Rank | Unlock level | Bonus damage (HP) |
+| Rank | Unlock level | Bonus damage (HP at full charge) |
 |------|-------------|-------------------|
 | 1 | 50 | 1.0 |
 | 2 | 100 | 2.0 |
@@ -137,7 +137,7 @@ Durability damage per proc = `rank × DamagePerRank` (default 6.5 per rank).
 
 **Ranks:** 1, Unlocks at level 50
 
-Skull Splitter is an active ability that must be armed by right-clicking with an axe while not looking at a block. When active, the next axe attack deals 50% of the hit's damage (scaled by attack strength) to all enemies within **2.5 blocks** of the primary target.
+Skull Splitter is a super ability that must be armed by right-clicking with an axe while not looking at a block. Activating it opens a timed window during which **every** axe hit deals 50% of that hit's damage (scaled by attack strength) to all enemies within **2.5 blocks** of the primary target. The window lasts 2 seconds plus 1 second for every 50 Axes levels (up to 22 seconds at level 1000), after which the ability goes on a 240-second cooldown before it can be armed again.
 
 The maximum number of additional targets hit by the AoE scales with weapon material:
 
