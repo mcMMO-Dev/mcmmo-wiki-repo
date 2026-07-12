@@ -85,7 +85,7 @@ Tick damage is applied twice per second.
 
 **Ranks:** 1 -- Unlocks at level 50
 
-Serrated Strikes is a super ability that must be armed by right-clicking with a sword while not looking at a block. Activating it opens a timed window during which **every** sword hit deals 25% of that hit's damage (scaled by attack strength) to all enemies within **2.5 blocks** of the primary target and also applies Rupture to each one. The window lasts 2 seconds plus 1 second for every 50 Swords levels (up to 22 seconds at level 1000), after which the ability goes on a 240-second cooldown before it can be armed again.
+Serrated Strikes is a super ability that must be armed by right-clicking with a sword while not looking at a block. Activating it opens a timed window during which **every** sword hit deals 25% of that hit's damage to all enemies within **2.5 blocks** of the primary target and rolls its normal chance to apply Rupture to each one (the same attack-strength-scaled roll as a regular hit). The window lasts 2 seconds plus 1 second for every 50 Swords levels (up to 22 seconds at level 1000), after which the ability goes on a 240-second cooldown before it can be armed again.
 
 The maximum number of additional targets hit by the AoE scales with weapon material:
 
