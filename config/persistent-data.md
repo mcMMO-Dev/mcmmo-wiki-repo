@@ -2,7 +2,7 @@
 title: persistent_data.yml
 description: NBT persistence flags for mcMMO mob tracking.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -27,15 +27,17 @@ Enabling persistence (`Saved_To_Disk: true`) solves this but adds a small disk I
 
 ## Mob Flags
 
-| Key | Default | Description |
-|-----|---------|-------------|
+Each flag is toggled by a `Saved_To_Disk` boolean nested under `Persistent_Data.Mobs.Flags.<FLAG>`. For example, spawner-mob persistence is set at `Persistent_Data.Mobs.Flags.MOB_SPAWNER_MOB.Saved_To_Disk`.
+
+| Flag | Default | Description |
+|------|---------|-------------|
 | `MOB_SPAWNER_MOB` | `false` | Mobs that spawned from a mob spawner. Gives 0 XP by default. |
 | `EGG_MOB` | `false` | Mobs spawned from spawn eggs. Gives 0 XP by default. |
 | `NETHER_PORTAL_MOB` | `false` | Mobs that entered via a nether portal. Gives 0 XP by default. |
 | `COTW_SUMMONED_MOB` | `true` | Pets summoned by Call of the Wild. Persistent by default because there are rarely many of them. |
 | `PLAYER_BRED_MOB` | `false` | Mobs bred by players. Gives normal XP by default; adjust in `experience.yml`. |
 | `EXPLOITED_ENDERMEN` | `false` | Endermen that arrived via the Enderman/Endermite exploit. Gives 0 XP. |
-| `PLAYER_TAMED_MOB` | `false` | Mobs tamed by players. Gives 0 XP, not currently adjustable. |
+| `PLAYER_TAMED_MOB` | `false` | Mobs tamed by players. Gives 0 XP by default; adjust the multiplier at `Experience_Formula.Player_Tamed.Multiplier` in `experience.yml`. |
 
 ---
 
