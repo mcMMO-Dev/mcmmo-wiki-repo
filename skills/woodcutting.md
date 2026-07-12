@@ -2,7 +2,7 @@
 title: Woodcutting
 description: "Information about the Woodcutting skill."
 published: true
-date: 2024-11-24T01:42:15.334Z
+date: 2026-07-12T00:00:00.000Z
 tags: skills, woodcutting
 editor: markdown
 dateCreated: 2022-07-17T14:29:42.727Z
@@ -93,35 +93,21 @@ The chance scales linearly from 0% at level 0 to **50%** at level 10,000.
 
 ### Leaf Blower
 
-**Ranks:** 3
+**Ranks:** 1, Unlocks at level 150
 
-Leaf Blower allows players to instantly break leaf blocks and other non-wood tree parts (such as bee nests, shroomlights, and similar) while holding an axe. No XP is awarded for leaf blocks.
-
-| Rank | Unlock level |
-|------|-------------|
-| 1 | 150 |
-| 2 | 350 |
-| 3 | 650 |
+Leaf Blower allows players to instantly break leaf blocks and other non-wood tree parts (such as pale hanging moss, mangrove roots, wart blocks, and mushroom blocks) while holding an axe. No XP is awarded for leaf blocks.
 
 ---
 
 ### Tree Feller
 
-**Ranks:** 5, Unlocks at level 50
+**Ranks:** 1, Unlocks at level 50
 
 Tree Feller is an active ability that must be armed by right-clicking with an axe while not looking at a block. When active, breaking any log block causes the entire connected tree (all attached logs and non-wood tree parts) to be felled at once. XP is awarded for each log block removed.
 
 Tree Feller causes extra durability damage to the axe proportional to the number of blocks felled. If the axe would break during Tree Feller, it splinters at the first block and Tree Feller is cancelled.
 
-Higher ranks increase the maximum number of blocks that can be felled in one use (the tree feller threshold is also configurable in `config.yml`).
-
-| Rank | Unlock level |
-|------|-------------|
-| 1 | 50 |
-| 2 | 250 |
-| 3 | 500 |
-| 4 | 750 |
-| 5 | 1000 |
+The maximum number of blocks that can be felled in a single use is the flat `Tree_Feller_Threshold` value configured in `config.yml` (default 1000). It does not scale with your Woodcutting level.
 
 **Config keys** (`config.yml` under `Abilities`):
 
@@ -139,7 +125,7 @@ Higher ranks increase the maximum number of blocks that can be felled in one use
 Knock on Wood triggers during Tree Feller. When active:
 
 - **Rank 1 (level 300):** Leaf blocks removed during Tree Feller have a chance to drop saplings and propagules.
-- **Rank 2 (level 600):** Additionally, there is a 10% chance per non-wood block removed for a random number of vanilla XP orbs (1–100) to spawn at the block''s location. Requires `Add_XP_Orbs_To_Drops: true` in `advanced.yml` (default: `true`).
+- **Rank 2 (level 600):** Additionally, there is a 10% chance per non-wood block removed for a random number of vanilla XP orbs (1–99) to spawn at the block''s location. Requires `Add_XP_Orbs_To_Drops: true` in `advanced.yml` (default: `true`).
 
 | Rank | Unlock level | Effect |
 |------|-------------|--------|
