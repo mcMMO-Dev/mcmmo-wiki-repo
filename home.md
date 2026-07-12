@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2026-06-07T00:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -30,18 +30,24 @@ Use the sidebar or the search function to find what you're looking for!
 
 ## Getting Started
 
+- [Getting Started](/getting-started) - First-time player guide covering skills, XP, and Super Abilities
 - [Installation](/installation) - Everything you need to know about installing or updating mcMMO
 - [Skills](/skills) - Read about mcMMO skills and sub-skills
 - [Permissions](/permissions) - Information on permission nodes used within mcMMO
 
 ## Useful Pages
 
+- [Commands](/Commands) - Full command reference for mcMMO
+- [Parties](/parties) - Information about the mcMMO party system
 - [Configuration](/config) - Customize mcMMO
 - [Locale](/locale) - Customize mcMMO messages or change the language for mcMMO
 - [Plugin Integration](/plugin-integration/plugin-support) - Optional mcMMO features making use of other plugins
+- [PlaceholderAPI Placeholders](/placeholders) - List of supported PlaceholderAPI placeholders
 - [World Blacklist](/config/world-blacklist) - Information about the world blacklist feature
 - [Hardcore Mode](/config/hardcore-mode) - Information about mcMMO's optional hardcore mode
 - [Vampirism](/config/vampirism) - Information about mcMMO's optional vampirism PVP setting
+- [XP Rate Events](/xprate) - Show or change XP rates and run server-wide XP events
+- [Level Up Commands](/config/level-up-commands) - Run commands when players reach chosen skill levels or power levels
 
 ## For plugin developers...
 
