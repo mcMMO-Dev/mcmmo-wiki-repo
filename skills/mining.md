@@ -235,8 +235,8 @@ Crouch and right-click while looking at TNT, holding a pickaxe or a Flint and St
 When you detonate TNT, mcMMO cancels the vanilla explosion drops and handles every drop itself:
 
 - **Mining XP:** every destroyed ore always grants Mining XP, whether or not it produces a drop.
-- **Ore drops:** each eligible ore has a drop chance equal to the explosion's yield (30% for a standard TNT blast) multiplied by `1 + Ore Bonus`, capped at 300%. With the shipped defaults this is about 40.5% at rank 1, rising to 51% at rank 8. Drops are rolled with the pickaxe in your hand, so Fortune and Silk Touch apply.
-- **Bonus ore drops:** when an ore drop succeeds and `Bonus_Drops.Enabled` is `true` (the default), there is a further flat 50% chance to spawn extra copies of that drop. The number of extra copies is fixed by rank: none at ranks 1-2, one extra set at ranks 3-6, and two extra sets at ranks 7-8.
+- **Ore drops:** each eligible ore's drop chance equals the explosion's yield multiplied by `1 + Ore Bonus`, capped at 300%. Every full 100% is one guaranteed drop and any leftover fraction is the chance of one more drop. Modern servers report a 100% yield for a standard TNT blast, so every eligible ore drops at least once, with a further 35% chance of a second set at rank 1, rising to 70% at rank 8. Drops are rolled with the pickaxe in your hand, so Fortune and Silk Touch apply.
+- **Bonus ore drops:** when an ore drop succeeds and `Bonus_Drops.Enabled` is `true` (the default) in [`advanced.yml`](/config/advanced) under `Skills.Mining.BlastMining`, there is a further flat 50% chance to spawn extra copies of that drop. The number of extra copies is fixed by rank: none at ranks 1-2, one extra set at ranks 3-6, and two extra sets at ranks 7-8.
 - **Non-ore blocks:** every non-ore block caught in the blast has a flat 10% chance to drop itself, at every rank.
 - **Never dropped:** spawners, infested blocks, and budding amethyst never drop, and player-placed blocks are ignored entirely.
 - **Self-damage:** the Blast Dmg Reduction column reduces the explosion damage you take; at rank 8 it is completely negated.
