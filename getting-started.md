@@ -31,7 +31,7 @@ You don't need to do anything special to start. Mine a block, swing your sword, 
 ## How XP works
 
 - Every skill has its own XP pool. Mining XP only goes toward Mining; Archery XP only toward Archery.
-- The exact XP per action is configured server-side, but in general: rarer blocks and tougher mobs give more XP than common ones. See each skill's page (e.g. [skills/mining](skills/mining.md)) for the full table.
+- The exact XP per action is configured server-side, but in general: rarer blocks and tougher mobs give more XP than common ones. See each skill's page (e.g. [skills/mining](/skills/mining)) for the full table.
 - Some skills are **child skills** that don't earn XP directly: **Salvage** and **Smelting**. Their level is computed from the average of two parent skills, so you raise them indirectly.
 
 ## Essential commands
@@ -44,16 +44,16 @@ You don't need to do anything special to start. Mine a block, swing your sword, 
 | `/mcrank` | Show your own rank on every skill leaderboard. |
 | `/mcability` | Toggle ability preparation. If disabled, you won't accidentally trigger Super Abilities while building. |
 | `/inspect <player>` | Look at another player's skill levels. |
-| `/party` | Open the party menu. See [Parties](parties.md). |
+| `/party` | Open the party menu. See [Parties](/parties). |
 | `/mcmmo` | Show plugin info and version. |
 
-A complete command reference is in [Commands](Commands.md).
+A complete command reference is in [Commands](/Commands).
 
 ## Super Abilities at a glance
 
 Most combat and gathering skills have an active **Super Ability**:
 
-| Skill | Super Ability | Triggered with |
+| Skill | Super Ability | How to use |
 |-------|---------------|----------------|
 | Mining | Super Breaker (faster ore mining) | Right-click while holding a pickaxe |
 | Mining | Blast Mining (TNT efficiency) | Sneak + right-click while holding a pickaxe or the detonator item (default Flint & Steel) to remotely detonate nearby TNT |
@@ -77,7 +77,7 @@ Each ability has a cooldown (configured server-side, often around 4 minutes). Wh
 
 - [Skill summary](/skills) -- a one-page overview of every skill.
 - Per-skill deep dives: see the **Skills** section in the sidebar.
-- [Commands](Commands.md) -- every command and what it does.
-- [Permissions](permissions.md) -- for server operators.
-- [Parties](parties.md) -- play together and share XP.
-- [Configuration](config.md) -- for server operators tuning the plugin.
+- [Commands](/Commands) -- every command and what it does.
+- [Permissions](/permissions) -- for server operators.
+- [Parties](/parties) -- play together and share XP.
+- [Configuration](/config) -- for server operators tuning the plugin.
