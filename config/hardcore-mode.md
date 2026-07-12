@@ -2,7 +2,7 @@
 title: Hardcore Mode
 description: Information about mcMMO's optional hardcore mode
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, hardcore
 editor: markdown
 dateCreated: 2022-07-17T21:51:08.011Z
@@ -35,4 +35,4 @@ When a player dies with Hardcore Mode enabled for at least one skill:
 
 ## Vampirism Interaction
 
-Hardcore Mode can interact with the [Vampirism](/config/vampirism) setting. When both are enabled, skill levels or XP lost by the dying player may be transferred to their killer (if killed by another player).
+[Vampirism](/config/vampirism) is a separate setting, not part of the Hardcore death penalty. The levels removed by the death penalty are destroyed, not transferred. When Vampirism is enabled and a player is killed by another player, the killer separately leeches a portion of the victim's skill levels; this leech is calculated independently and is not the same levels the death penalty removes.
