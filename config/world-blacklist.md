@@ -2,7 +2,7 @@
 title: World Blacklist
 description: Information about the world blacklist feature for mcMMO
 published: true
-date: 2024-11-24T01:59:07.533Z
+date: 2026-07-12T00:00:00.000Z
 tags: blacklist, config
 editor: markdown
 dateCreated: 2022-07-17T22:33:56.252Z
@@ -14,9 +14,9 @@ The World Blacklist feature allows server administrators to disable mcMMO entire
 
 ## Configuration
 
-The world blacklist is configured in `config.yml`. Add the names of worlds you want to disable mcMMO in to the blacklist section.
+The world blacklist is a plain-text file, `world_blacklist.txt`, in the mcMMO plugin folder. It is created automatically if it does not already exist. List one world name per line for each world you want to disable mcMMO in.
 
-> Changes to `config.yml` require a server restart to take effect.
+> Changes to `world_blacklist.txt` require a server restart to take effect.
 {.is-warning}
 
 ## WorldGuard Integration
