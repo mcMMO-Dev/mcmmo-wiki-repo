@@ -2,7 +2,7 @@
 title: salvage.vanilla.yml
 description: Vanilla item salvage configuration reference for mcMMO Salvage.
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-07-12T00:00:00.000Z
 tags: config, salvage
 editor: markdown
 dateCreated: 2026-05-17T00:00:00.000Z
@@ -29,10 +29,10 @@ Salvageables:
         MaximumQuantity: 2
 ```
 
-> For craftable vanilla items (tools, armour) mcMMO auto-detects the salvage material from the crafting recipe; no `SalvageMaterial` field is needed. For non-craftable items (e.g. Elytra), you must specify `SalvageMaterial` explicitly.
+> For standard vanilla tools and armour mcMMO auto-detects the salvage material from the item's material tier (wood, stone, iron, diamond, and so on); no `SalvageMaterial` field is needed. Items that match no tier (e.g. Elytra) auto-detect to nothing, so you must specify `SalvageMaterial` explicitly for them.
 {.is-info}
 
-> By default, **diamond items require level 500** and **netherite items require level 1000** Salvage (Retro) before they can be salvaged. Wooden, stone, leather, iron, and gold items have no level requirement.
+> By default, **diamond items require Salvage level 50** and **netherite items require Salvage level 100** before they can be salvaged. Wooden, stone, copper, leather, iron, and gold items have no level requirement.
 {.is-info}
 
 | Field | Description |
@@ -52,15 +52,16 @@ The file covers most vanilla repairable items. The Shield, Mace, Elytra, and War
 |------|-------------|-----------------|
 | Wood | Wooden tools | `OAK_PLANKS` |
 | Stone | Stone tools | `COBBLESTONE` |
+| Copper | Copper tools and armour | `COPPER_INGOT` |
 | Leather | Leather armour | `LEATHER` |
 | Iron | Iron tools and armour | `IRON_INGOT` |
 | Gold | Golden tools and armour | `GOLD_INGOT` |
 | Diamond | Diamond tools and armour | `DIAMOND` |
 | Netherite | Netherite tools and armour | `NETHERITE_INGOT` |
 
-Bows, Crossbows, and Fishing Rods are also salvageable by default.
+Bows, Crossbows, Fishing Rods, Carrot on a Stick, Shears, and Flint and Steel are also salvageable by default.
 
-> Elytra is **not** salvageable by default; add it manually as shown below. Trident has an entry but no `SalvageMaterial` and no crafting recipe, so it yields nothing; add `SalvageMaterial` and `MaximumQuantity` to the existing Trident entry to enable salvage.
+> Elytra is **not** salvageable by default; add it manually as shown below. Trident **is** salvageable by default: its entry has no `SalvageMaterial`, so mcMMO auto-detects it as a Prismarine tool and returns Prismarine Crystals (up to 16 from a full-durability Trident).
 {.is-info}
 
 ---
@@ -76,7 +77,7 @@ Bows, Crossbows, and Fishing Rods are also salvageable by default.
 
 ## Examples
 
-> `MinimumLevel` is always specified in **Standard mode** units regardless of your server's level mode. Retro mode players see 10× this value in-game (e.g. `MinimumLevel: 75` = level 750 in Retro mode).
+> `MinimumLevel` is compared directly against the player's Salvage level, using the same number in both Standard and Retro mode. `MinimumLevel: 75` requires Salvage level 75 either way.
 {.is-info}
 
 ### Adding Elytra to salvage
@@ -92,7 +93,7 @@ Salvageables:
         SalvageMaterial: PHANTOM_MEMBRANE
 ```
 
-`SalvageMaterial` is required for items with no crafting recipe. Without it mcMMO cannot determine what material to return.
+`SalvageMaterial` is required for items that match no material tier (like the Elytra). Without it mcMMO cannot determine what material to return.
 
 ### Adding Mace to salvage
 
@@ -121,7 +122,7 @@ Salvageables:
 
 ### Raising the level gate for Netherite salvage
 
-Default Netherite items require Salvage level 1000 (Retro). To raise this to 1500 (Retro), set `MinimumLevel: 150`:
+Default Netherite items require Salvage level 100. To raise this to 150, set `MinimumLevel: 150`:
 
 ```yaml
 Salvageables:
