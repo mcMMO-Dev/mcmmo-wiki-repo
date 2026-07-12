@@ -36,7 +36,6 @@ Each flag is toggled by a `Saved_To_Disk` boolean nested under `Persistent_Data.
 | `NETHER_PORTAL_MOB` | `false` | Mobs that entered via a nether portal. Gives 0 XP by default. |
 | `COTW_SUMMONED_MOB` | `true` | Pets summoned by Call of the Wild. Persistent by default because there are rarely many of them. |
 | `PLAYER_BRED_MOB` | `false` | Mobs bred by players. Gives normal XP by default; adjust in `experience.yml`. |
-| `EXPLOITED_ENDERMEN` | `false` | Endermen that arrived via the Enderman/Endermite exploit. Gives 0 XP. |
 | `PLAYER_TAMED_MOB` | `false` | Mobs tamed by players. Gives 0 XP by default; adjust the multiplier at `Experience_Formula.Player_Tamed.Multiplier` in `experience.yml`. |
 
 ---
