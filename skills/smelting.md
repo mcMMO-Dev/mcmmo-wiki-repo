@@ -2,7 +2,7 @@
 title: Smelting
 description: "Information about the Smelting skill."
 published: true
-date: 2024-11-24T01:59:07.533Z
+date: 2026-07-12T00:00:00.000Z
 tags: smelting, skills
 editor: markdown
 dateCreated: 2024-11-24T01:59:07.533Z
@@ -88,7 +88,7 @@ The proc chance scales linearly from 0% at level 0 to **50%** at level 1000.
 | `ChanceMax` | `50.0` | Maximum proc chance (%) at MaxBonusLevel |
 | `MaxBonusLevel.RetroMode` | `1000` | Skill level at which maximum chance is reached |
 
-> Second Smelt can be disabled per material in `config.yml` under `Double_Drops_Enabled`.
+> Second Smelt can be disabled per material in `config.yml` under `Bonus_Drops.Smelting`.
 {.is-info}
 
 ---
