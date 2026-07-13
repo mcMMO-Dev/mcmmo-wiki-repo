@@ -114,7 +114,6 @@ The maximum enchantment level kept or downgraded to is capped at `MaxEnchantLeve
 | Command | Description |
 |---------|-------------|
 | `/salvage` | Display your Salvage skill stats and sub-skill information. |
-| `/mctop salvage` | View the Salvage leaderboard. |
 | `/mcrank` | Show your rank on every skill leaderboard. |
 
 ## See Also
