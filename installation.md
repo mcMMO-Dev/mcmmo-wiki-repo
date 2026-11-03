@@ -2,7 +2,7 @@
 title: Install or Update mcMMO
 description: Instructions on how to install or update mcMMO
 published: true
-date: 2026-07-11T20:00:00.000Z
+date: 2026-11-02T00:00:00.000Z
 tags: install, update
 editor: markdown
 dateCreated: 2022-07-17T22:27:04.825Z
@@ -24,14 +24,14 @@ Historically very old versions of mcMMO ran directly against CraftBukkit (the sp
 
 ## Installing the newest mcMMO
 
-1.  Grab the latest version of mcMMO from [Spigot](https://www.spigotmc.org/resources/official-mcmmo-original-author-returns.64348/) or [Voxel](https://voxel.shop/product/727/mcmmo)
+1.  Grab the latest version of mcMMO from [Spigot](https://www.spigotmc.org/resources/official-mcmmo-original-author-returns.64348/)
 2.  Place mcMMO.jar in /path/to/your/spigotorpaperserver/plugins/ directory
 
 ## Upgrading to the newest mcMMO
 
 Upgrading mcMMO is meant to be as simple as possible, you are never required to delete data or configs.
 
-1.  Grab the latest version of mcMMO from [Spigot](https://www.spigotmc.org/resources/official-mcmmo-original-author-returns.64348/) or [Voxel](https://voxel.shop/product/727/mcmmo)
+1.  Grab the latest version of mcMMO from [Spigot](https://www.spigotmc.org/resources/official-mcmmo-original-author-returns.64348/)
 2.  Make sure that your Spigot or Paper server is up to date
 3.  Place mcMMO.jar in /path/to/your/spigot-or-paper-or-folia-server/plugins/ directory
 4.  Replace the existing mcMMO.jar

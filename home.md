@@ -2,7 +2,7 @@
 title: Home
 description: Welcome!
 published: true
-date: 2026-07-12T00:00:00.000Z
+date: 2026-11-02T00:00:00.000Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-16T05:21:57.454Z
@@ -21,7 +21,6 @@ It would be wonderful if you would make any contribution to help us get the wiki
 Use the sidebar or the search function to find what you're looking for!
 
 ## Get mcMMO
-- [Download mcMMO from Voxel](https://voxel.shop/product/727/mcmmo)
 - [Download mcMMO from Spigot](https://www.spigotmc.org/resources/official-mcmmo-original-author-returns.64348/)
 ## mcMMO Development
 - [mcMMO GitHub](https://github.com/mcMMO-Dev/mcMMO)
